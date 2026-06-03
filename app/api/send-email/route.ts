@@ -64,7 +64,12 @@ export async function POST(request: NextRequest) {
       emailContent.to,
       emailContent.subject,
       emailContent.text,
-      emailContent.html
+      emailContent.html,
+      {
+        from: credentials.fromEmail,
+        brevoUser: credentials.brevoUser,
+        brevoMasterKey: credentials.brevoMasterKey,
+      }
     );
 
     return NextResponse.json(

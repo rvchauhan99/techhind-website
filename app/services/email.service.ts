@@ -1,24 +1,31 @@
 import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-  host: "smtp-relay.brevo.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.BREVO_USER,
-    pass: process.env.BREVO_MASTER_KEY,
-  },
-});
+interface SendEmailOptions {
+  from: string;
+  brevoUser: string;
+  brevoMasterKey: string;
+}
 
 export async function sendEmail(
   to: string | string[],
   subject: string,
   text: string,
-  html?: string
+  html: string | undefined,
+  options: SendEmailOptions
 ) {
   try {
+    const transporter = nodemailer.createTransport({
+      host: "smtp-relay.brevo.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: options.brevoUser,
+        pass: options.brevoMasterKey,
+      },
+    });
+
     const mailOptions = {
-      from: `'techHind Website' <${process.env.BREVO_FROM}>`,
+      from: `'techHind Website' <${options.from}>`,
       to,
       subject,
       text,
