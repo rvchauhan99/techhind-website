@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-teal: #00823b;
+    --primary-cyan: #00662e;
+    --primary-purple: #f37021;
+    --primary-indigo: #1b365d;
+    --brand-dark-hover: #142847;
+    --brand-dark-border: #0f1f3a;
+    --brand-dark-mid: #2d4e7a;
+  }
+
+  * {
+    @apply border-gray-200;
+  }
+
+  body {
+    @apply text-gray-900 antialiased bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-dark {
+    background: rgba(10, 15, 28, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #00823b, #1b365d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .gradient-text-brand {
+    background: linear-gradient(135deg, #00823b, #1b365d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #00823b 0%, #1b365d 50%, #f37021 100%);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #00662e 0%, #162c4a 50%, #d95d16 100%);
+  }
+
+  /* Fade in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);;
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  /* Slow bounce animation */
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+
+  @keyframes bounce-slow-delayed {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-bounce-slow-delayed {
+    animation: bounce-slow-delayed 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  /* === NEW: Infinite Marquee === */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 28s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  /* === NEW: Scroll-triggered entrance === */
+  .highlight-card.animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  /* === NEW: Gradient primary utility (referenced by some components) === */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #00823b 0%, #1b365d 100%);
+  }
+
+  /* === Glow shadows === */
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(0, 130, 59, 0.3);
+  }
+
+  .shadow-glow-purple {
+    box-shadow: 0 0 20px rgba(243, 112, 33, 0.3);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  }
+
+  .hero-color-mesh {
+    background:
+      radial-gradient(circle at 20% 50%, rgba(0, 130, 59, 0.07) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(27, 54, 93, 0.06) 0%, transparent 50%);
+  }
+
+  .hero-color-mesh-fallback {
+    background:
+      radial-gradient(circle at 20% 50%, rgba(0, 130, 59, 0.07) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(27, 54, 93, 0.06) 0%, transparent 50%);
+  }
+
+  .hero-cinematic-bg {
+    background: #f8faff;
+  }
+
+  .hero-horizon-glow {
+    background: none;
+  }
+
+  .hero-panel-fog {
+    background: none;
+  }
+}
