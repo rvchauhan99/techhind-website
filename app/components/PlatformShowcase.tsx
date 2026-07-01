@@ -16,7 +16,7 @@ export default function PlatformShowcase() {
             See the <span className="gradient-text">Solar Management System</span>
           </h2>
           <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
-            Real screens from our live demo — lead pipelines, GST quotations, inventory, B2B orders, and service tickets in one platform.
+            Real dashboards and management reports from our live demo — executive KPIs, collections, operations, inventory analytics, and B2B sales in one platform.
           </p>
         </div>
 
@@ -26,12 +26,12 @@ export default function PlatformShowcase() {
               key={item.src}
               className="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-xl hover:border-[#00823b]/20 transition-all duration-300"
             >
-              <div className="relative aspect-video bg-slate-100 overflow-hidden">
+              <div className="relative aspect-[3/2] bg-slate-50 overflow-hidden">
                 <Image
                   src={item.src}
                   alt={item.alt}
                   fill
-                  className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
+                  className="object-contain object-top group-hover:scale-[1.02] transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>

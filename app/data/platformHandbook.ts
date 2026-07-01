@@ -222,40 +222,46 @@ export const platformFaqs = [
 
 export const platformShowcase = [
   {
-    src: "/platform/marketing-leads-kanban.png",
-    alt: "Solar lead kanban pipeline in techHind CRM with Meta Lead Ads integration",
-    title: "Marketing Lead Pipeline",
-    description: "Visual kanban board for qualifying digital marketing leads before they enter sales.",
+    src: "/platform/dashboard-home.png",
+    alt: "Executive solar CRM dashboard with KPIs, pipeline, and order activity in techHind",
+    title: "Executive Dashboard",
+    description:
+      "Real-time KPIs, sales pipeline health, and order activity — a single view for leadership and sales managers.",
   },
   {
-    src: "/platform/quotation-pdf-preview.png",
-    alt: "GST-ready solar quotation PDF preview generated in techHind",
-    title: "GST-Ready Quotations",
-    description: "Professional branded solar proposals with manager approval workflow.",
+    src: "/platform/payment-outstanding.png",
+    alt: "Collections and outstanding receivables dashboard with KPI summary in techHind",
+    title: "Collections Dashboard",
+    description:
+      "Monitor receivables, collection follow-ups, and payment approvals with finance-ready KPI summaries.",
   },
   {
-    src: "/platform/stocks.png",
-    alt: "Solar component stock levels by warehouse in techHind inventory module",
-    title: "Inventory & Stock",
-    description: "Real-time stock levels with serialized tracking for panels and inverters.",
+    src: "/platform/service-dashboard.png",
+    alt: "Service operations dashboard with workload KPIs in techHind after-sales module",
+    title: "Service Operations",
+    description:
+      "Operations dashboard for service workload, ticket status, and after-sales support visibility.",
   },
   {
-    src: "/platform/b2b-sales-orders.png",
-    alt: "B2B solar dealer sales orders list in techHind CRM",
-    title: "B2B Trading",
-    description: "Dealer quotes, orders, shipments, and invoices in one module.",
+    src: "/platform/reports-payments.png",
+    alt: "B2C payments management report for finance review in techHind Solar CRM",
+    title: "Payments Report",
+    description:
+      "Standardized payments report for collection analysis and finance review across all projects.",
   },
   {
-    src: "/platform/service-tickets.png",
-    alt: "Solar service ticket management in techHind after-sales module",
-    title: "Service & Warranty",
-    description: "After-sales tickets and warranty claims with full traceability.",
+    src: "/platform/reports-serialized-inventory.png",
+    alt: "Serialized solar inventory report with stock analytics in techHind",
+    title: "Inventory Report",
+    description:
+      "Serialized inventory analytics for panels and inverters — stock levels, movement, and traceability.",
   },
   {
-    src: "/platform/confirm-order-pipeline.png",
-    alt: "Solar order confirmation pipeline in techHind order lifecycle module",
-    title: "Order Lifecycle",
-    description: "Track every order from quotation conversion to confirmed installation.",
+    src: "/platform/reports-b2b-so-lines.png",
+    alt: "B2B solar sales order lines analytics report in techHind CRM",
+    title: "B2B Sales Report",
+    description:
+      "B2B order-line analytics for dealer sales — quotes, orders, and distribution performance.",
   },
 ] as const;
 
