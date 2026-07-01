@@ -1,46 +1,47 @@
-Post-Deploy SEO / GSC Verification Checklist for techhind.in
-===========================================================
+Post-Deploy SEO / GSC / AEO Checklist for techhind.in
+========================================================
 
-Run these steps after deploying to production:
+Run after every production deploy:
 
-0. Domain / redirect check
+0. Automated live check
+   npm run verify:live
+   (redirects, sitemap, AEO files, GA, all pages HTTP 200)
+
+1. Domain / redirect check
    - https://techhind.in loads (no redirect loop)
    - https://www.techhind.in → single redirect → https://techhind.in
 
-1. Google Search Console — Sitemap
-   - Go to Indexing → Sitemaps
-   - Submit: https://techhind.in/sitemap.xml
-   - Confirm ~14 URLs discovered
+2. Google Search Console — Sitemap
+   - Indexing → Sitemaps → https://techhind.in/sitemap.xml
+   - Status: Success
+   - Confirm 13 URLs discovered (may take days to update from older count)
 
-2. URL Inspection
-   - Inspect https://techhind.in/
-   - Inspect https://techhind.in/pricing
-   - Confirm "URL is on Google" and correct canonical
+3. GSC URL Inspection (use scripts/gsc-url-inspection-list.txt)
+   - Request indexing for /features and all 7 /features/* pages
+   - Confirm canonical = https://techhind.in/... (not www)
 
-3. Rich Results Test
-   - Test https://techhind.in/ for Organization, SoftwareApplication, FAQPage
-   - Test https://techhind.in/pricing for Product/Offer and FAQPage
-   - URL: https://search.google.com/test/rich-results
+4. Rich Results Test
+   - https://techhind.in/ → Organization, SoftwareApplication, FAQPage, HowTo
+   - https://techhind.in/pricing → Product/Offer, FAQPage
+   - https://search.google.com/test/rich-results
 
-4. Asset Verification (all should return HTTP 200)
-   - https://techhind.in/og-image.png
-   - https://techhind.in/logo.png
-   - https://techhind.in/favicon.ico
+5. AEO / AI crawler assets (HTTP 200)
    - https://techhind.in/llms.txt
+   - https://techhind.in/llms-full.txt
    - https://techhind.in/ai.txt
+   - Monthly manual tests: scripts/aeo-manual-tests.txt
 
-5. GSC Experience
-   - Experience → HTTPS: fully secure
-   - Experience → Core Web Vitals: check for Poor URLs
+6. GSC Experience
+   - HTTPS: fully secure
+   - Core Web Vitals: no Poor URLs on key pages
    - Security & Manual Actions: no issues
 
-6. Analytics
-   - Set NEXT_PUBLIC_GA_ID in production
-   - Link GSC property to GA4
-   - Enable GSC email alerts for indexing errors
+7. Analytics & associations
+   - NEXT_PUBLIC_GA_ID=G-ENF5GKMCX2 on Vercel Production
+   - GSC ↔ GA4 linked (Settings → Associations)
+   - GSC email alerts enabled
 
-7. Re-benchmark (4–8 weeks after deploy)
-   - Performance → compare impressions/clicks vs baseline (128 impressions / 27 clicks)
-   - Track non-branded queries: "crm price in india", "solar CRM pricing India"
-   - Inspect feature pages: /features and all /features/* URLs in URL Inspection
-   - Confirm 14 URLs in sitemap (homepage + features hub + 7 feature pages + pricing + 3 legal)
+8. Re-benchmark (4–8 weeks)
+   - GSC Performance vs baseline (128 impressions / 27 clicks)
+   - Queries: "crm price in india", "solar CRM pricing India"
+   - AI spot checks per scripts/aeo-manual-tests.txt

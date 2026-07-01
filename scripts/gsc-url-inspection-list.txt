@@ -1,0 +1,20 @@
+Google Search Console — URL Inspection list for techhind.in
+===========================================================
+
+Paste each URL into GSC → URL Inspection → Request indexing
+
+https://techhind.in/
+https://techhind.in/pricing
+https://techhind.in/features
+https://techhind.in/features/solar-lead-management
+https://techhind.in/features/solar-quotation-software
+https://techhind.in/features/solar-order-management
+https://techhind.in/features/solar-inventory-software
+https://techhind.in/features/b2b-solar-trading
+https://techhind.in/features/solar-payment-tracking
+https://techhind.in/features/solar-service-warranty
+https://techhind.in/privacy-policy
+https://techhind.in/terms-conditions
+https://techhind.in/data-deletion
+
+For each URL confirm: Google-selected canonical = https://techhind.in/...

@@ -1,0 +1,25 @@
+AEO / AI Search — manual spot checks (monthly)
+==============================================
+
+1. Live asset check (automated)
+   npm run verify:live
+
+2. Ask these in Perplexity, ChatGPT, or Gemini — note if techhind.in is cited with correct facts:
+
+   - What is techHind Solar CRM?
+   - Solar CRM pricing in India techHind
+   - Solar CRM with Meta Facebook lead ads integration India
+   - Solar EPC software with inventory and B2B trading India
+   - techHind vs generic CRM for solar companies
+
+3. Expected facts AI should surface (from llms-full.txt):
+   - Product: complete Solar Management System for Indian EPC companies
+   - Pricing from: ₹12,999/month on yearly plan (+ tax)
+   - Demo: https://demo.techhind.in/auth/preview
+   - Contact: contact@techhind.in, +91-8485949461
+   - Modules: leads, quotations, orders, inventory, B2B, payments, service
+
+4. If facts are wrong or site not cited:
+   - Re-run GSC URL Inspection for /features/* pages
+   - Update public/llms-full.txt when pricing or modules change
+   - Redeploy and wait 2–4 weeks for AI crawlers to refresh

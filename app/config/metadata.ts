@@ -61,6 +61,9 @@ export const rootMetadata: Metadata = {
   },
   alternates: {
     canonical: "/",
+    types: {
+      "text/plain": "/llms.txt",
+    },
   },
   openGraph: {
     title: siteData.seo.title,

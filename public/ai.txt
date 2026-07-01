@@ -3,6 +3,11 @@
 llms-txt: https://techhind.in/llms.txt
 llms-full-txt: https://techhind.in/llms-full.txt
 sitemap: https://techhind.in/sitemap.xml
+handbook-pdf: https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
+features: https://techhind.in/features
+pricing: https://techhind.in/pricing
 contact: contact@techhind.in
+phone: +91-8485949461
+demo: https://demo.techhind.in/auth/preview
 organization: Techhind Private Limited
 product: techHind Solar CRM
