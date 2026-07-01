@@ -1,16 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.techhind.in" }],
-        destination: "https://techhind.in/:path*",
-        permanent: true,
-      },
-    ];
-  },
+  // www → apex redirect is configured in Vercel Domains (not here).
   async headers() {
     return [
       {

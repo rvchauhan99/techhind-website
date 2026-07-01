@@ -382,7 +382,7 @@ export default function PrivacyPolicy() {
                     <p className="mb-4">For privacy-related concerns:</p>
                     <div className="bg-[#0f2942] rounded-lg p-4">
                       <p className="text-gray-300">Techhind Private Limited</p>
-                      <p className="text-gray-300">Website: www.techhind.in</p>
+                      <p className="text-gray-300">Website: techhind.in</p>
                       <p className="text-[#00823b] font-medium">Email: privacy@techhind.in</p>
                     </div>
                   </section>

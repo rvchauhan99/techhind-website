@@ -3,10 +3,14 @@ Post-Deploy SEO / GSC Verification Checklist for techhind.in
 
 Run these steps after deploying to production:
 
+0. Domain / redirect check
+   - https://techhind.in loads (no redirect loop)
+   - https://www.techhind.in → single redirect → https://techhind.in
+
 1. Google Search Console — Sitemap
    - Go to Indexing → Sitemaps
    - Submit: https://techhind.in/sitemap.xml
-   - Confirm 5 URLs discovered
+   - Confirm ~14 URLs discovered
 
 2. URL Inspection
    - Inspect https://techhind.in/

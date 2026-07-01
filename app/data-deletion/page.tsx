@@ -229,7 +229,7 @@ export default function DataDeletion() {
                     <p className="mb-4">
                       Updates will be published on:
                     </p>
-                    <p className="text-[#00823b] font-medium">www.techhind.in/data-deletion</p>
+                    <p className="text-[#00823b] font-medium">techhind.in/data-deletion</p>
                   </section>
 
                 </div>

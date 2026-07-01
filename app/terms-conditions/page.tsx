@@ -50,7 +50,7 @@ export default function TermsConditions() {
                 </p>
 
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>www.techhind.in</li>
+                  <li>techhind.in</li>
                   <li>Techhind ERP platform</li>
                   <li>Techhind CRM software</li>
                   <li>API integrations</li>
@@ -376,7 +376,7 @@ export default function TermsConditions() {
                     <p className="mb-4">
                       Use of our services is also governed by our Privacy Policy available on:
                     </p>
-                    <p className="text-[#00823b] font-medium">www.techhind.in/privacy-policy</p>
+                    <p className="text-[#00823b] font-medium">techhind.in/privacy-policy</p>
                   </section>
 
                   {/* Section 18 */}
