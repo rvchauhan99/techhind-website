@@ -250,11 +250,11 @@ export const platformShowcase = [
       "Standardized payments report for collection analysis and finance review across all projects.",
   },
   {
-    src: "/platform/reports-serialized-inventory.png",
-    alt: "Serialized solar inventory report with stock analytics in techHind",
-    title: "Inventory Report",
+    src: "/platform/stocks.png",
+    alt: "Solar stock dashboard with warehouse levels and stock analytics in techHind",
+    title: "Stock Dashboard",
     description:
-      "Serialized inventory analytics for panels and inverters — stock levels, movement, and traceability.",
+      "Real-time stock levels by warehouse and product — panels, inverters, and components at a glance.",
   },
   {
     src: "/platform/reports-b2b-so-lines.png",
