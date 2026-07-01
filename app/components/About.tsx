@@ -72,6 +72,12 @@ export default function About() {
             <h3 className="text-3xl font-bold text-dark-900 mb-6">
               About <span className="gradient-text">{siteData.company.name}</span>
             </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
+              techHind is a solar CRM platform for EPC companies in India that
+              manages leads, projects, quotations, and commissioning from a
+              single cloud dashboard — including the SolarCRM mobile field app
+              for site engineers.
+            </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
               {siteData.company.description}
             </p>

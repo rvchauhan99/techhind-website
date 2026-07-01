@@ -1,0 +1,42 @@
+Post-Deploy SEO / GSC Verification Checklist for techhind.in
+===========================================================
+
+Run these steps after deploying to production:
+
+1. Google Search Console — Sitemap
+   - Go to Indexing → Sitemaps
+   - Submit: https://techhind.in/sitemap.xml
+   - Confirm 5 URLs discovered
+
+2. URL Inspection
+   - Inspect https://techhind.in/
+   - Inspect https://techhind.in/pricing
+   - Confirm "URL is on Google" and correct canonical
+
+3. Rich Results Test
+   - Test https://techhind.in/ for Organization, SoftwareApplication, FAQPage
+   - Test https://techhind.in/pricing for Product/Offer and FAQPage
+   - URL: https://search.google.com/test/rich-results
+
+4. Asset Verification (all should return HTTP 200)
+   - https://techhind.in/og-image.png
+   - https://techhind.in/logo.png
+   - https://techhind.in/favicon.ico
+   - https://techhind.in/llms.txt
+   - https://techhind.in/ai.txt
+
+5. GSC Experience
+   - Experience → HTTPS: fully secure
+   - Experience → Core Web Vitals: check for Poor URLs
+   - Security & Manual Actions: no issues
+
+6. Analytics
+   - Set NEXT_PUBLIC_GA_ID in production
+   - Link GSC property to GA4
+   - Enable GSC email alerts for indexing errors
+
+7. Re-benchmark (4–8 weeks after deploy)
+   - Performance → compare impressions/clicks vs baseline (128 impressions / 27 clicks)
+   - Track non-branded queries: "crm price in india", "solar CRM pricing India"
+   - Inspect feature pages: /features and all /features/* URLs in URL Inspection
+   - Confirm 14 URLs in sitemap (homepage + features hub + 7 feature pages + pricing + 3 legal)

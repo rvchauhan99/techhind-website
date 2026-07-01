@@ -1,27 +1,36 @@
 "use client";
 
+import Link from "next/link";
 import {
-  Users,
-  FolderKanban,
-  Package,
+  Megaphone,
+  Search,
   FileText,
-  BarChart3,
-  Shield,
-  Smartphone,
+  ShoppingCart,
+  Wrench,
+  Wallet,
+  Package,
+  Building2,
+  Percent,
   Headphones,
+  BarChart3,
+  FileOutput,
   CheckCircle2,
 } from "lucide-react";
 import { siteData } from "../data/siteData";
 
 const iconMap: Record<string, React.ElementType> = {
-  Users,
-  FolderKanban,
-  Package,
+  Megaphone,
+  Search,
   FileText,
-  BarChart3,
-  Shield,
-  Smartphone,
+  ShoppingCart,
+  Wrench,
+  Wallet,
+  Package,
+  Building2,
+  Percent,
   Headphones,
+  BarChart3,
+  FileOutput,
 };
 
 export default function Features() {
@@ -29,7 +38,9 @@ export default function Features() {
     <section id="features" className="scroll-mt-24 py-24 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-[#00823b]/8 border border-[#00823b]/15 text-[#00823b] text-sm font-semibold mb-4">Platform Features</span>
+          <span className="inline-block px-4 py-1.5 rounded-full bg-[#00823b]/8 border border-[#00823b]/15 text-[#00823b] text-sm font-semibold mb-4">
+            Platform Features
+          </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0d1b2e] mb-5">
             {siteData.features.title.split(siteData.features.titleHighlight)[0]}
             <span className="gradient-text">{siteData.features.titleHighlight}</span>
@@ -39,14 +50,11 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {siteData.features.items.map((feature, index) => {
-            const Icon = iconMap[feature.icon] || Users;
-            return (
-              <div
-                key={index}
-                className="group relative p-6 rounded-2xl bg-white border border-gray-100 hover:border-[#00823b]/20 hover:shadow-xl hover:shadow-[#1b365d]/6 transition-all duration-300 hover:-translate-y-1"
-              >
+            const Icon = iconMap[feature.icon] || Package;
+            const card = (
+              <div className="group relative p-6 rounded-2xl bg-white border border-gray-100 hover:border-[#00823b]/20 hover:shadow-xl hover:shadow-[#1b365d]/6 transition-all duration-300 hover:-translate-y-1 h-full">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#00823b]/0 to-[#1b365d]/0 group-hover:from-[#00823b]/2 group-hover:to-[#1b365d]/2 transition-all duration-300" />
                 <div className="relative">
                   <div className="w-11 h-11 bg-gradient-to-br from-[#00823b] to-[#1b365d] rounded-xl flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
@@ -69,21 +77,42 @@ export default function Features() {
                 </div>
               </div>
             );
+
+            if (feature.slug) {
+              return (
+                <Link
+                  key={index}
+                  href={`/features/${feature.slug}`}
+                  className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00823b] rounded-2xl"
+                >
+                  {card}
+                </Link>
+              );
+            }
+
+            return <div key={index}>{card}</div>;
           })}
         </div>
 
-        {/* CTA */}
         <div className="mt-14 text-center">
           <p className="text-gray-500 mb-5">Ready to transform your solar business operations?</p>
-          <button
-            onClick={() => {
-              const element = document.querySelector("#contact");
-              if (element) element.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#1b365d] hover:bg-[#142847] text-white rounded-xl font-bold text-base transition-all duration-200 shadow-lg shadow-[#1b365d]/20 hover:shadow-xl hover:-translate-y-0.5"
-          >
-            Start Free Trial
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/features"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-[#1b365d] text-[#1b365d] hover:bg-[#1b365d]/5 rounded-xl font-bold text-base transition-all"
+            >
+              View All Features
+            </Link>
+            <button
+              onClick={() => {
+                const element = document.querySelector("#contact");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#1b365d] hover:bg-[#142847] text-white rounded-xl font-bold text-base transition-all duration-200 shadow-lg shadow-[#1b365d]/20 hover:shadow-xl hover:-translate-y-0.5"
+            >
+              Start Free Trial
+            </button>
+          </div>
         </div>
       </div>
     </section>

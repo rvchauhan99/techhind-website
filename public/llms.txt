@@ -1,0 +1,57 @@
+# techHind
+
+> Complete Solar Management System for EPC companies in India
+
+## About
+
+techHind (Techhind Private Limited) is a cloud Solar CRM built exclusively for Indian solar EPC companies, distributors, and integrators. The platform manages the full business journey — from marketing lead to installed project, payment collection, and after-sales service.
+
+## Integrated Modules
+
+- **Marketing Leads & Meta** — Kanban pipeline with Facebook/Instagram Lead Ads sync
+- **Inquiry Management** — Lead-to-inquiry conversion with DISCOM and site visits
+- **Quotations** — GST-ready PDF proposals with manager approval
+- **Order Lifecycle** — Quotation to confirmed order with document collection
+- **Fabrication & Installation** — Serial capture, manager sign-off, delivery challans
+- **Payments & Outstanding** — Payment recording, audit, and follow-up reminders
+- **Procurement & Inventory** — Purchase orders, stock, serialized panel/inverter tracking
+- **B2B Trading** — Dealer quotes, orders, shipments, and invoices
+- **Commission Management** — Partner incentives with approval and payout
+- **Service & Warranty** — Tickets, warranty claims, and spare parts
+- **Reports & Audit** — Dashboards, analytics, and document audit trails
+- **Document Outputs** — Quotation PDFs, challans, invoices, warranty cards
+
+## 8-Stage Workflow
+
+Lead Capture → Inquiry Qualification → Site Assessment → Commercial Proposal → Order Confirmation → Field Execution → Financial Closure → After-Sales Service
+
+## Pricing
+
+https://techhind.in/pricing — Plans from ₹12,999/month
+
+## Platform Handbook (PDF)
+
+https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
+
+## Contact
+
+- Email: contact@techhind.in
+- Phone: +91-8485949461
+- Demo: https://demo.techhind.in/auth/preview
+
+## Key Pages
+
+- Homepage: https://techhind.in/
+- Features: https://techhind.in/features
+- Lead Management: https://techhind.in/features/solar-lead-management
+- Quotations: https://techhind.in/features/solar-quotation-software
+- Order Management: https://techhind.in/features/solar-order-management
+- Inventory: https://techhind.in/features/solar-inventory-software
+- B2B Trading: https://techhind.in/features/b2b-solar-trading
+- Payments: https://techhind.in/features/solar-payment-tracking
+- Service & Warranty: https://techhind.in/features/solar-service-warranty
+- Pricing: https://techhind.in/pricing
+
+## Extended Documentation
+
+- Full FAQ and module details: https://techhind.in/llms-full.txt

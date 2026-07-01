@@ -1,19 +1,30 @@
-import { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BreadcrumbStructuredData from '../components/structured-data/BreadcrumbStructuredData';
+import { buildPageMetadata } from '../config/metadata';
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Privacy Policy - Techhind Private Limited',
-  description: 'Techhind Private Limited Privacy Policy - How we collect, process, and protect your personal data in compliance with DPDP Act 2023 and Meta platform policies.',
-  keywords: ['privacy policy', 'data protection', 'DPDP Act 2023', 'Meta privacy', 'Techhind privacy', 'SolarCRM', 'camera permission'],
-  alternates: {
-    canonical: '/privacy-policy',
-  },
-};
+  description:
+    'Techhind Private Limited Privacy Policy - How we collect, process, and protect your personal data in compliance with DPDP Act 2023 and Meta platform policies.',
+  path: '/privacy-policy',
+  keywords: [
+    'privacy policy',
+    'data protection',
+    'DPDP Act 2023',
+    'Meta privacy',
+    'Techhind privacy',
+    'SolarCRM',
+    'camera permission',
+  ],
+});
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-[#0b1c33]">
+      <BreadcrumbStructuredData
+        items={[{ name: 'Privacy Policy', path: '/privacy-policy' }]}
+      />
       <Header />
       
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 lg:pt-40 relative z-10">

@@ -1,19 +1,22 @@
-import { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BreadcrumbStructuredData from '../components/structured-data/BreadcrumbStructuredData';
+import { buildPageMetadata } from '../config/metadata';
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Terms & Conditions - Techhind Private Limited',
-  description: 'Techhind Private Limited Terms & Conditions - Legal terms governing the use of our ERP platform, CRM software, and business integration services.',
+  description:
+    'Techhind Private Limited Terms & Conditions - Legal terms governing the use of our ERP platform, CRM software, and business integration services.',
+  path: '/terms-conditions',
   keywords: ['terms and conditions', 'legal terms', 'service agreement', 'Techhind terms'],
-  alternates: {
-    canonical: '/terms-conditions',
-  },
-};
+});
 
 export default function TermsConditions() {
   return (
     <div className="min-h-screen bg-[#0b1c33]">
+      <BreadcrumbStructuredData
+        items={[{ name: 'Terms & Conditions', path: '/terms-conditions' }]}
+      />
       <Header />
       
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 lg:pt-40 relative z-10">

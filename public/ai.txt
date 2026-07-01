@@ -1,0 +1,8 @@
+# AI Crawler Information for techhind.in
+
+llms-txt: https://techhind.in/llms.txt
+llms-full-txt: https://techhind.in/llms-full.txt
+sitemap: https://techhind.in/sitemap.xml
+contact: contact@techhind.in
+organization: Techhind Private Limited
+product: techHind Solar CRM

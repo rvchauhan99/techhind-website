@@ -1,0 +1,499 @@
+{
+  "capturedAt": "2026-06-22T07:57:30.898Z",
+  "baseUrl": "https://demo.techhind.in",
+  "demoIds": {
+    "discoveredAt": "2026-06-22T07:53:43.190Z",
+    "baseUrl": "https://demo.techhind.in",
+    "apiBase": "https://solar-api-demo-d8tfk.ondigitalocean.app/api",
+    "inquiryId": "217",
+    "marketingLeadId": "435",
+    "quotationId": "350",
+    "pendingOrderId": "145",
+    "confirmOrderId": "146",
+    "b2bSalesOrderId": "72",
+    "b2bInvoiceId": "5",
+    "serviceTicketId": "2"
+  },
+  "total": 36,
+  "captured": 36,
+  "skipped": 0,
+  "accessDenied": 0,
+  "failed": 0,
+  "results": [
+    {
+      "route": "/auth/login",
+      "filename": "auth-login.png",
+      "public": true,
+      "waitSelector": "form",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/home",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/auth-login.png"
+    },
+    {
+      "route": "/home",
+      "filename": "dashboard-home.png",
+      "module": "dashboard",
+      "waitSelector": "main",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/home",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/dashboard-home.png"
+    },
+    {
+      "route": "/inquiry",
+      "filename": "inquiry-kanban.png",
+      "module": "inquiry",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "button:has-text('Kanban'), [data-view='kanban']",
+          "optional": true
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/inquiry",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/inquiry-kanban.png"
+    },
+    {
+      "route": "/inquiry/add",
+      "filename": "inquiry-add-form.png",
+      "module": "inquiry",
+      "fullPage": false,
+      "waitSelector": "form",
+      "status": "captured",
+      "url": "https://demo.techhind.in/inquiry/add",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/inquiry-add-form.png"
+    },
+    {
+      "route": "/inquiry/217",
+      "filename": "inquiry-detail.png",
+      "module": "inquiry",
+      "fullPage": false,
+      "requiresId": "inquiryId",
+      "status": "captured",
+      "url": "https://demo.techhind.in/inquiry/217",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/inquiry-detail.png"
+    },
+    {
+      "route": "/marketing-leads",
+      "filename": "marketing-leads-kanban.png",
+      "module": "marketing-leads",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/marketing-leads",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/marketing-leads-kanban.png"
+    },
+    {
+      "route": "/marketing-leads/view?id=435",
+      "filename": "marketing-lead-detail.png",
+      "module": "marketing-leads",
+      "fullPage": false,
+      "requiresId": "marketingLeadId",
+      "status": "captured",
+      "url": "https://demo.techhind.in/marketing-leads/view?id=435",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/marketing-lead-detail.png"
+    },
+    {
+      "route": "/quotation/add",
+      "filename": "quotation-add-form.png",
+      "module": "quotation",
+      "fullPage": false,
+      "waitSelector": "form",
+      "status": "captured",
+      "url": "https://demo.techhind.in/quotation/add",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/quotation-add-form.png"
+    },
+    {
+      "route": "/quotation/350",
+      "filename": "quotation-pdf-preview.png",
+      "module": "quotation",
+      "fullPage": false,
+      "requiresId": "quotationId",
+      "actions": [
+        {
+          "type": "wait",
+          "ms": 4000
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/quotation/350",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/quotation-pdf-preview.png"
+    },
+    {
+      "route": "/quotation/manager-approval",
+      "filename": "quotation-manager-approval.png",
+      "module": "quotation",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "table tbody tr:first-child button, table tbody tr:first-child a",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2000
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/quotation/manager-approval",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/quotation-manager-approval.png"
+    },
+    {
+      "route": "/order/add",
+      "filename": "order-add-form.png",
+      "module": "orders",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/order/add",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/order-add-form.png"
+    },
+    {
+      "route": "/order/view?id=145&tab=2",
+      "filename": "order-payment-tab.png",
+      "module": "orders",
+      "fullPage": false,
+      "requiresId": "pendingOrderId",
+      "status": "captured",
+      "url": "https://demo.techhind.in/order/view?id=145&tab=2",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/order-payment-tab.png"
+    },
+    {
+      "route": "/confirm-orders/view?id=146",
+      "filename": "confirm-order-pipeline.png",
+      "module": "orders",
+      "fullPage": false,
+      "requiresId": "confirmOrderId",
+      "status": "captured",
+      "url": "https://demo.techhind.in/confirm-orders/view?id=146",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-pipeline.png"
+    },
+    {
+      "route": "/confirm-orders/view?id=146",
+      "filename": "confirm-order-delivery.png",
+      "module": "orders",
+      "fullPage": false,
+      "requiresId": "confirmOrderId",
+      "actions": [
+        {
+          "type": "click",
+          "selector": "text=Delivery",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2500
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/confirm-orders/view?id=146",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-delivery.png"
+    },
+    {
+      "route": "/confirm-orders/view?id=146",
+      "filename": "confirm-order-installation.png",
+      "module": "orders",
+      "fullPage": false,
+      "requiresId": "confirmOrderId",
+      "actions": [
+        {
+          "type": "click",
+          "selector": "text=Installation",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2500
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/confirm-orders/view?id=146",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-installation.png"
+    },
+    {
+      "route": "/confirm-orders",
+      "filename": "confirm-order-drawer.png",
+      "module": "orders",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "[aria-label*='detail' i], [title*='detail' i], button:has(svg)",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2500
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/confirm-orders",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-drawer.png"
+    },
+    {
+      "route": "/fabrication-installation",
+      "filename": "fabrication-installation.png",
+      "module": "execution",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/fabrication-installation",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/fabrication-installation.png"
+    },
+    {
+      "route": "/installation/manager-approval",
+      "filename": "installation-approval-drawer.png",
+      "module": "execution",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "table tbody tr:first-child a, table tbody tr:first-child button",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 3000
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/installation/manager-approval",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/installation-approval-drawer.png"
+    },
+    {
+      "route": "/delivery-execution",
+      "filename": "delivery-execution-drawer.png",
+      "module": "execution",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "[class*='kanban'] [class*='card']:first-child, [data-rbd-draggable-id]:first-child",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2500
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/delivery-execution",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/delivery-execution-drawer.png"
+    },
+    {
+      "route": "/delivery-challans/new",
+      "filename": "delivery-challan-form.png",
+      "module": "execution",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/delivery-challans/new",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/delivery-challan-form.png"
+    },
+    {
+      "route": "/payment-outstanding",
+      "filename": "payment-outstanding.png",
+      "module": "payments",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/payment-outstanding",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/payment-outstanding.png"
+    },
+    {
+      "route": "/payment-outstanding",
+      "filename": "payment-followup-dialog.png",
+      "module": "payments",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "button:has-text('Follow'), [aria-label*='follow' i]",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2000
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/payment-outstanding",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/payment-followup-dialog.png"
+    },
+    {
+      "route": "/payment-audit",
+      "filename": "payment-audit-approve.png",
+      "module": "payments",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "button:has-text('Approve')",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2000
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/payment-audit",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/payment-audit-approve.png"
+    },
+    {
+      "route": "/purchase-orders/add",
+      "filename": "purchase-order-form.png",
+      "module": "procurement",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/purchase-orders/add",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/purchase-order-form.png"
+    },
+    {
+      "route": "/po-inwards/add",
+      "filename": "po-inward-form.png",
+      "module": "procurement",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/po-inwards/add",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/po-inward-form.png"
+    },
+    {
+      "route": "/stocks",
+      "filename": "stocks.png",
+      "module": "procurement",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/stocks",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/stocks.png"
+    },
+    {
+      "route": "/b2b-sales-quotes/add",
+      "filename": "b2b-quote-form.png",
+      "module": "b2b",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/b2b-sales-quotes/add",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/b2b-quote-form.png"
+    },
+    {
+      "route": "/b2b-sales-orders/view?id=72",
+      "filename": "b2b-order-detail.png",
+      "module": "b2b",
+      "fullPage": false,
+      "requiresId": "b2bSalesOrderId",
+      "status": "captured",
+      "url": "https://demo.techhind.in/b2b-sales-orders/view?id=72",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/b2b-order-detail.png"
+    },
+    {
+      "route": "/b2b-invoices",
+      "filename": "b2b-invoice-drawer.png",
+      "module": "b2b",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "table tbody tr:first-child",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2500
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/b2b-invoices",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/b2b-invoice-drawer.png"
+    },
+    {
+      "route": "/commission-settlements/pending",
+      "filename": "commission-review-drawer.png",
+      "module": "commission",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "table tbody tr:first-child",
+          "optional": true
+        },
+        {
+          "type": "wait",
+          "ms": 2500
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/commission-settlements/pending",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/commission-review-drawer.png"
+    },
+    {
+      "route": "/service/dashboard",
+      "filename": "service-dashboard.png",
+      "module": "service",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/service/dashboard",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/service-dashboard.png"
+    },
+    {
+      "route": "/service/tickets/2",
+      "filename": "service-ticket-detail.png",
+      "module": "service",
+      "fullPage": false,
+      "requiresId": "serviceTicketId",
+      "status": "captured",
+      "url": "https://demo.techhind.in/service/tickets/2",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/service-ticket-detail.png"
+    },
+    {
+      "route": "/reports/payments",
+      "filename": "reports-payments.png",
+      "module": "reports",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/reports/payments",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/reports-payments.png"
+    },
+    {
+      "route": "/company-profile",
+      "filename": "company-profile.png",
+      "module": "settings",
+      "fullPage": false,
+      "status": "captured",
+      "url": "https://demo.techhind.in/company-profile",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/company-profile.png"
+    },
+    {
+      "route": "/confirm-orders",
+      "filename": "order-pdf-download.png",
+      "module": "documents",
+      "fullPage": false,
+      "actions": [
+        {
+          "type": "downloadPdf",
+          "menuSelector": "table tbody tr:first-child button:has(svg), [aria-label*='more' i]",
+          "menuItemText": "PDF",
+          "saveAs": "pdfs/order-sample.pdf"
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/confirm-orders",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/order-pdf-download.png"
+    },
+    {
+      "route": "/quotation/350",
+      "filename": "pdfs/quotation-sample.png",
+      "module": "documents",
+      "fullPage": false,
+      "requiresId": "quotationId",
+      "actions": [
+        {
+          "type": "screenshotPdfViewer",
+          "selector": "iframe, embed, [class*='pdf'], canvas"
+        }
+      ],
+      "status": "captured",
+      "url": "https://demo.techhind.in/quotation/350",
+      "outputPath": "/Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/pdfs/quotation-sample.png"
+    }
+  ]
+}

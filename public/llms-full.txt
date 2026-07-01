@@ -1,0 +1,127 @@
+# techHind — Full Product & Platform Reference
+
+> Complete Solar Management System for EPC companies in India
+
+## What is techHind?
+
+techHind Solar CRM is a complete Solar Management System for EPC companies, distributors, and integrators in India. It manages leads, projects, quotations, orders, inventory, B2B trading, payments, commission, and after-sales service from a single cloud dashboard — including the SolarCRM mobile field app for site engineers.
+
+## Integrated Modules
+
+### Marketing Leads & Meta Integration
+Capture digital leads on a visual kanban pipeline. Meta Lead Ads integration brings Facebook and Instagram campaign leads directly into the system with source tracking, assignment, and follow-up.
+
+### Inquiry Management
+Convert qualified leads to inquiries with customer details, capacity, location, DISCOM, and site visit scheduling.
+
+### Quotations
+Create GST-ready solar quotations from inquiries with dynamic pricing, manager approval, and branded PDF output.
+
+### Order Lifecycle
+Manage orders from quotation conversion through confirmation, amendments, document collection, and payment schedules.
+
+### Fabrication, Installation & Delivery
+Track fabrication, field installation with serial capture, manager sign-off, and delivery challan dispatch.
+
+### Payments & Outstanding
+Record customer payments, track outstanding balances, payment audits, and follow-up reminders.
+
+### Procurement & Inventory
+Manage purchase orders, goods receipt, stock levels, serialized panel and inverter tracking, and warehouse transfers.
+
+### B2B Trading
+Handle dealer quotes, sales orders, shipments, invoices, and payment outstanding for B2B solar distribution.
+
+### Commission Management
+Configure commission rates, track accruals per order, manager review, and settlement payouts.
+
+### Service & Warranty
+Manage after-sales service tickets, warranty claims, spare parts requests, and service billing.
+
+### Reports & Audit
+Access dashboards, payment reports, delivery reports, B2B analytics, and full document audit trails.
+
+### Document Outputs
+Generate branded quotation PDFs, order documents, delivery challans, B2B invoices, payment receipts, and warranty cards.
+
+## 8-Stage Workflow: Lead to Installation
+
+1. **Lead Capture** (Marketing Leads & Meta) — Leads arrive via Meta campaigns, CSV import, or manual entry
+2. **Inquiry Qualification** (Inquiry Management) — Convert leads with capacity, location, DISCOM data
+3. **Site Assessment** (Follow-up & Site Visit) — On-site surveys and document attachment
+4. **Commercial Proposal** (Quotations) — GST-ready quotations with manager approval
+5. **Order Confirmation** (Order Lifecycle) — Stock reservation and payment schedule
+6. **Field Execution** (Fabrication & Installation) — Serial capture and delivery challan
+7. **Financial Closure** (Payments & Commission) — Payment collection and commission settlement
+8. **After-Sales Service** (Service & Warranty) — Tickets and warranty claims
+
+## Pricing
+
+https://techhind.in/pricing
+
+- Monthly Renewable: ₹14,999/month + tax (up to 200 users)
+- Quarterly Renewable: ₹14,499/month + tax
+- Half-Year Renewable: ₹13,999/month + tax
+- Yearly Renewable: ₹12,999/month + tax (most popular)
+- 14-day free trial, no credit card required
+
+## Platform Handbook
+
+Full customer presentation PDF: https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
+
+## Feature Pages
+
+- https://techhind.in/features
+- https://techhind.in/features/solar-lead-management
+- https://techhind.in/features/solar-quotation-software
+- https://techhind.in/features/solar-order-management
+- https://techhind.in/features/solar-inventory-software
+- https://techhind.in/features/b2b-solar-trading
+- https://techhind.in/features/solar-payment-tracking
+- https://techhind.in/features/solar-service-warranty
+
+## Frequently Asked Questions
+
+### Is techHind built specifically for solar companies?
+
+Yes! techHind is built exclusively for Solar EPC companies in India. Unlike generic CRMs, every feature — from lead management to commissioning checklists — is designed around the solar project lifecycle.
+
+### Does techHind support Meta (Facebook/Instagram) Lead Ads?
+
+Yes. techHind Solar CRM integrates with Meta Lead Ads so campaign leads from Facebook and Instagram flow directly into your marketing lead pipeline with source tracking, assignment, and follow-up.
+
+### Can I track solar panel and inverter serial numbers?
+
+Yes. techHind supports serialized inventory tracking. Serial numbers are registered at goods receipt and linked to orders, installations, and warranty claims.
+
+### Does techHind handle B2B dealer orders and invoicing?
+
+Yes. The B2B Trading module covers dealer quotes, sales orders, shipments, invoices, and payment outstanding.
+
+### What documents can techHind generate?
+
+techHind generates branded quotation PDFs, order documents, delivery challans, B2B invoices, payment receipts, and warranty cards.
+
+### Does techHind manage commission for sales partners?
+
+Yes. Commission Management lets you configure rates, track accruals per order, route through manager approval, and settle payouts.
+
+### What is the price of solar CRM in India?
+
+techHind Solar CRM plans start from ₹12,999 per month (plus applicable taxes) on the yearly plan. See https://techhind.in/pricing
+
+### How is techHind different from a generic CRM?
+
+Unlike generic CRMs such as Zoho or HubSpot, techHind includes solar-specific workflows — site surveys, GST quotations, MNRE compliance, B2B trading, serialized inventory, commission management, and a mobile field app.
+
+## Contact
+
+- Website: https://techhind.in
+- Email: contact@techhind.in
+- Phone: +91-8485949461
+- Demo: https://demo.techhind.in/auth/preview
+- Address: Vijapur, Gujarat, India
+
+## Legal Entity
+
+Techhind Private Limited

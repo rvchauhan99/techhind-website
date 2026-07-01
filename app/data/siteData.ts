@@ -1,23 +1,31 @@
 // Central data file for all dynamic website content
 // Update this file to change content across the entire website
 
+import {
+  platformDifferentiators,
+  platformFaqs,
+  platformModules,
+  platformWorkflow,
+  handbookPdfUrl,
+} from "./platformHandbook";
+
 export const siteData = {
   // Company Information
   company: {
     name: "techHind",
     shortName: "TH",
-    tagline: "India's most powerful CRM platform for Solar EPC companies.",
+    tagline: "India's complete Solar Management System for EPC companies.",
     description:
-      "techHind is a newly established company dedicated to revolutionizing how solar EPC companies manage their business operations. Our platform is designed specifically for the Indian solar market, understanding the unique challenges and opportunities in this rapidly growing industry.",
+      "techHind Solar CRM is a complete Solar Management System for EPC companies, distributors, and integrators. It manages the full business journey — from marketing lead to installed project, payment collection, and after-sales service — in one platform built for the Indian solar market.",
     additionalInfo:
-      "We combine deep industry knowledge with modern technology to deliver a solution that truly makes a difference. Our team is committed to supporting your business growth every step of the way.",
+      "Sales, operations, warehouse, finance, and service teams work from one system with role-based workspaces, approval workflows, and professional document generation — from quotation PDFs to B2B invoices and warranty cards.",
   },
 
   // SEO & Metadata
   seo: {
     title: "Solar CRM for EPC Companies in India | techHind",
     description:
-      "Manage solar leads, projects, and payments in one CRM built for Indian EPC companies. From lead to commissioning — residential, commercial, and ground-mounted.",
+      "Complete Solar Management System for Indian EPC companies — leads, Meta ads, quotations, orders, inventory, B2B trading, payments, and service in one platform.",
     keywords: [
       "solar CRM India",
       "CRM for solar EPC companies",
@@ -25,6 +33,11 @@ export const siteData = {
       "solar lead management software",
       "solar EPC software",
       "WhatsApp solar CRM",
+      "solar inventory software",
+      "Meta lead ads CRM",
+      "B2B solar trading",
+      "solar quotation software India",
+      "solar management system India",
     ],
     ogImage: "/og-image.png",
   },
@@ -46,11 +59,31 @@ export const siteData = {
   navigation: {
     demoUrl: "https://demo.techhind.in/auth/preview",
     items: [
-      { name: "Product", hasDropdown: true, href: "#features" },
-      { name: "Resources", hasDropdown: true, href: "#faq" },
-      { name: "Pricing", hasDropdown: true, href: "/pricing" },
-      { name: "About Us", hasDropdown: false, href: "#about" },
-      { name: "Contact", hasDropdown: false, href: "#contact" },
+      {
+        name: "Product",
+        hasDropdown: true,
+        href: "/features",
+        subLinks: [
+          { name: "All Features", href: "/features" },
+          { name: "Lead Management", href: "/features/solar-lead-management" },
+          { name: "Quotations", href: "/features/solar-quotation-software" },
+          { name: "Order Management", href: "/features/solar-order-management" },
+          { name: "Inventory", href: "/features/solar-inventory-software" },
+        ],
+      },
+      {
+        name: "Resources",
+        hasDropdown: true,
+        href: "/#faq",
+        subLinks: [
+          { name: "FAQ", href: "/#faq" },
+          { name: "Platform Handbook", href: handbookPdfUrl },
+          { name: "Pricing", href: "/pricing" },
+        ],
+      },
+      { name: "Pricing", hasDropdown: false, href: "/pricing" },
+      { name: "About Us", hasDropdown: false, href: "/#about" },
+      { name: "Contact", hasDropdown: false, href: "/#contact" },
     ],
     ctaButtons: {
       login: "Login",
@@ -154,65 +187,14 @@ export const siteData = {
     title: "Everything You Need to Manage Your Solar Business",
     titleHighlight: "Manage Your Solar Business",
     description:
-      "A comprehensive platform designed to streamline operations and accelerate growth for solar EPC companies.",
-    items: [
-      {
-        icon: "Users",
-        title: "Lead Management",
-        description:
-          "Capture, track, and nurture leads from multiple sources with automated workflows and intelligent scoring.",
-        subFeatures: ["Multi-source lead capture", "Automated follow-up reminders", "Lead scoring & prioritization"],
-      },
-      {
-        icon: "FolderKanban",
-        title: "Project Tracking",
-        description:
-          "Monitor project progress in real-time with visual dashboards, timelines, and milestone tracking.",
-        subFeatures: ["Gantt timeline view", "Stage-wise milestone tracking", "Team task assignments"],
-      },
-      {
-        icon: "Package",
-        title: "Inventory Management",
-        description:
-          "Keep track of solar panels, inverters, and components with real-time inventory updates and alerts.",
-        subFeatures: ["Real-time stock levels", "Low stock alerts", "Vendor purchase orders"],
-      },
-      {
-        icon: "FileText",
-        title: "Quotation & Proposals",
-        description:
-          "Generate professional, branded solar quotations with dynamic pricing in minutes — not hours.",
-        subFeatures: ["One-click PDF proposals", "Dynamic component pricing", "GST-ready quotations"],
-      },
-      {
-        icon: "BarChart3",
-        title: "Analytics & Reports",
-        description:
-          "Comprehensive insights into sales performance, project profitability, and business metrics.",
-        subFeatures: ["Sales pipeline reports", "Project profit analysis", "Custom dashboards"],
-      },
-      {
-        icon: "Shield",
-        title: "Compliance & Quality",
-        description:
-          "Ensure regulatory compliance and maintain quality standards throughout your projects.",
-        subFeatures: ["Document checklists", "MNRE compliance tracking", "Quality audit logs"],
-      },
-      {
-        icon: "Smartphone",
-        title: "Mobile Field App",
-        description:
-          "Empower site engineers with a dedicated mobile app for surveys, photo uploads, and progress updates.",
-        subFeatures: ["Offline capability", "Photo & document upload", "GPS site check-in"],
-      },
-      {
-        icon: "Headphones",
-        title: "After-Sales & AMC",
-        description:
-          "Manage service requests, AMC contracts, and customer support tickets seamlessly after project handover.",
-        subFeatures: ["AMC contract tracking", "Service ticket management", "Customer portal access"],
-      },
-    ],
+      "A complete Solar Management System — 12 integrated modules from marketing leads and Meta ads through installation, inventory, B2B trading, and after-sales service.",
+    items: platformModules.map(({ icon, title, description, subFeatures, slug }) => ({
+      icon,
+      title,
+      description,
+      subFeatures: [...subFeatures],
+      slug,
+    })),
   },
 
   // About Section
@@ -226,59 +208,11 @@ export const siteData = {
   whyTechHind: {
     title: "techHind vs. Generic CRMs",
     subtitle: "See why solar companies switch from generic tools to techHind",
-    features: [
-      "Solar project lifecycle management",
-      "Site survey & design tools",
-      "Component & inventory tracking",
-      "GST-ready quotations",
-      "MNRE compliance support",
-      "Mobile field team app",
-      "WhatsApp & SMS lead alerts",
-      "India-specific payment tracking",
-      "Offline mode for remote sites",
-      "Dedicated solar industry support",
-    ],
+    features: [...platformDifferentiators],
   },
 
   // Process Flow (NEW)
-  processFlow: {
-    title: "How techHind Powers Your Entire Solar Business",
-    subtitle: "A seamless end-to-end workflow — from first contact to happy customer",
-    steps: [
-      {
-        number: "01",
-        icon: "📋",
-        title: "Lead Capture",
-        description:
-          "Capture inquiries from website, calls, WhatsApp, and referrals. Auto-assign to sales reps with follow-up reminders.",
-        color: "from-[#00823b] to-[#1b365d]",
-      },
-      {
-        number: "02",
-        icon: "📊",
-        title: "Survey & Quotation",
-        description:
-          "Schedule site surveys, capture rooftop measurements, and generate professional GST-ready solar proposals in minutes.",
-        color: "from-[#00823b] to-[#1b365d]",
-      },
-      {
-        number: "03",
-        icon: "⚙️",
-        title: "Project Execution",
-        description:
-          "Manage procurement, inventory allocation, installation stages, and field team tasks with real-time progress tracking.",
-        color: "from-[#00823b] to-[#1b365d]",
-      },
-      {
-        number: "04",
-        icon: "✅",
-        title: "Commissioning & After-Sales",
-        description:
-          "Complete commissioning checklists, handle DISCOM approvals, and manage AMC/service contracts for ongoing revenue.",
-        color: "from-[#00823b] to-[#1b365d]",
-      },
-    ],
-  },
+  processFlow: platformWorkflow,
 
   // Testimonials (kept for future enablement; currently hidden on homepage)
   testimonials: {
@@ -364,6 +298,17 @@ export const siteData = {
         answer:
           "We offer email support, live chat, phone support, and dedicated onboarding assistance. Our support team has deep knowledge of the solar industry and can help with both technical and business process questions.",
       },
+      {
+        question: "What is the price of solar CRM in India?",
+        answer:
+          "techHind Solar CRM plans start from ₹12,999 per month (plus applicable taxes) on the yearly plan, with monthly plans from ₹14,999 per month. All plans include up to 200 users, lead management, project tracking, inventory, and a 14-day free trial. See full pricing at techhind.in/pricing.",
+      },
+      {
+        question: "How is techHind different from a generic CRM?",
+        answer:
+          "Unlike generic CRMs such as Zoho or HubSpot, techHind Solar CRM is built exclusively for Indian solar EPC companies. It includes solar-specific workflows — site surveys, GST-ready quotations, MNRE compliance, subsidy tracking, DISCOM approvals, B2B trading, serialized inventory, commission management, and a SolarCRM mobile field app — that generic CRMs do not offer out of the box.",
+      },
+      ...platformFaqs,
     ],
   },
 
@@ -455,14 +400,18 @@ export const siteData = {
   footer: {
     links: {
       product: [
-        { name: "Features", href: "/#features" },
+        { name: "All Features", href: "/features" },
+        { name: "Lead Management", href: "/features/solar-lead-management" },
         { name: "Pricing", href: "/pricing" },
       ],
       company: [
         { name: "About Us", href: "/#about" },
         { name: "Contact", href: "/#contact" },
       ],
-      resources: [{ name: "FAQ", href: "/#faq" }],
+      resources: [
+        { name: "FAQ", href: "/#faq" },
+        { name: "Platform Handbook", href: handbookPdfUrl },
+      ],
       legal: ["Privacy Policy", "Terms & Conditions", "Data Deletion Instructions"],
     },
   },

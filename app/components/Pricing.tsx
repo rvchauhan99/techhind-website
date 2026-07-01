@@ -2,92 +2,7 @@
 
 import { Check, X } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { siteData } from "../data/siteData";
-
-const includedCapabilities = [
-  "Purchasing",
-  "Inventory Management",
-  "B2B Trading",
-];
-
-const pricingPlans = [
-  {
-    name: "Monthly Renewable",
-    billingCycle: "monthly",
-    monthlyPrice: 14999,
-    cycleMonths: 1,
-    userLimit: "Up to 200 users",
-    description: "Best for teams that prefer maximum billing flexibility.",
-    features: [
-      ...includedCapabilities,
-      "Lead-to-project lifecycle management",
-      "Project tracking and task workflows",
-      "Mobile field access",
-      "Business reporting dashboard",
-      "Priority support",
-    ],
-    limitations: [],
-    popular: false,
-    cta: "Get Started",
-  },
-  {
-    name: "Quarterly Renewable",
-    billingCycle: "quarterly",
-    monthlyPrice: 14499,
-    cycleMonths: 3,
-    userLimit: "Up to 200 users",
-    description: "Balanced pricing for teams planning a quarter ahead.",
-    features: [
-      ...includedCapabilities,
-      "Lead-to-project lifecycle management",
-      "Project tracking and task workflows",
-      "Mobile field access",
-      "Business reporting dashboard",
-      "Priority support",
-    ],
-    limitations: [],
-    popular: false,
-    cta: "Get Started",
-  },
-  {
-    name: "Half-Year Renewable",
-    billingCycle: "half-yearly",
-    monthlyPrice: 13999,
-    cycleMonths: 6,
-    userLimit: "Up to 200 users",
-    description: "Lower monthly cost with stronger half-year commitment.",
-    features: [
-      ...includedCapabilities,
-      "Lead-to-project lifecycle management",
-      "Project tracking and task workflows",
-      "Mobile field access",
-      "Business reporting dashboard",
-      "Priority support",
-    ],
-    limitations: [],
-    popular: false,
-    cta: "Get Started",
-  },
-  {
-    name: "Yearly Renewable",
-    billingCycle: "yearly",
-    monthlyPrice: 12999,
-    cycleMonths: 12,
-    userLimit: "Up to 200 users",
-    description: "Best value plan for long-term growth and planning.",
-    features: [
-      ...includedCapabilities,
-      "Lead-to-project lifecycle management",
-      "Project tracking and task workflows",
-      "Mobile field access",
-      "Business reporting dashboard",
-      "Priority support",
-    ],
-    limitations: [],
-    popular: true,
-    cta: "Get Started",
-  },
-];
+import { pricingFaqItems, pricingPlans, includedCapabilities } from "../data/pricingData";
 
 export default function Pricing() {
   const router = useRouter();
@@ -207,33 +122,17 @@ export default function Pricing() {
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
-            <div className="glass rounded-2xl p-8 shadow-soft border border-gray-200/50 bg-white/80 backdrop-blur-sm hover:border-[#00823b]/40 transition-all">
-              <h3 className="text-xl font-bold text-dark-900 mb-3">
-                Can I change plans later?
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Yes, you can upgrade or downgrade your plan at any time. Changes
-                will be reflected in your next billing cycle.
-              </p>
-            </div>
-            <div className="glass rounded-2xl p-8 shadow-soft border border-gray-200/50 bg-white/80 backdrop-blur-sm hover:border-[#00823b]/40 transition-all">
-              <h3 className="text-xl font-bold text-dark-900 mb-3">
-                Is there a free trial?
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Yes, all plans come with a 14-day free trial. No credit card
-                required to start.
-              </p>
-            </div>
-            <div className="glass rounded-2xl p-8 shadow-soft border border-gray-200/50 bg-white/80 backdrop-blur-sm hover:border-[#00823b]/40 transition-all">
-              <h3 className="text-xl font-bold text-dark-900 mb-3">
-                What payment methods do you accept?
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                We accept all major credit cards, UPI, and bank transfers for
-                enterprise plans.
-              </p>
-            </div>
+            {pricingFaqItems.map((item) => (
+              <div
+                key={item.question}
+                className="glass rounded-2xl p-8 shadow-soft border border-gray-200/50 bg-white/80 backdrop-blur-sm hover:border-[#00823b]/40 transition-all"
+              >
+                <h3 className="text-xl font-bold text-dark-900 mb-3">
+                  {item.question}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

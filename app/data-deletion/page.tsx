@@ -1,19 +1,29 @@
-import { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BreadcrumbStructuredData from '../components/structured-data/BreadcrumbStructuredData';
+import { buildPageMetadata } from '../config/metadata';
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Data Deletion Instructions - Techhind Private Limited',
-  description: 'Techhind Private Limited Data Deletion Instructions - How to request deletion of your personal data collected through our website, ERP platform, and Meta integrations.',
-  keywords: ['data deletion', 'GDPR', 'DPDP Act', 'privacy rights', 'data removal', 'Techhind data deletion'],
-  alternates: {
-    canonical: '/data-deletion',
-  },
-};
+  description:
+    'Techhind Private Limited Data Deletion Instructions - How to request deletion of your personal data collected through our website, ERP platform, and Meta integrations.',
+  path: '/data-deletion',
+  keywords: [
+    'data deletion',
+    'GDPR',
+    'DPDP Act',
+    'privacy rights',
+    'data removal',
+    'Techhind data deletion',
+  ],
+});
 
 export default function DataDeletion() {
   return (
     <div className="min-h-screen bg-[#0b1c33]">
+      <BreadcrumbStructuredData
+        items={[{ name: 'Data Deletion Instructions', path: '/data-deletion' }]}
+      />
       <Header />
       
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 lg:pt-40 relative z-10">

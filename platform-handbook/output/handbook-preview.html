@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TechHind Solar CRM Platform Handbook</title>
+  <style>
+    @page { size: A4; margin: 16mm 14mm; }
+    * { box-sizing: border-box; }
+    body { font-family: Helvetica, Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #1a1a1a; margin: 0; padding: 0; }
+    .cover { page-break-after: always; text-align: center; padding: 100px 40px 60px; min-height: 90vh; display: flex; flex-direction: column; justify-content: center; }
+    .cover h1 { font-size: 32pt; color: #0d47a1; margin: 0 0 12px; border: none; page-break-before: avoid; }
+    .cover .tagline { font-size: 14pt; color: #444; margin: 8px 0; }
+    .cover .meta { font-size: 11pt; color: #666; margin-top: 40px; }
+    .toc { page-break-after: always; padding: 20px 0 40px; }
+    .toc-title { font-size: 18pt; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 8px; page-break-before: avoid; }
+    .toc ol { line-height: 1.9; font-size: 11pt; padding-left: 24px; }
+    .toc a { color: #1565c0; text-decoration: none; }
+    .chapter { page-break-before: always; break-before: page; }
+    .chapter:first-of-type { page-break-before: avoid; }
+    h1 { font-size: 20pt; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 6px; margin: 0 0 16px; page-break-before: always; break-after: avoid; }
+    .chapter-opener { break-inside: avoid; page-break-inside: avoid; margin-bottom: 20px; }
+    h2 { font-size: 14pt; color: #1565c0; margin: 20px 0 10px; break-after: avoid; page-break-after: avoid; }
+    h3 { font-size: 11.5pt; color: #333; margin: 14px 0 8px; break-after: avoid; }
+    section.block { break-inside: avoid-page; page-break-inside: avoid; margin-bottom: 18px; }
+    p { margin: 0 0 10px; orphans: 3; widows: 3; }
+    ul, ol { margin: 8px 0 12px 22px; }
+    li { margin: 4px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10pt; break-inside: avoid; }
+    th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; }
+    th { background: #f0f4f8; }
+    figure.shot { break-inside: avoid; page-break-inside: avoid; margin: 14px 0 18px; text-align: center; }
+    figure.shot.hero { page-break-before: auto; }
+    figure.shot img, img.hero, img.compact { display: block; margin: 0 auto; border: 1px solid #ddd; border-radius: 4px; }
+    figure.shot.hero img, img.hero { max-width: 100%; max-height: 520px; object-fit: contain; }
+    figure.shot.compact img, img.compact { max-width: 100%; max-height: 360px; object-fit: contain; }
+    figcaption { font-size: 9pt; color: #555; margin-top: 6px; font-style: italic; break-before: avoid; }
+    blockquote { border-left: 3px solid #0d47a1; margin: 12px 0; padding: 8px 14px; background: #f5f8fc; break-inside: avoid; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <h1>TechHind Solar CRM</h1>
+    <p class="tagline">Platform Handbook</p>
+    <p class="tagline">Complete Solar Business Management — Sales to Service</p>
+    <p class="meta">Customer Presentation · June 2026 · Version 2.0</p>
+  </div>
+  <nav class="toc"><h2 class="toc-title">Contents</h2><ol><li><a href="#chapter-1">Executive Overview</a></li><li><a href="#chapter-2">Platform Capabilities</a></li><li><a href="#chapter-3">Dashboard &amp; Analytics</a></li><li><a href="#chapter-4">Marketing Leads &amp; Meta Integration</a></li><li><a href="#chapter-5">Inquiry Management</a></li><li><a href="#chapter-6">Quotations</a></li><li><a href="#chapter-7">Order Lifecycle</a></li><li><a href="#chapter-8">Fabrication, Installation &amp; Delivery</a></li><li><a href="#chapter-9">Payments &amp; Outstanding</a></li><li><a href="#chapter-10">Procurement &amp; Inventory</a></li><li><a href="#chapter-11">B2B Trading</a></li><li><a href="#chapter-12">Commission Management</a></li><li><a href="#chapter-13">Service &amp; Warranty</a></li><li><a href="#chapter-14">Reports &amp; Audit</a></li><li><a href="#chapter-15">Settings &amp; Administration</a></li><li><a href="#chapter-16">Document Outputs</a></li><li><a href="#chapter-17">Workflow: Lead to Installation</a></li><li><a href="#chapter-18">Workflow: Procurement to Stock</a></li><li><a href="#chapter-19">Workflow: B2B Order to Invoice</a></li></ol></nav>
+  <div class="chapter-opener"><div class="chapter"><h1 id="chapter-1">Executive Overview</h1>
+<section class="block"><h2>What Is TechHind Solar CRM?</h2>
+<p>TechHind Solar CRM is a complete <strong>Solar Management System</strong> for EPC companies, distributors, and integrators. It manages the full business journey — from marketing lead to installed project, payment collection, and after-sales service — in one platform.</p>
+</section><section class="block"><h2>Who Is It For?</h2>
+<table>
+<thead>
+<tr>
+<th>Stakeholder</th>
+<th>What they gain</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sales &amp; marketing</td>
+<td>Lead pipeline, inquiries, quotations, conversion tracking</td>
+</tr>
+<tr>
+<td>Operations</td>
+<td>Order execution, fabrication, installation, delivery</td>
+</tr>
+<tr>
+<td>Warehouse</td>
+<td>Purchase orders, stock, serial tracking, dispatch</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>Collections, outstanding tracking, B2B invoicing</td>
+</tr>
+<tr>
+<td>Service teams</td>
+<td>Tickets, warranty, spare parts</td>
+</tr>
+<tr>
+<td>Management</td>
+<td>Dashboards, KPIs, approvals, reports</td>
+</tr>
+</tbody></table>
+</section><section class="block"><h2>Platform at a Glance</h2>
+<ul>
+<li><strong>Pre-Sales</strong> — Marketing leads, Meta campaigns, inquiries, site visits, quotations</li>
+<li><strong>Sales</strong> — Orders from quotation to confirmation, amendments, payments</li>
+<li><strong>Execution</strong> — Fabrication, installation approval, delivery challans</li>
+<li><strong>Supply chain</strong> — Suppliers, purchase orders, stock, serialized inventory</li>
+<li><strong>B2B</strong> — Dealer quotes, orders, shipments, invoices</li>
+<li><strong>Commission</strong> — Partner incentives with approval and payout</li>
+<li><strong>Service</strong> — Tickets, warranty claims, service billing</li>
+<li><strong>Administration</strong> — Users, roles, company profile, reference data</li>
+</ul>
+</section><section class="block"><h2>Key Differentiators</h2>
+<p><strong>Complete lifecycle in one system</strong> — No gaps between sales, operations, and finance.</p>
+<p><strong>Built for solar</strong> — Project schemes, DISCOM, subsidy docs, panel/inverter serial tracking, installation sign-off.</p>
+<p><strong>Role-based access</strong> — Each team sees what they need; management controls permissions.</p>
+<p><strong>Professional documents</strong> — Quotation PDFs, order documents, invoices, warranty cards.</p>
+<p><strong>Meta Lead Ads</strong> — Automatic lead import from Facebook and Instagram campaigns.</p>
+</section><section class="block"><h2>Demo Environment</h2>
+<p>Screenshots in this handbook are from the live demo at <strong><a href="https://demo.techhind.in">https://demo.techhind.in</a></strong>.</p>
+<div class="chapter"><h1 id="chapter-2">Platform Capabilities</h1>
+</section><section class="block"><h2>One Platform for Your Entire Solar Business</h2>
+<p>TechHind Solar CRM brings sales, project execution, inventory, finance, and after-sales service into a single workspace. Your teams work from one system — with menus and data tailored to each role.</p>
+</section><section class="block"><h2>What the Platform Delivers</h2>
+<h3>End-to-end project lifecycle</h3>
+<p>Track every residential and commercial project from first lead through installation, subsidy documentation, payments, and warranty service — without switching between spreadsheets and disconnected tools.</p>
+<h3>Role-based workspaces</h3>
+<p>Each user sees only the modules they need. Sales teams manage pipelines and quotations; warehouse staff handle stock and dispatch; finance tracks collections; managers review dashboards and approvals.</p>
+<h3>Professional customer documents</h3>
+<p>Generate branded <strong>quotation PDFs</strong>, <strong>order documents</strong>, <strong>delivery challans</strong>, <strong>B2B invoices</strong>, <strong>payment receipts</strong>, and <strong>warranty cards</strong> — ready to share with customers and partners.</p>
+<h3>Digital lead capture</h3>
+<p>Connect <strong>Meta (Facebook/Instagram) Lead Ads</strong> so campaign leads flow directly into your sales pipeline with source tracking and assignment.</p>
+<h3>Real-time visibility</h3>
+<p>Dashboards, pipeline boards, and KPI strips give management an up-to-date picture of sales, execution backlog, outstanding payments, and service workload.</p>
+<h3>Control and accountability</h3>
+<p>Approval workflows for quotations, installations, payments, and commissions. Full audit history for payments and uploaded documents.</p>
+</section><section class="block"><h2>Who Benefits</h2>
+<table>
+<thead>
+<tr>
+<th>Team</th>
+<th>Key capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sales &amp; marketing</td>
+<td>Leads, inquiries, quotations, follow-ups</td>
+</tr>
+<tr>
+<td>Operations</td>
+<td>Orders, fabrication, installation, delivery</td>
+</tr>
+<tr>
+<td>Warehouse</td>
+<td>Stock, purchase orders, challans, serial tracking</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>Payments, outstanding, B2B invoicing, commission</td>
+</tr>
+<tr>
+<td>Service</td>
+<td>Tickets, warranty claims, material requests</td>
+</tr>
+<tr>
+<td>Management</td>
+<td>Dashboards, reports, approvals</td>
+</tr>
+</tbody></table>
+</section><section class="block"><h2>Integrated Modules</h2>
+<p>Sales, execution, inventory, B2B trading, commission, and service modules share the same customer and order data — so information entered once is available everywhere it is needed.</p>
+<p><strong>Next:</strong> <a href="modules/04-dashboard.md">Dashboard</a></p>
+<div class="chapter"><h1 id="chapter-3">Dashboard &amp; Analytics</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>The home dashboard gives leadership and sales managers a real-time view of business performance — pipeline health, order activity, and key metrics — without running separate reports.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>View KPI summary cards for sales and operations</li>
+<li>Monitor the sales pipeline board by stage</li>
+<li>Review recent orders and their status</li>
+<li>Analyze trends over selectable time periods</li>
+</ul>
+</section><section class="block"><h2>Who Uses It</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Management</td>
+<td>Daily business review</td>
+</tr>
+<tr>
+<td>Sales managers</td>
+<td>Team pipeline and conversion</td>
+</tr>
+<tr>
+<td>Operations</td>
+<td>Order backlog visibility</td>
+</tr>
+</tbody></table>
+</section><section class="block"><h2>Screenshot</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/dashboard-home.png" alt="Home dashboard" /><figcaption>Home dashboard</figcaption></figure>
+
+
+
+<p><em>Executive dashboard with KPIs, pipeline, and order activity.</em></p>
+<div class="chapter"><h1 id="chapter-4">Marketing Leads &amp; Meta Integration</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Capture and qualify digital marketing leads before they enter the formal sales pipeline. Meta Lead Ads integration brings Facebook and Instagram campaign leads directly into the system.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Manage leads on a visual <strong>kanban pipeline</strong></li>
+<li>View lead detail with call history and campaign source</li>
+<li>Assign leads to sales executives</li>
+<li>Import leads in bulk from spreadsheets</li>
+<li>Connect Meta Lead Ads for automatic lead sync</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Lead arrives from Meta, upload, or manual entry</li>
+<li>Team qualifies and records follow-up calls</li>
+<li>Qualified lead converts to an <strong>Inquiry</strong></li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/marketing-leads-kanban.png" alt="Marketing leads kanban" /><figcaption>Marketing leads kanban</figcaption></figure>
+
+
+
+<p><em>Visual pipeline for marketing leads by stage.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/marketing-lead-detail.png" alt="Lead detail" /><figcaption>Lead detail</figcaption></figure>
+
+
+
+<p><em>Lead detail with contact info, source, and follow-up history.</em></p>
+<div class="chapter"><h1 id="chapter-5">Inquiry Management</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Track sales opportunities from first contact through site assessment and qualification — the foundation of your solar sales pipeline.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Manage inquiries on a <strong>kanban board</strong> by stage</li>
+<li>Create inquiries with customer, capacity, location, and DISCOM details</li>
+<li>Open inquiry <strong>detail view</strong> with follow-ups, site visits, documents, and quotations</li>
+<li>Schedule follow-up calls and site visits</li>
+<li>Convert qualified inquiries to quotations</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Create inquiry or convert from marketing lead</li>
+<li>Record follow-ups and site visit data</li>
+<li>Attach supporting documents</li>
+<li>Generate quotation when customer is ready</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/inquiry-kanban.png" alt="Inquiry kanban" /><figcaption>Inquiry kanban</figcaption></figure>
+
+
+
+<p><em>Stage-based inquiry pipeline.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/inquiry-add-form.png" alt="Inquiry form" /><figcaption>Inquiry form</figcaption></figure>
+
+
+
+<p><em>New inquiry capture form with customer and project fields.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/inquiry-detail.png" alt="Inquiry detail" /><figcaption>Inquiry detail</figcaption></figure>
+
+
+
+<p><em>Inquiry hub with tabs for follow-ups, site visits, and documents.</em></p>
+<div class="chapter"><h1 id="chapter-6">Quotations</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Create formal commercial proposals from qualified inquiries — with pricing, terms, manager approval, and customer-ready PDF output.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Build quotations with product lines, discounts, and terms</li>
+<li>Submit for <strong>manager approval</strong> when required</li>
+<li>Preview and download <strong>branded quotation PDF</strong></li>
+<li>Convert approved quotations to pending orders</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Create quotation from inquiry</li>
+<li>Add products and commercial terms</li>
+<li>Manager reviews and approves</li>
+<li>Share PDF with customer</li>
+<li>Convert to order on acceptance</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/quotation-add-form.png" alt="Quotation form" /><figcaption>Quotation form</figcaption></figure>
+
+
+
+<p><em>Quotation builder with technical and commercial sections.</em></p>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/quotation-pdf-preview.png" alt="Quotation PDF" /><figcaption>Quotation PDF</figcaption></figure>
+
+
+
+<p><em>Inline PDF preview of the approved quotation.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/quotation-manager-approval.png" alt="Manager approval" /><figcaption>Manager approval</figcaption></figure>
+
+
+
+<p><em>Manager approval queue with quotation detail sidebar.</em></p>
+<div class="chapter"><h1 id="chapter-7">Order Lifecycle</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Manage the complete B2C project journey from pending order through confirmation, execution stages, payments, and closure.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Create and confirm orders from approved quotations</li>
+<li>View <strong>order pipeline</strong> with stage tabs: registration, documents, payments, delivery, installation, subsidy</li>
+<li>Record payments against milestones</li>
+<li>Open <strong>order detail drawer</strong> for quick access from lists</li>
+<li>Track amendments and document collection</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Quotation converts to pending order</li>
+<li>Collect documents and confirm order</li>
+<li>Progress through fabrication, delivery, and installation stages</li>
+<li>Record payments and close project</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-pipeline.png" alt="Confirm order pipeline" /><figcaption>Confirm order pipeline</figcaption></figure>
+
+
+
+<p><em>Full project command center with lifecycle stages.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-delivery.png" alt="Delivery stage" /><figcaption>Delivery stage</figcaption></figure>
+
+
+
+<p><em>Delivery stage with challan management.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-installation.png" alt="Installation stage" /><figcaption>Installation stage</figcaption></figure>
+
+
+
+<p><em>Installation tracking and serial capture.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/order-payment-tab.png" alt="Payment tab" /><figcaption>Payment tab</figcaption></figure>
+
+
+
+<p><em>Receive payment against order milestones.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/confirm-order-drawer.png" alt="Order detail drawer" /><figcaption>Order detail drawer</figcaption></figure>
+
+
+
+<p><em>Quick-view drawer for order summary from list.</em></p>
+<div class="chapter"><h1 id="chapter-8">Fabrication, Installation &amp; Delivery</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Coordinate field execution after order confirmation — shop fabrication, on-site installation, warehouse dispatch, and delivery proof.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Track fabrication and installation on a <strong>visual execution board</strong></li>
+<li>Manager <strong>approves completed installations</strong> via review drawer</li>
+<li>Manage delivery on a <strong>kanban board</strong> with order detail drawer</li>
+<li>Create <strong>delivery challans</strong> for material dispatch</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Order enters fabrication queue</li>
+<li>Installation team completes on-site work with serial numbers</li>
+<li>Manager approves installation</li>
+<li>Warehouse creates challan and confirms delivery</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/fabrication-installation.png" alt="Execution board" /><figcaption>Execution board</figcaption></figure>
+
+
+
+<p><em>Fabrication and installation progress board.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/installation-approval-drawer.png" alt="Installation approval" /><figcaption>Installation approval</figcaption></figure>
+
+
+
+<p><em>Manager review drawer for installation sign-off.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/delivery-execution-drawer.png" alt="Delivery execution" /><figcaption>Delivery execution</figcaption></figure>
+
+
+
+<p><em>Delivery kanban with order detail drawer.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/delivery-challan-form.png" alt="Challan form" /><figcaption>Challan form</figcaption></figure>
+
+
+
+<p><em>New delivery challan creation.</em></p>
+<div class="chapter"><h1 id="chapter-9">Payments &amp; Outstanding</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Give finance teams clear visibility on receivables, collection follow-ups, and payment approvals across B2C projects.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Monitor outstanding amounts with KPI summary</li>
+<li>Schedule and record <strong>collection follow-ups</strong> via dialog</li>
+<li><strong>Approve payment proofs</strong> submitted by field teams</li>
+<li>Export outstanding data for reporting</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Payments link to order milestones at confirmation</li>
+<li>Finance tracks outstanding by age and customer</li>
+<li>Follow-up calls are scheduled and recorded</li>
+<li>Payment proofs are reviewed and approved</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/payment-outstanding.png" alt="Payment outstanding" /><figcaption>Payment outstanding</figcaption></figure>
+
+
+
+<p><em>Outstanding dashboard with collection KPIs.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/payment-followup-dialog.png" alt="Follow-up dialog" /><figcaption>Follow-up dialog</figcaption></figure>
+
+
+
+<p><em>Collection follow-up scheduling dialog.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/payment-audit-approve.png" alt="Payment approval" /><figcaption>Payment approval</figcaption></figure>
+
+
+
+<p><em>Payment proof approval workflow.</em></p>
+<div class="chapter"><h1 id="chapter-10">Procurement &amp; Inventory</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Manage solar component supply — from purchase orders and goods receipt through stock levels and serial number tracking.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Create <strong>purchase orders</strong> with line items and supplier terms</li>
+<li>Record <strong>goods receipt</strong> against POs with serial capture</li>
+<li>View current <strong>stock levels</strong> by warehouse and product</li>
+<li>Track serialized inventory for panels and inverters</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Raise purchase order to supplier</li>
+<li>Receive goods and update stock</li>
+<li>Serial numbers registered at inward</li>
+<li>Stock reserved and issued against orders and challans</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/purchase-order-form.png" alt="Purchase order form" /><figcaption>Purchase order form</figcaption></figure>
+
+
+
+<p><em>Purchase order creation with product lines.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/po-inward-form.png" alt="PO inward form" /><figcaption>PO inward form</figcaption></figure>
+
+
+
+<p><em>Goods receipt against purchase order.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/stocks.png" alt="Stocks" /><figcaption>Stocks</figcaption></figure>
+
+
+
+<p><em>Current stock levels by warehouse.</em></p>
+<div class="chapter"><h1 id="chapter-11">B2B Trading</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Support dealer and distributor sales — quotes, orders, shipments, and invoicing — separate from residential B2C projects.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Create <strong>B2B sales quotes</strong> with GST line items</li>
+<li>Manage <strong>sales orders</strong> with payment tracking</li>
+<li>View <strong>invoice detail</strong> in sidebar with line items and client info</li>
+<li>Track B2B outstanding payments</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Create quote for B2B client</li>
+<li>Convert to sales order and confirm</li>
+<li>Ship against order with serial tracking</li>
+<li>Generate invoice and record payment</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/b2b-quote-form.png" alt="B2B quote form" /><figcaption>B2B quote form</figcaption></figure>
+
+
+
+<p><em>B2B quotation builder.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/b2b-order-detail.png" alt="B2B order detail" /><figcaption>B2B order detail</figcaption></figure>
+
+
+
+<p><em>B2B sales order with payment tabs.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/b2b-invoice-drawer.png" alt="B2B invoice drawer" /><figcaption>B2B invoice drawer</figcaption></figure>
+
+
+
+<p><em>Invoice detail sidebar with line items.</em></p>
+<div class="chapter"><h1 id="chapter-12">Commission Management</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Automate sales partner and channel incentive tracking — from accrual through manager approval to payout.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Configure commission rates per user</li>
+<li>Review <strong>pending settlements</strong> in approval drawer</li>
+<li>Process payouts and view settlement history</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Orders generate commission accruals</li>
+<li>Finance batches unsettled entries</li>
+<li>Manager approves in review drawer</li>
+<li>Payout recorded and archived</li>
+</ol>
+</section><section class="block"><h2>Screenshot</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/commission-review-drawer.png" alt="Commission review drawer" /><figcaption>Commission review drawer</figcaption></figure>
+
+
+
+<p><em>Settlement approval drawer with order-level commission detail.</em></p>
+<div class="chapter"><h1 id="chapter-13">Service &amp; Warranty</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Handle after-sales support for installed projects — service tickets, warranty claims, and field material requests linked to original order data.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Monitor service workload on <strong>operations dashboard</strong></li>
+<li>Manage tickets with assignment, site visits, and resolution</li>
+<li>Open <strong>ticket detail</strong> with full lifecycle and customer context</li>
+<li>Process warranty claims</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Customer issue raised as service ticket</li>
+<li>Ticket assigned to technician with priority</li>
+<li>Site visit and materials if needed</li>
+<li>Ticket closed; warranty claim if applicable</li>
+</ol>
+</section><section class="block"><h2>Screenshots</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/service-dashboard.png" alt="Service dashboard" /><figcaption>Service dashboard</figcaption></figure>
+
+
+
+<p><em>Service operations KPIs and workload.</em></p>
+<figure class="shot compact"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/service-ticket-detail.png" alt="Ticket detail" /><figcaption>Ticket detail</figcaption></figure>
+
+
+
+<p><em>Service ticket with customer, order, and resolution history.</em></p>
+<div class="chapter"><h1 id="chapter-14">Reports &amp; Audit</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Provide management and finance with standardized reports and compliance visibility across payments and documents.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Run <strong>payments report</strong> for collection analysis</li>
+<li>Review <strong>payment audit</strong> for approval history</li>
+<li>Track <strong>document audit</strong> for upload and approval trail</li>
+</ul>
+</section><section class="block"><h2>Screenshot</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/reports-payments.png" alt="Payments report" /><figcaption>Payments report</figcaption></figure>
+
+
+
+<p><em>B2C payments report for finance review.</em></p>
+<div class="chapter"><h1 id="chapter-15">Settings &amp; Administration</h1>
+</section><section class="block"><h2>Business Purpose</h2>
+<p>Configure your organization in the platform — company details, branches, warehouses, bank accounts, users, roles, and reference data.</p>
+</section><section class="block"><h2>What You Can Do</h2>
+<ul>
+<li>Set up <strong>company profile</strong> with logo, branches, and warehouses</li>
+<li>Manage users and assign roles</li>
+<li>Configure which modules each role can access</li>
+<li>Maintain reference masters (DISCOM, payment modes, document types, etc.)</li>
+</ul>
+</section><section class="block"><h2>How It Works</h2>
+<ol>
+<li>Admin sets company profile and branches</li>
+<li>Roles defined for job functions</li>
+<li>Module permissions assigned per role</li>
+<li>Users created and linked to roles and branches</li>
+</ol>
+</section><section class="block"><h2>Screenshot</h2>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/company-profile.png" alt="Company profile" /><figcaption>Company profile</figcaption></figure>
+
+
+
+<p><em>Organization setup with company, branches, warehouses, and bank accounts.</em></p>
+<div class="chapter"><h1 id="chapter-16">Document Outputs</h1>
+</section><section class="block"><h2>Professional Documents for Customers and Partners</h2>
+<p>TechHind Solar CRM produces branded, print-ready documents at every stage of the business relationship. These outputs reflect your company identity and can be shared directly with customers, dealers, banks, and DISCOM authorities.</p>
+</section><section class="block"><h2>Quotation PDF</h2>
+<p>Formal commercial proposals with product line items, pricing, terms and conditions, and technical specifications. Managers approve quotations before PDF generation; sales teams share the document with customers for sign-off.</p>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/quotation-pdf-preview.png" alt="Quotation PDF preview" /><figcaption>Quotation PDF preview</figcaption></figure>
+
+
+
+<p><em>Branded quotation with inline PDF preview before sharing with the customer.</em></p>
+</section><section class="block"><h2>Order Document</h2>
+<p>Comprehensive order summary including customer details, project scope, payment schedule, and commercial terms — generated from confirmed project data.</p>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/pdfs/order-sample.png" alt="Order PDF" /><figcaption>Order PDF</figcaption></figure>
+
+
+
+<p><em>Order PDF generated from confirmed project data.</em></p>
+</section><section class="block"><h2>B2B Invoice</h2>
+<p>Tax-compliant invoices for dealer and distributor sales, generated from shipments with GST line-item breakdown.</p>
+<figure class="shot hero"><img src="file:///Users/ravatrajsinhchauhan/Documents/Programs/techHind/techhind-solar-web/docs/platform-handbook/assets/screenshots/b2b-invoice-drawer.png" alt="B2B invoice detail" /><figcaption>B2B invoice detail</figcaption></figure>
+
+
+
+<p><em>B2B invoice with line items and client details.</em></p>
+</section><section class="block"><h2>Payment Receipt</h2>
+<p>Receipt PDFs for recorded payments against order milestones — useful for customer acknowledgment and accounts reconciliation.</p>
+</section><section class="block"><h2>Warranty Card</h2>
+<p>Digital warranty card for installed systems, linked to serial numbers and installation date. Customers can verify warranty status through a public lookup page.</p>
+</section><section class="block"><h2>Delivery Challan</h2>
+<p>Material dispatch documents for warehouse-to-site delivery, with product quantities and serial numbers where applicable.</p>
+</section><section class="block"><h2>Why It Matters for Your Business</h2>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Business use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Quotation PDF</td>
+<td>Win customer trust with professional proposals</td>
+</tr>
+<tr>
+<td>Order PDF</td>
+<td>Formal agreement and project reference</td>
+</tr>
+<tr>
+<td>B2B Invoice</td>
+<td>Dealer billing and GST compliance</td>
+</tr>
+<tr>
+<td>Payment receipt</td>
+<td>Collection proof and customer records</td>
+</tr>
+<tr>
+<td>Warranty card</td>
+<td>After-sales confidence and brand credibility</td>
+</tr>
+<tr>
+<td>Delivery challan</td>
+<td>Logistics proof and inventory traceability</td>
+</tr>
+</tbody></table>
+<p>All documents use your <strong>company profile</strong> settings — logo, address, bank details, and terms configured once in administration.</p>
+<hr>
+<p><strong>Related:</strong> <a href="modules/07-quotations.md">Quotations</a> · <a href="modules/08-order-lifecycle.md">Order Lifecycle</a> · <a href="modules/12-b2b-trading.md">B2B Trading</a></p>
+<div class="chapter"><h1 id="chapter-17">Workflow: Lead to Installation</h1>
+</section><section class="block"><h2>Overview</h2>
+<p>This workflow describes the complete B2C customer journey in TechHind Solar CRM — from the first marketing touchpoint through installed and commissioned solar project.</p>
+</section><section class="block"><h2>Process Flow</h2>
+<pre><code>Marketing Lead → Inquiry → Follow-up → Site Visit → Quotation
+    → Manager Approval → Pending Order → Confirmed Order
+    → Fabrication → Installation → Manager Sign-off
+    → Delivery Challan → Payment Collection → Order Closed
+</code></pre>
+</section><section class="block"><h2>Stage Details</h2>
+<h3>Stage 1: Lead Capture</h3>
+<ul>
+<li><strong>Module:</strong> Marketing Leads &amp; Meta Integration</li>
+<li><strong>Actions:</strong> Lead arrives via Meta campaign, CSV, or manual entry</li>
+<li><strong>Output:</strong> Qualified lead record with source and campaign attribution</li>
+</ul>
+<h3>Stage 2: Inquiry Qualification</h3>
+<ul>
+<li><strong>Module:</strong> Inquiry Management</li>
+<li><strong>Actions:</strong> Convert lead to inquiry; record customer details, capacity, location, DISCOM</li>
+<li><strong>Output:</strong> Active inquiry in sales pipeline</li>
+</ul>
+<h3>Stage 3: Follow-up &amp; Site Assessment</h3>
+<ul>
+<li><strong>Modules:</strong> Follow-up, Site Visit</li>
+<li><strong>Actions:</strong> Schedule calls; conduct on-site survey; attach documents</li>
+<li><strong>Output:</strong> Technically qualified opportunity</li>
+</ul>
+<h3>Stage 4: Commercial Proposal</h3>
+<ul>
+<li><strong>Module:</strong> Quotations</li>
+<li><strong>Actions:</strong> Create quotation from inquiry; apply pricing; submit for approval</li>
+<li><strong>Output:</strong> Approved quotation PDF shared with customer</li>
+</ul>
+<h3>Stage 5: Order Confirmation</h3>
+<ul>
+<li><strong>Module:</strong> Order Lifecycle</li>
+<li><strong>Actions:</strong> Convert quotation to pending order; collect documents; confirm order</li>
+<li><strong>Output:</strong> Confirmed order with stock reservation and payment schedule</li>
+</ul>
+<h3>Stage 6: Field Execution</h3>
+<ul>
+<li><strong>Modules:</strong> Fabrication &amp; Installation, Delivery</li>
+<li><strong>Actions:</strong> Fabricate; install with serial capture; manager approval; dispatch challan</li>
+<li><strong>Output:</strong> Installed system with serial registry and delivery proof</li>
+</ul>
+<h3>Stage 7: Financial Closure</h3>
+<ul>
+<li><strong>Modules:</strong> Payments &amp; Outstanding, Commission</li>
+<li><strong>Actions:</strong> Record payments; clear outstanding; commission accrual and settlement</li>
+<li><strong>Output:</strong> Closed order with full financial reconciliation</li>
+</ul>
+<h3>Stage 8: After-Sales (ongoing)</h3>
+<ul>
+<li><strong>Module:</strong> Service &amp; Warranty</li>
+<li><strong>Actions:</strong> Service tickets and warranty claims as needed</li>
+<li><strong>Output:</strong> Customer support with warranty traceability</li>
+</ul>
+</section><section class="block"><h2>Key Decision Points</h2>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Module</th>
+<th>Typical approver</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Quotation approval</td>
+<td>Quotations</td>
+<td>Sales manager</td>
+</tr>
+<tr>
+<td>Order confirmation</td>
+<td>Orders</td>
+<td>Operations / sales</td>
+</tr>
+<tr>
+<td>Installation sign-off</td>
+<td>Installation</td>
+<td>Installation manager</td>
+</tr>
+<tr>
+<td>Commission settlement</td>
+<td>Commission</td>
+<td>Finance manager</td>
+</tr>
+</tbody></table>
+</section><section class="block"><h2>Roles Involved</h2>
+<p>Sales Executive → Site Surveyor → Sales Manager → Project Coordinator → Fabrication Team → Installation Engineer → Installation Manager → Warehouse → Accounts Receivable → Service Team</p>
+</section><section class="block"><h2>Related Chapters</h2>
+<ul>
+<li><a href="../modules/05-marketing-leads-meta.md">Marketing Leads &amp; Meta</a></li>
+<li><a href="../modules/06-inquiry-management.md">Inquiry Management</a></li>
+<li><a href="../modules/07-quotations.md">Quotations</a></li>
+<li><a href="../modules/08-order-lifecycle.md">Order Lifecycle</a></li>
+<li><a href="../modules/09-fabrication-installation-delivery.md">Fabrication, Installation &amp; Delivery</a></li>
+<li><a href="../modules/10-payments-outstanding.md">Payments &amp; Outstanding</a></li>
+</ul>
+<div class="chapter"><h1 id="chapter-18">Workflow: Procurement to Stock</h1>
+</section><section class="block"><h2>Overview</h2>
+<p>This workflow covers the supply chain path from vendor engagement through available stock in the warehouse — the foundation for order fulfillment and B2B shipments.</p>
+</section><section class="block"><h2>Process Flow</h2>
+<pre><code>Supplier Setup → Purchase Order → PO Approval → Goods Receipt (PO Inward)
+    → Serial Registration → Stock Update → Inventory Ledger Entry
+    → (Optional) Stock Transfer → (Optional) Stock Adjustment
+    → Stock Available for Order Reservation / B2B Shipment
+</code></pre>
+</section><section class="block"><h2>Stage Details</h2>
+<h3>Stage 1: Supplier &amp; Catalog Setup</h3>
+<ul>
+<li><strong>Modules:</strong> Supplier, Product, Bill of Materials, Project Price</li>
+<li><strong>Actions:</strong> Register vendors; maintain product catalog and BOM definitions</li>
+<li><strong>Output:</strong> Master data ready for procurement</li>
+</ul>
+<h3>Stage 2: Purchase Order Creation</h3>
+<ul>
+<li><strong>Module:</strong> Purchase Orders</li>
+<li><strong>Actions:</strong> Create PO with line items, quantities, rates, and delivery terms</li>
+<li><strong>Output:</strong> PO submitted for approval</li>
+</ul>
+<h3>Stage 3: Goods Receipt</h3>
+<ul>
+<li><strong>Module:</strong> PO Inward</li>
+<li><strong>Actions:</strong> Receive goods against PO; capture quantities and serial numbers</li>
+<li><strong>Output:</strong> Stock increased; ledger entry created</li>
+</ul>
+<h3>Stage 4: Stock Management</h3>
+<ul>
+<li><strong>Modules:</strong> Stocks, Inventory Ledger</li>
+<li><strong>Actions:</strong> Monitor levels; review movement history</li>
+<li><strong>Output:</strong> Real-time stock visibility by warehouse</li>
+</ul>
+<h3>Stage 5: Internal Movements (as needed)</h3>
+<ul>
+<li><strong>Modules:</strong> Stock Transfers, Stock Adjustments</li>
+<li><strong>Actions:</strong> Move stock between warehouses; correct physical count variances</li>
+<li><strong>Output:</strong> Accurate warehouse-level stock</li>
+</ul>
+<h3>Stage 6: Returns (if applicable)</h3>
+<ul>
+<li><strong>Module:</strong> Purchase Returns</li>
+<li><strong>Actions:</strong> Return goods to supplier; credit stock</li>
+<li><strong>Output:</strong> Stock and ledger adjusted</li>
+</ul>
+<h3>Stage 7: Fulfillment Link</h3>
+<ul>
+<li><strong>Modules:</strong> Order Lifecycle, B2B Trading</li>
+<li><strong>Actions:</strong> Reserved stock allocated to confirmed orders or B2B shipments</li>
+<li><strong>Output:</strong> Stock committed to customer demand</li>
+</ul>
+</section><section class="block"><h2>Inventory Traceability</h2>
+<p>Serialized products (panels, inverters) are tracked from <strong>PO Inward</strong> through <strong>Installation</strong> or <strong>B2B Shipment</strong> using the Serial Master configuration and Serialized Inventory Report.</p>
+</section><section class="block"><h2>Key Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PO approval</td>
+<td>Prevent unauthorized purchases</td>
+</tr>
+<tr>
+<td>Serial capture at inward</td>
+<td>Enable end-to-end traceability</td>
+</tr>
+<tr>
+<td>Inventory ledger</td>
+<td>Immutable audit of all movements</td>
+</tr>
+<tr>
+<td>Stock reservation</td>
+<td>Prevent overselling</td>
+</tr>
+</tbody></table>
+</section><section class="block"><h2>Related Chapters</h2>
+<ul>
+<li><a href="../modules/11-procurement-inventory.md">Procurement &amp; Inventory</a></li>
+<li><a href="../modules/08-order-lifecycle.md">Order Lifecycle</a></li>
+<li><a href="../modules/12-b2b-trading.md">B2B Trading</a></li>
+</ul>
+<div class="chapter"><h1 id="chapter-19">Workflow: B2B Order to Invoice</h1>
+</section><section class="block"><h2>Overview</h2>
+<p>This workflow describes the B2B distribution sales cycle — from dealer/client engagement through invoicing and payment collection.</p>
+</section><section class="block"><h2>Process Flow</h2>
+<pre><code>B2B Client Setup → Sales Quote → Quote Approval → Sales Order
+    → Order Confirmation → Stock Reservation → Shipment
+    → Invoice Generation → Payment Recording → Outstanding Clearance
+    → (Optional) Shipment Return
+</code></pre>
+</section><section class="block"><h2>Stage Details</h2>
+<h3>Stage 1: Client Onboarding</h3>
+<ul>
+<li><strong>Module:</strong> B2B Clients</li>
+<li><strong>Actions:</strong> Register client with billing and ship-to addresses</li>
+<li><strong>Output:</strong> Client master ready for transactions</li>
+</ul>
+<h3>Stage 2: Quotation</h3>
+<ul>
+<li><strong>Module:</strong> B2B Sales Quotes</li>
+<li><strong>Actions:</strong> Create quote with products, quantities, rates, and GST</li>
+<li><strong>Output:</strong> Quote PDF shared with dealer</li>
+</ul>
+<h3>Stage 3: Sales Order</h3>
+<ul>
+<li><strong>Module:</strong> B2B Sales Orders</li>
+<li><strong>Actions:</strong> Convert approved quote to sales order; confirm order</li>
+<li><strong>Output:</strong> Confirmed SO with stock reservation</li>
+</ul>
+<h3>Stage 4: Dispatch</h3>
+<ul>
+<li><strong>Module:</strong> B2B Shipments</li>
+<li><strong>Actions:</strong> Pick, pack, and dispatch against SO; capture serial numbers</li>
+<li><strong>Output:</strong> Shipment record with stock deduction</li>
+</ul>
+<h3>Stage 5: Invoicing</h3>
+<ul>
+<li><strong>Module:</strong> B2B Invoices</li>
+<li><strong>Actions:</strong> Generate invoice from shipment; produce PDF</li>
+<li><strong>Output:</strong> Tax invoice for dealer accounts</li>
+</ul>
+<h3>Stage 6: Collections</h3>
+<ul>
+<li><strong>Modules:</strong> B2B Payment Outstanding, B2B Payments Report</li>
+<li><strong>Actions:</strong> Record payments; track outstanding; analyze collections</li>
+<li><strong>Output:</strong> Reconciled receivables</li>
+</ul>
+<h3>Stage 7: Returns (if applicable)</h3>
+<ul>
+<li><strong>Module:</strong> B2B Shipment Returns</li>
+<li><strong>Actions:</strong> Process return; credit stock and adjust invoice</li>
+<li><strong>Output:</strong> Return documented with inventory correction</li>
+</ul>
+</section><section class="block"><h2>GST &amp; Compliance</h2>
+<p>B2B transactions support GST line-item calculation per product HSN and client tax profile. Invoice PDFs include required tax breakdowns for dealer accounting.</p>
+</section><section class="block"><h2>Key Metrics</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Report / Screen</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Open orders</td>
+<td>B2B Sales Orders</td>
+</tr>
+<tr>
+<td>Shipment status</td>
+<td>B2B Shipments</td>
+</tr>
+<tr>
+<td>Outstanding</td>
+<td>B2B Payment Outstanding</td>
+</tr>
+<tr>
+<td>Line-level revenue</td>
+<td>B2B Sales Order Lines Report</td>
+</tr>
+<tr>
+<td>Collections</td>
+<td>B2B Payments Report</td>
+</tr>
+</tbody></table>
+</section><section class="block"><h2>Related Chapters</h2>
+<ul>
+<li><a href="../modules/12-b2b-trading.md">B2B Trading</a></li>
+<li><a href="../modules/11-procurement-inventory.md">Procurement &amp; Inventory</a></li>
+<li><a href="../modules/10-payments-outstanding.md">Payments &amp; Outstanding</a></li>
+<li><a href="../modules/15-reports-audit.md">Reports &amp; Audit</a></li>
+</ul>
+</section></div>
+</body>
+</html>

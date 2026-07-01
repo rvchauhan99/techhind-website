@@ -1,8 +1,42 @@
 "use client";
 
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { siteData } from "../data/siteData";
+
+const socialIcons = {
+  linkedin: Linkedin,
+  twitter: Twitter,
+  facebook: Facebook,
+} as const;
+
+function FooterLink({ href, name }: { href: string; name: string }) {
+  if (href.endsWith(".pdf")) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-400 hover:text-[#00823b] transition-colors text-sm"
+      >
+        {name}
+      </a>
+    );
+  }
+  if (href.startsWith("/") && !href.startsWith("/#")) {
+    return (
+      <Link href={href} className="text-gray-400 hover:text-[#00823b] transition-colors text-sm">
+        {name}
+      </Link>
+    );
+  }
+  return (
+    <a href={href} className="text-gray-400 hover:text-[#00823b] transition-colors text-sm">
+      {name}
+    </a>
+  );
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,8 +44,6 @@ export default function Footer() {
 
   return (
     <>
-      {/* Floating social CTA hidden for now; kept in code history for future enablement. */}
-
       <footer className="bg-[#0b1c33] text-gray-300 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,130,59,0.1),transparent_70%)]" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
@@ -22,8 +54,8 @@ export default function Footer() {
                 <Image
                   src="/logo-transparent.png"
                   alt="techHind - Solar CRM for EPC Companies"
-                  width={1780}
-                  height={338}
+                  width={750}
+                  height={139}
                   className="h-10 w-auto"
                 />
               </div>
@@ -49,7 +81,27 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* Footer social media icon section hidden for now; kept for future enablement. */}
+              <div className="flex items-center gap-4">
+                {(
+                  Object.entries(contact.socialMedia) as Array<
+                    [keyof typeof socialIcons, string]
+                  >
+                ).map(([platform, url]) => {
+                  const Icon = socialIcons[platform];
+                  return (
+                    <a
+                      key={platform}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`techHind on ${platform}`}
+                      className="text-gray-400 hover:text-[#00823b] transition-colors"
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Product Links */}
@@ -58,9 +110,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 {footer.links.product.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-gray-400 hover:text-[#00823b] transition-colors text-sm">
-                      {link.name}
-                    </a>
+                    <FooterLink href={link.href} name={link.name} />
                   </li>
                 ))}
               </ul>
@@ -72,9 +122,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 {footer.links.company.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-gray-400 hover:text-[#00823b] transition-colors text-sm">
-                      {link.name}
-                    </a>
+                    <FooterLink href={link.href} name={link.name} />
                   </li>
                 ))}
               </ul>
@@ -86,9 +134,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 {footer.links.resources.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-gray-400 hover:text-[#00823b] transition-colors text-sm">
-                      {link.name}
-                    </a>
+                    <FooterLink href={link.href} name={link.name} />
                   </li>
                 ))}
               </ul>

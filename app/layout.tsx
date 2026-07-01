@@ -2,55 +2,20 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { siteData } from "./data/siteData";
 import { SITE_URL } from "./config/siteUrl";
-import StructuredData from "./components/StructuredData";
+import { rootMetadata } from "./config/metadata";
+import GlobalStructuredData from "./components/structured-data/GlobalStructuredData";
 
 const inter = Inter({ subsets: ["latin"] });
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
+  ...rootMetadata,
   metadataBase: new URL(SITE_URL),
-  title: siteData.seo.title,
-  description: siteData.seo.description,
-  keywords: siteData.seo.keywords,
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: siteData.seo.title,
-    description: siteData.seo.description,
-    url: SITE_URL,
-    siteName: siteData.company.name,
-    locale: "en_IN",
-    type: "website",
-    images: [
-      {
-        url: siteData.seo.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteData.seo.title,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteData.seo.title,
-    description: siteData.seo.description,
-    images: [siteData.seo.ogImage],
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
-    ],
-    apple: "/icon.png",
-    shortcut: "/favicon.ico",
-  },
+  ...(googleSiteVerification
+    ? { verification: { google: googleSiteVerification } }
+    : {}),
 };
 
 export default function RootLayout({
@@ -59,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <body className={inter.className}>
-        <StructuredData />
+        <GlobalStructuredData />
         {children}
         {gaId ? (
           <>

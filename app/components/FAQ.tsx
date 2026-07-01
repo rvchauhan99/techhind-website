@@ -42,27 +42,29 @@ export default function FAQ() {
                     : "border-gray-200/70 bg-white hover:border-[#1b365d]/30 hover:shadow-md"
                 }`}
               >
-                <button
-                  type="button"
-                  onClick={() => toggle(index)}
-                  aria-expanded={isOpen}
-                  aria-controls={`faq-answer-${index}`}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left gap-4"
-                >
-                  <span
+                <h3 className="m-0">
+                  <button
+                    type="button"
+                    onClick={() => toggle(index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${index}`}
                     id={`faq-question-${index}`}
-                    className={`font-semibold text-base sm:text-lg transition-colors ${
-                      isOpen ? "text-[#1b365d]" : "text-slate-800"
-                    }`}
+                    className="w-full flex items-center justify-between px-6 py-5 text-left gap-4"
                   >
-                    {item.question}
-                  </span>
-                  <ChevronDown
-                    className={`h-5 w-5 flex-shrink-0 transition-all duration-300 ${
-                      isOpen ? "rotate-180 text-[#1b365d]" : "text-slate-400"
-                    }`}
-                  />
-                </button>
+                    <span
+                      className={`font-semibold text-base sm:text-lg transition-colors ${
+                        isOpen ? "text-[#1b365d]" : "text-slate-800"
+                      }`}
+                    >
+                      {item.question}
+                    </span>
+                    <ChevronDown
+                      className={`h-5 w-5 flex-shrink-0 transition-all duration-300 ${
+                        isOpen ? "rotate-180 text-[#1b365d]" : "text-slate-400"
+                      }`}
+                    />
+                  </button>
+                </h3>
 
                 <div
                   id={`faq-answer-${index}`}
