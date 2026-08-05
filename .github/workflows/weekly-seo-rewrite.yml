@@ -1,0 +1,69 @@
+name: Weekly SEO Rewrite
+
+on:
+  schedule:
+    # Wednesday 10:00 IST = 04:30 UTC
+    - cron: "30 4 * * 3"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-seo-rewrite
+  cancel-in-progress: false
+
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Ensure candidates exist
+        env:
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: |
+          if [ ! -f data/seo-rewrite-candidates.json ]; then
+            node scripts/gsc-weekly-report.mjs
+          fi
+
+      - name: Rewrite one underperformer
+        id: rewrite
+        run: node scripts/seo-rewrite-underperformer.mjs
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if git diff --quiet -- content/blog data/seo-rewrite-log.md; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          SLUG="${{ steps.rewrite.outputs.slug }}"
+          if [ -z "$SLUG" ]; then SLUG="rewrite"; fi
+          git add content/blog data/seo-rewrite-log.md data/seo-rewrite-candidates.json data/seo-reports || true
+          git commit -m "chore(seo): rewrite underperformer — ${SLUG}"
+          git push origin HEAD:${{ github.ref_name }}
+
+      - name: Summary
+        run: |
+          {
+            echo "## SEO rewrite (Improve)"
+            echo ""
+            echo "- Slug: \`${{ steps.rewrite.outputs.slug || 'none' }}\`"
+            echo "- Changed: \`${{ steps.diff.outputs.has_changes }}\`"
+            echo "- Cap: 1 rewrite per week"
+          } >> "$GITHUB_STEP_SUMMARY"

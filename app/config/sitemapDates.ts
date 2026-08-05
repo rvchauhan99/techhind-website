@@ -11,6 +11,7 @@ export const SITEMAP_LAST_MODIFIED: Record<string, string> = {
   "/features/solar-service-warranty": "2026-07-01",
   "/solar-crm": "2026-08-05",
   "/solar-epc-software": "2026-08-05",
+  "/solar-crm-vs-zoho": "2026-08-06",
   "/blog": "2026-08-05",
   "/pricing": "2026-06-01",
   "/privacy-policy": "2026-01-01",

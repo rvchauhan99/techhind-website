@@ -8,6 +8,7 @@ author: "techHind"
 keywords: ["solar CRM for EPC companies", "solar CRM India", "solar EPC software"]
 ---
 
+
 Indian Solar EPC companies are closing more rooftop and commercial jobs than ever. The teams that scale are not only generating more leads — they are running a **Solar CRM** that matches how solar work actually happens.
 
 ## Why generic CRM falls short
@@ -39,3 +40,8 @@ That gap is why EPC owners search for **Solar CRM for EPC companies** instead of
 ## Next step
 
 Start with a 14-day free trial or a 10-minute demo. Judge the product on a real lead-to-install walkthrough — not a feature slide.
+
+
+### Related reading
+- [Complete Solar CRM India: One System from Lead to AMC](/blog/complete-solar-crm-india)
+- [Solar EPC software India: Full Solar CRM & Management System for Indian EPCs](/blog/solar-epc-software-india)

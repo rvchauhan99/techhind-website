@@ -124,22 +124,19 @@ This Next.js application can be deployed to:
 
 ### Weekly SEO blog (full auto)
 
-GitHub Actions workflow: `.github/workflows/weekly-seo-blog.yml`
+See [docs/RANK-LOOP.md](docs/RANK-LOOP.md) for the full Rank loop (Ship → Measure → Improve → AEO).
 
-- Runs every **Monday 10:00 IST** (and on manual **Run workflow**)
-- Picks the next unused keyword from `data/seo-keywords.json`
-- Writes one published post under `content/blog/`
-- Commits + pushes to `main` → Vercel redeploys
-- Works even if your laptop is off
-
-Local test:
+GitHub Actions:
+- **Weekly SEO Blog** — Monday — 1 new post
+- **Weekly GSC Measure** — Tuesday — GSC/heuristic report
+- **Weekly SEO Rewrite** — Wednesday — 1 rewrite
+- **Monthly AEO Refresh** — 1st — `llms.txt` refresh
 
 ```bash
-npm run seo:weekly:dry
-npm run seo:weekly
+npm run seo:gsc
+npm run seo:rewrite:dry
+npm run seo:aeo
 ```
-
-Log: `data/seo-weekly-log.md`
 
 ## Technologies Used
 

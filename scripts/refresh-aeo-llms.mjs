@@ -1,10 +1,47 @@
-# techHind
+#!/usr/bin/env node
+/**
+ * Phase 4 — Refresh public/llms.txt and llms-full.txt from handbook + site facts.
+ *
+ * Usage:
+ *   node scripts/refresh-aeo-llms.mjs
+ *   node scripts/refresh-aeo-llms.mjs --dry-run
+ */
+
+import fs from "node:fs";
+import path from "node:path";
+import {
+  PUBLIC_DIR,
+  HANDBOOK_DIR,
+  todayISO,
+  loadBlogPosts,
+  appendGithubOutput,
+} from "./lib/seo-common.mjs";
+
+const dryRun = process.argv.includes("--dry-run");
+
+function readSafe(file) {
+  return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+}
+
+function buildLlmsTxt(posts) {
+  const overview = readSafe(path.join(HANDBOOK_DIR, "01-executive-overview.md"));
+  const about =
+    overview.match(/## What Is TechHind Solar CRM\?\n\n([\s\S]*?)\n\n##/)?.[1]?.trim() ||
+    "techHind is a complete Solar Management System for Indian EPC companies.";
+
+  const blogLines = posts
+    .filter((p) => p.status === "published")
+    .slice(0, 12)
+    .map((p) => `- ${p.title}: https://techhind.in/blog/${p.slug}`)
+    .join("\n");
+
+  return `# techHind
 
 > Complete Solar Management System for EPC companies in India
 
 ## About
 
-TechHind Solar CRM is a complete **Solar Management System** for EPC companies, distributors, and integrators. It manages the full business journey — from marketing lead to installed project, payment collection, and after-sales service — in one platform.
+${about}
 
 techHind (Techhind Private Limited) is a cloud Solar CRM built exclusively for Indian solar EPC companies, distributors, and integrators.
 
@@ -60,16 +97,70 @@ https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
 
 ## Recent Blog Posts
 
-- Complete Solar CRM India: One System from Lead to AMC: https://techhind.in/blog/complete-solar-crm-india
-- Solar CRM for EPC Companies: What to Look For in 2026: https://techhind.in/blog/solar-crm-for-epc-companies-checklist
-- Solar EPC software India: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-epc-software-india
-- Solar Lead Management Software: Stop Losing Follow-Ups: https://techhind.in/blog/solar-lead-management-software
-- Solar project management software India: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-project-management-software-india
-- Solar Quotation Software India — Inside a Complete Solar CRM: https://techhind.in/blog/solar-quotation-software-india
+${blogLines || "- https://techhind.in/blog"}
 
 ## Extended Documentation
 
 - AI crawler index: https://techhind.in/ai.txt
 - Full FAQ and module details: https://techhind.in/llms-full.txt
 
-<!-- refreshed: 2026-08-05 -->
+<!-- refreshed: ${todayISO()} -->
+`;
+}
+
+function buildLlmsFull(posts) {
+  const caps = readSafe(path.join(HANDBOOK_DIR, "02-platform-capabilities.md")).slice(0, 8000);
+  const exec = readSafe(path.join(HANDBOOK_DIR, "01-executive-overview.md")).slice(0, 6000);
+  const blog = posts
+    .filter((p) => p.status === "published")
+    .map((p) => `### ${p.title}\n${p.description}\nURL: https://techhind.in/blog/${p.slug}\n`)
+    .join("\n");
+
+  return `# techHind — Full AI / AEO context
+
+Last refreshed: ${todayISO()}
+
+## Executive overview
+
+${exec}
+
+## Platform capabilities
+
+${caps}
+
+## Blog index
+
+${blog}
+
+## Canonical product pages
+
+- https://techhind.in/solar-crm
+- https://techhind.in/solar-epc-software
+- https://techhind.in/solar-crm-vs-zoho
+- https://techhind.in/features
+- https://techhind.in/pricing
+- https://techhind.in/blog
+`;
+}
+
+function main() {
+  const posts = loadBlogPosts();
+  const llms = buildLlmsTxt(posts);
+  const full = buildLlmsFull(posts);
+  const llmsPath = path.join(PUBLIC_DIR, "llms.txt");
+  const fullPath = path.join(PUBLIC_DIR, "llms-full.txt");
+
+  if (dryRun) {
+    console.log(llms.slice(0, 500) + "\n...");
+    appendGithubOutput({ changed: "false", dry_run: "true" });
+    return;
+  }
+
+  fs.writeFileSync(llmsPath, llms);
+  fs.writeFileSync(fullPath, full);
+  console.log(`Updated ${llmsPath}`);
+  console.log(`Updated ${fullPath}`);
+  appendGithubOutput({ changed: "true" });
+}
+
+main();

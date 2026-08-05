@@ -7,6 +7,7 @@ handbook-pdf: https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
 features: https://techhind.in/features
 solar-crm: https://techhind.in/solar-crm
 solar-epc-software: https://techhind.in/solar-epc-software
+solar-crm-vs-zoho: https://techhind.in/solar-crm-vs-zoho
 blog: https://techhind.in/blog
 pricing: https://techhind.in/pricing
 contact: contact@techhind.in

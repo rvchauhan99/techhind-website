@@ -25,6 +25,7 @@ const STATIC_PATHS = [
   "/features",
   "/solar-crm",
   "/solar-epc-software",
+  "/solar-crm-vs-zoho",
   "/blog",
   "/privacy-policy",
   "/terms-conditions",

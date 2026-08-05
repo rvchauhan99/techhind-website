@@ -1,0 +1,58 @@
+name: Weekly GSC Measure
+
+on:
+  schedule:
+    # Tuesday 10:00 IST = 04:30 UTC
+    - cron: "30 4 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-gsc-measure
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run GSC / heuristic measure
+        id: report
+        env:
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: node scripts/gsc-weekly-report.mjs
+
+      - name: Commit report artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/seo-reports data/seo-rewrite-candidates.json || true
+          if git diff --cached --quiet; then
+            echo "No report changes"
+            exit 0
+          fi
+          git commit -m "chore(seo): weekly GSC measure report"
+          git push origin HEAD:${{ github.ref_name }}
+
+      - name: Summary
+        run: |
+          {
+            echo "## GSC weekly measure"
+            echo ""
+            echo "- Mode: \`${{ steps.report.outputs.mode }}\`"
+            echo "- Candidates: \`${{ steps.report.outputs.candidates }}\`"
+            echo "- Top rewrite slug: \`${{ steps.report.outputs.top_slug }}\`"
+            echo ""
+            echo "Without GSC secrets, heuristic age-based candidates are used."
+            echo "Set \`GSC_SERVICE_ACCOUNT_JSON\` + \`GSC_SITE_URL\` for real Search Console data."
+          } >> "$GITHUB_STEP_SUMMARY"

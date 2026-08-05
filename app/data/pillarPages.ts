@@ -283,7 +283,131 @@ export const solarEpcSoftwarePillar: PillarPage = {
     "See techHind solar EPC software on a live demo — or start a 14-day free trial.",
 };
 
-export const pillarPages: PillarPage[] = [solarCrmPillar, solarEpcSoftwarePillar];
+export const solarCrmVsZohoPillar: PillarPage = {
+  slug: "solar-crm-vs-zoho",
+  path: "/solar-crm-vs-zoho",
+  metaTitle: "Solar CRM vs Zoho for Indian EPC Companies | techHind",
+  metaDescription:
+    "Compare Solar CRM vs Zoho for Indian EPC companies. techHind covers lead-to-install, GST quotes, serial inventory, B2B dealers, and AMC — Solar Management System depth Zoho lacks out of the box.",
+  keywords: [
+    "solar CRM vs Zoho",
+    "solar CRM vs Zoho India",
+    "Zoho for solar EPC",
+    "best Solar CRM India",
+  ],
+  eyebrow: "Comparison · Solar CRM vs Zoho",
+  h1: "Solar CRM vs Zoho for Indian EPC Companies",
+  intro:
+    "Zoho is a strong generic CRM. Indian Solar EPCs still need site visits, GST solar quotations, serialized panels/inverters, dealer trading, and after-sales tied to the same project. That is where a Solar CRM / Solar Management System like techHind wins.",
+  problemTitle: "Where Zoho alone creates parallel systems",
+  problemBody:
+    "Many EPC teams start on Zoho for contacts and deals, then still run WhatsApp + Excel for surveys, stock serials, challans, and outstanding. Parallel systems are the cost.",
+  problemPoints: [
+    "Solar pipeline stages are custom-configured, not native",
+    "GST solar proposal + approval is bolted on",
+    "Panel/inverter serial tracking is not a Zoho CRM default",
+    "B2B dealer shipments/invoices usually need another product",
+    "India DISCOM / subsidy document context is missing",
+  ],
+  workflowTitle: "What to evaluate in a side-by-side demo",
+  workflowSteps: [
+    {
+      title: "Lead → inquiry → site visit",
+      body: "Include Meta Lead Ads and DISCOM/capacity fields — not just a contact card.",
+    },
+    {
+      title: "GST quotation → order",
+      body: "Branded PDF, approvals, and conversion into a real solar order with stock reservation.",
+    },
+    {
+      title: "Install + serials",
+      body: "Capture panel/inverter serials and delivery challans on the same project.",
+    },
+    {
+      title: "Payments + service",
+      body: "Outstanding tracking and AMC/warranty after commissioning.",
+    },
+  ],
+  modulesTitle: "Where techHind is built for solar",
+  modules: [
+    {
+      title: "Solar CRM overview",
+      body: "Full Solar Management System positioning for EPC buyers.",
+      href: "/solar-crm",
+    },
+    {
+      title: "Lead management",
+      body: "Meta ads + pipeline designed for solar sales.",
+      href: "/features/solar-lead-management",
+    },
+    {
+      title: "Inventory & serials",
+      body: "PO, warehouse, serialized components.",
+      href: "/features/solar-inventory-software",
+    },
+    {
+      title: "B2B trading",
+      body: "Dealer quotes, shipments, invoices.",
+      href: "/features/b2b-solar-trading",
+    },
+  ],
+  comparisonTitle: "techHind Solar CRM vs Zoho (at a glance)",
+  comparisonIntro:
+    "Zoho is excellent as a general CRM suite. techHind is purpose-built for Indian solar EPC operations end to end.",
+  comparisonRows: [
+    {
+      capability: "Solar lead → install stages",
+      techhind: "Native",
+      generic: "Custom configuration",
+    },
+    {
+      capability: "GST solar quotations + PDF",
+      techhind: "Built-in",
+      generic: "Templates / add-ons",
+    },
+    {
+      capability: "Panel / inverter serials",
+      techhind: "Native inventory",
+      generic: "Not CRM-native",
+    },
+    {
+      capability: "Dealer B2B trading",
+      techhind: "Included module",
+      generic: "Separate apps",
+    },
+    {
+      capability: "India EPC document context",
+      techhind: "Designed in",
+      generic: "Manual fields",
+    },
+  ],
+  faqs: [
+    {
+      question: "Can Zoho be customized for solar?",
+      answer:
+        "Yes, with enough configuration and extra tools. Most mid-size EPCs still end up with WhatsApp/Excel for stock, serials, and field execution. techHind ships those workflows as product.",
+    },
+    {
+      question: "Is techHind only a CRM?",
+      answer:
+        "techHind is marketed as Solar CRM and operates as a complete Solar Management System — sales, ops, inventory, B2B, payments, and service.",
+    },
+    {
+      question: "How should we compare in a demo?",
+      answer:
+        "Ask both vendors to walk lead → quote → order → serial install → payment → service ticket on one project record.",
+    },
+  ],
+  ctaTitle: "See the Solar CRM difference in 10 minutes",
+  ctaBody:
+    "Book a techHind demo focused on your EPC workflow — or start a 14-day free trial.",
+};
+
+export const pillarPages: PillarPage[] = [
+  solarCrmPillar,
+  solarEpcSoftwarePillar,
+  solarCrmVsZohoPillar,
+];
 
 export const pillarBySlug: Record<string, PillarPage> = Object.fromEntries(
   pillarPages.map((p) => [p.slug, p])

@@ -166,7 +166,7 @@ Treat **${keyword}** as a search intent that maps to the broader platform — no
 4. Installation, delivery challans, payments
 5. B2B dealer flow and after-sales service where needed
 
-Start with the [Solar CRM overview](/solar-crm), then [Solar EPC software](/solar-epc-software), [features](/features), and [pricing](/pricing).
+Start with the [Solar CRM overview](/solar-crm), then [Solar EPC software](/solar-epc-software), [Solar CRM vs Zoho](/solar-crm-vs-zoho), [features](/features), and [pricing](/pricing).
 
 ### Related pages
 ${linkLines}

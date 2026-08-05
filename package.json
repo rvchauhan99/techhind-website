@@ -10,7 +10,12 @@
     "generate:seo-assets": "node scripts/generate-seo-assets.mjs",
     "verify:live": "node scripts/verify-live.mjs",
     "seo:weekly": "node scripts/weekly-seo-blog.mjs",
-    "seo:weekly:dry": "node scripts/weekly-seo-blog.mjs --dry-run"
+    "seo:weekly:dry": "node scripts/weekly-seo-blog.mjs --dry-run",
+    "seo:gsc": "node scripts/gsc-weekly-report.mjs",
+    "seo:rewrite": "node scripts/seo-rewrite-underperformer.mjs",
+    "seo:rewrite:dry": "node scripts/seo-rewrite-underperformer.mjs --dry-run",
+    "seo:enrich-links": "node scripts/enrich-blog-internal-links.mjs",
+    "seo:aeo": "node scripts/refresh-aeo-llms.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

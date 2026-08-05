@@ -78,6 +78,7 @@ export const siteData = {
         subLinks: [
           { name: "Blog", href: "/blog" },
           { name: "Solar CRM", href: "/solar-crm" },
+          { name: "Solar CRM vs Zoho", href: "/solar-crm-vs-zoho" },
           { name: "Solar EPC Software", href: "/solar-epc-software" },
           { name: "FAQ", href: "/#faq" },
           { name: "Platform Handbook", href: handbookPdfUrl },
@@ -414,6 +415,7 @@ export const siteData = {
       ],
       resources: [
         { name: "Blog", href: "/blog" },
+        { name: "Solar CRM vs Zoho", href: "/solar-crm-vs-zoho" },
         { name: "Solar EPC Software", href: "/solar-epc-software" },
         { name: "FAQ", href: "/#faq" },
         { name: "Platform Handbook", href: handbookPdfUrl },
