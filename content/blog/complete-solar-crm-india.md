@@ -14,6 +14,8 @@ Indian Solar EPC companies do not fail only because they lack leads. They fail w
 
 Buying only quotation software, only inventory software, or only a generic CRM recreates the same problem: sales and ops never share one timeline.
 
+
+
 A complete platform must cover:
 
 - Marketing leads and Meta ads
