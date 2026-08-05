@@ -13,7 +13,7 @@ import {
 import { siteData } from "../../data/siteData";
 
 type PageProps = {
-  params: Promise<{ slug: string }> | { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
@@ -21,8 +21,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const resolved = await Promise.resolve(params);
-  const post = getBlogPostBySlug(resolved.slug);
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
   if (!post) {
     return { title: "Post not found" };
   }
@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const resolved = await Promise.resolve(params);
-  const post = getBlogPostBySlug(resolved.slug);
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
   if (!post) notFound();
 
   const html = markdownToHtml(post.body);
