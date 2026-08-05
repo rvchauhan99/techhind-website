@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "generate:seo-assets": "node scripts/generate-seo-assets.mjs",
-    "verify:live": "node scripts/verify-live.mjs"
+    "verify:live": "node scripts/verify-live.mjs",
+    "seo:weekly": "node scripts/weekly-seo-blog.mjs",
+    "seo:weekly:dry": "node scripts/weekly-seo-blog.mjs --dry-run"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

@@ -122,9 +122,28 @@ This Next.js application can be deployed to:
 - **Netlify**: Use the Next.js build preset
 - **Any Node.js hosting**: Build and deploy the production build
 
+### Weekly SEO blog (full auto)
+
+GitHub Actions workflow: `.github/workflows/weekly-seo-blog.yml`
+
+- Runs every **Monday 10:00 IST** (and on manual **Run workflow**)
+- Picks the next unused keyword from `data/seo-keywords.json`
+- Writes one published post under `content/blog/`
+- Commits + pushes to `main` → Vercel redeploys
+- Works even if your laptop is off
+
+Local test:
+
+```bash
+npm run seo:weekly:dry
+npm run seo:weekly
+```
+
+Log: `data/seo-weekly-log.md`
+
 ## Technologies Used
 
-- Next.js 14 (App Router)
+- Next.js 15 (App Router)
 - React 18
 - TypeScript
 - Tailwind CSS

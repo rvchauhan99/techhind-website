@@ -88,7 +88,7 @@ export function getAllBlogPosts(options?: { includeDrafts?: boolean }): BlogPost
 
   const files = fs
     .readdirSync(BLOG_DIR)
-    .filter((f) => f.endsWith(".md") || f.endsWith(".mdx"));
+    .filter((f) => (f.endsWith(".md") || f.endsWith(".mdx")) && !f.startsWith(".") && f !== "README.md");
 
   const posts = files
     .map((f) => toPost(path.join(BLOG_DIR, f)))

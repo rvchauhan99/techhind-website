@@ -1,0 +1,67 @@
+name: Weekly SEO Blog
+
+on:
+  schedule:
+    # Monday 10:00 IST = 04:30 UTC
+    - cron: "30 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-seo-blog
+  cancel-in-progress: false
+
+jobs:
+  publish-weekly-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate weekly blog post
+        id: gen
+        run: node scripts/weekly-seo-blog.mjs
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if git diff --quiet -- content/blog data/seo-weekly-log.md; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "No blog changes this run."
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            git status --short
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          SLUG="${{ steps.gen.outputs.slug }}"
+          if [ -z "$SLUG" ]; then SLUG="weekly-post"; fi
+          git add content/blog data/seo-weekly-log.md
+          git commit -m "chore(seo): weekly blog — ${SLUG}"
+          git push origin HEAD:${{ github.ref_name }}
+
+      - name: Summary
+        run: |
+          {
+            echo "## Weekly SEO blog"
+            echo ""
+            echo "- Keyword: \`${{ steps.gen.outputs.keyword || 'none' }}\`"
+            echo "- Slug: \`${{ steps.gen.outputs.slug || 'none' }}\`"
+            echo "- Changed: \`${{ steps.diff.outputs.has_changes }}\`"
+            echo ""
+            echo "After Vercel deploy, request indexing in Google Search Console for the new /blog URL."
+            echo "Laptop power does not matter — this job runs on GitHub."
+          } >> "$GITHUB_STEP_SUMMARY"
