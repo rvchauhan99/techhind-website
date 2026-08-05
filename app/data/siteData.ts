@@ -39,7 +39,7 @@ export const siteData = {
       "solar quotation software India",
       "solar management system India",
     ],
-    ogImage: "/og-image.png",
+    ogImage: "/og-image.png?v=20260805",
   },
 
   // Contact Information
