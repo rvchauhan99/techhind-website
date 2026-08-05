@@ -42,6 +42,9 @@ https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
 ## Key Pages
 
 - Homepage: https://techhind.in/
+- Solar CRM: https://techhind.in/solar-crm
+- Solar EPC Software: https://techhind.in/solar-epc-software
+- Blog: https://techhind.in/blog
 - Features: https://techhind.in/features
 - Lead Management: https://techhind.in/features/solar-lead-management
 - Quotations: https://techhind.in/features/solar-quotation-software

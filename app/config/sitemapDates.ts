@@ -1,6 +1,6 @@
 /** Stable last-modified dates for sitemap entries (update when page content changes). */
 export const SITEMAP_LAST_MODIFIED: Record<string, string> = {
-  "/": "2026-07-01",
+  "/": "2026-08-05",
   "/features": "2026-07-01",
   "/features/solar-lead-management": "2026-07-01",
   "/features/solar-quotation-software": "2026-07-01",
@@ -9,6 +9,9 @@ export const SITEMAP_LAST_MODIFIED: Record<string, string> = {
   "/features/b2b-solar-trading": "2026-07-01",
   "/features/solar-payment-tracking": "2026-07-01",
   "/features/solar-service-warranty": "2026-07-01",
+  "/solar-crm": "2026-08-05",
+  "/solar-epc-software": "2026-08-05",
+  "/blog": "2026-08-05",
   "/pricing": "2026-06-01",
   "/privacy-policy": "2026-01-01",
   "/terms-conditions": "2026-01-01",

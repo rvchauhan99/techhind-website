@@ -14,10 +14,11 @@ Run after every production deploy:
 2. Google Search Console — Sitemap
    - Indexing → Sitemaps → https://techhind.in/sitemap.xml
    - Status: Success
-   - Confirm 13 URLs discovered (may take days to update from older count)
+   - Confirm new pillar + blog URLs appear (count grows beyond the old ~13)
 
 3. GSC URL Inspection (use scripts/gsc-url-inspection-list.txt)
-   - Request indexing for /features and all 7 /features/* pages
+   - Priority: /solar-crm, /solar-epc-software, /blog, new blog posts
+   - Then /features and all 7 /features/* pages
    - Confirm canonical = https://techhind.in/... (not www)
 
 4. Rich Results Test

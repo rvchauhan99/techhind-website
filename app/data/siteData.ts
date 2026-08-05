@@ -74,8 +74,11 @@ export const siteData = {
       {
         name: "Resources",
         hasDropdown: true,
-        href: "/#faq",
+        href: "/blog",
         subLinks: [
+          { name: "Blog", href: "/blog" },
+          { name: "Solar CRM", href: "/solar-crm" },
+          { name: "Solar EPC Software", href: "/solar-epc-software" },
           { name: "FAQ", href: "/#faq" },
           { name: "Platform Handbook", href: handbookPdfUrl },
           { name: "Pricing", href: "/pricing" },
@@ -100,9 +103,9 @@ export const siteData = {
     },
     headline: {
       prefix: "India's Most Powerful",
-      crm: "CRM",
+      crm: "Solar CRM",
       middle: "for",
-      industry: "Solar EPC",
+      industry: "EPC",
       suffix: "Companies",
     },
     subheadline:
@@ -401,6 +404,7 @@ export const siteData = {
     links: {
       product: [
         { name: "All Features", href: "/features" },
+        { name: "Solar CRM", href: "/solar-crm" },
         { name: "Lead Management", href: "/features/solar-lead-management" },
         { name: "Pricing", href: "/pricing" },
       ],
@@ -409,6 +413,8 @@ export const siteData = {
         { name: "Contact", href: "/#contact" },
       ],
       resources: [
+        { name: "Blog", href: "/blog" },
+        { name: "Solar EPC Software", href: "/solar-epc-software" },
         { name: "FAQ", href: "/#faq" },
         { name: "Platform Handbook", href: handbookPdfUrl },
       ],

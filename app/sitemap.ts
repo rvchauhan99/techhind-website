@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "./config/siteUrl";
 import { SITEMAP_LAST_MODIFIED } from "./config/sitemapDates";
 import { featureSlugs } from "./data/platformFeatures";
+import { pillarPages } from "./data/pillarPages";
+import { getAllBlogPosts } from "./lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const featureEntries = featureSlugs.map((slug) => ({
@@ -9,6 +11,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: SITEMAP_LAST_MODIFIED[`/features/${slug}`] ?? "2026-07-01",
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  const pillarEntries = pillarPages.map((page) => ({
+    url: `${SITE_URL}${page.path}`,
+    lastModified: SITEMAP_LAST_MODIFIED[page.path] ?? "2026-08-05",
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+
+  const blogIndex = {
+    url: `${SITE_URL}/blog`,
+    lastModified: SITEMAP_LAST_MODIFIED["/blog"] ?? "2026-08-05",
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  };
+
+  const blogEntries = getAllBlogPosts().map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: post.updated || post.date,
+    changeFrequency: "monthly" as const,
+    priority: 0.65,
   }));
 
   return [
@@ -25,6 +48,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     ...featureEntries,
+    ...pillarEntries,
+    blogIndex,
+    ...blogEntries,
     {
       url: `${SITE_URL}/pricing`,
       lastModified: SITEMAP_LAST_MODIFIED["/pricing"],
