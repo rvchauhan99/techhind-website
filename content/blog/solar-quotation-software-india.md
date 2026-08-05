@@ -3,7 +3,7 @@ title: "Solar Quotation Software India — Inside a Complete Solar CRM"
 description: "GST solar quotations matter — but Indian EPCs need them inside a complete Solar CRM, not as a standalone quote tool."
 slug: "solar-quotation-software-india"
 date: "2026-08-05"
-status: "draft"
+status: "published"
 author: "techHind"
 keywords: ["solar quotation software India", "solar CRM India", "complete solar CRM India"]
 ---
