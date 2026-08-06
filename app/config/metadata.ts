@@ -63,6 +63,7 @@ export const rootMetadata: Metadata = {
     canonical: "/",
     types: {
       "text/plain": "/llms.txt",
+      "application/rss+xml": "/rss.xml",
     },
   },
   openGraph: {

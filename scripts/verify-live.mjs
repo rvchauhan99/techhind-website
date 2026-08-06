@@ -33,6 +33,7 @@ const STATIC_PATHS = [
   "/robots.txt",
   "/sitemap.xml",
   "/llms.txt",
+  "/rss.xml",
   "/llms-full.txt",
   "/ai.txt",
   "/og-image.png",
