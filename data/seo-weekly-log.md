@@ -5,3 +5,4 @@
 - 2026-08-10 | published | `end-to-end-solar-crm-for-epc` | keyword: end to end solar CRM for EPC | auto weekly-seo-blog
 - 2026-08-17 | published | `solar-inventory-software-epc` | keyword: solar inventory software EPC | auto weekly-seo-blog
 - 2026-08-24 | published | `b2b-solar-trading-software` | keyword: B2B solar trading software | auto weekly-seo-blog
+- 2026-08-31 | published | `solar-payment-tracking-software` | keyword: solar payment tracking software | auto weekly-seo-blog
