@@ -94,6 +94,7 @@ BREVO_API_KEY=your_brevo_api_key_here
 
 4. Ensure all required SMTP vars are set: `BREVO_USER`, `BREVO_MASTER_KEY`, `BREVO_FROM`, `BREVO_TO`.
    - `BREVO_TO` supports multiple addresses separated by comma or semicolon.
+   - Every address in `BREVO_TO` receives each contact form submission (all listed in the To field).
 
 Note: Website contact form now uses Brevo SMTP relay (same pattern as platform backend).
 

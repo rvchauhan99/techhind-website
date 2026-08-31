@@ -1,16 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getEmailCredentials } from "@/app/config/emailCredentials";
 import { sendEmail } from "@/app/services/email.service";
+import {
+  buildContactFormEmailHtml,
+  buildContactFormEmailText,
+  buildContactFormSubject,
+} from "@/app/utils/contactFormEmail";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, message } = body;
+    const { name, email, phone, message } = body;
+    const trimmedPhone =
+      typeof phone === "string" && phone.trim().length > 0 ? phone.trim() : null;
 
     // Validate input
     if (!name || !email || !message) {
       return NextResponse.json(
-        { error: "All fields are required" },
+        { error: "Name, email, and message are required" },
         { status: 400 }
       );
     }
@@ -18,24 +25,20 @@ export async function POST(request: NextRequest) {
     // Get email credentials
     const credentials = getEmailCredentials();
 
+    const contactFormPayload = {
+      name,
+      email,
+      phone: trimmedPhone,
+      message,
+    };
+
     // Email content
     const emailContent = {
       from: credentials.fromEmail,
       to: credentials.toEmails,
-      subject: `New Contact Form Submission from ${name}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, "<br>")}</p>
-      `,
-      text: `
-        New Contact Form Submission
-        Name: ${name}
-        Email: ${email}
-        Message: ${message}
-      `,
+      subject: buildContactFormSubject(name),
+      html: buildContactFormEmailHtml(contactFormPayload),
+      text: buildContactFormEmailText(contactFormPayload),
     };
 
     if (credentials.service !== "brevo") {
@@ -69,6 +72,7 @@ export async function POST(request: NextRequest) {
         from: credentials.fromEmail,
         brevoUser: credentials.brevoUser,
         brevoMasterKey: credentials.brevoMasterKey,
+        priority: "high",
       }
     );
 

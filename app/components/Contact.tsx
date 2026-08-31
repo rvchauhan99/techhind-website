@@ -10,6 +10,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,7 +40,7 @@ export default function Contact() {
           type: "success",
           message: data.message || "Thank you for your message! We'll get back to you soon.",
         });
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
         setSubmitStatus({
           type: "error",
@@ -177,7 +178,10 @@ export default function Contact() {
                     htmlFor="name"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    Name
+                    Name{" "}
+                    <span className="text-red-500" aria-hidden="true">
+                      *
+                    </span>
                   </label>
                   <input
                     type="text"
@@ -186,6 +190,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    aria-required="true"
                     className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-teal focus:border-primary-teal outline-none transition-all bg-white/50"
                     placeholder="Your name"
                   />
@@ -196,7 +201,10 @@ export default function Contact() {
                     htmlFor="email"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    Email
+                    Email{" "}
+                    <span className="text-red-500" aria-hidden="true">
+                      *
+                    </span>
                   </label>
                   <input
                     type="email"
@@ -205,8 +213,29 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    aria-required="true"
                     className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-teal focus:border-primary-teal outline-none transition-all bg-white/50"
                     placeholder="your.email@example.com"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Contact Number{" "}
+                    <span className="text-gray-400 font-normal">(optional)</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    autoComplete="tel"
+                    className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-teal focus:border-primary-teal outline-none transition-all bg-white/50"
+                    placeholder="+91 98765 43210"
                   />
                 </div>
 
@@ -215,7 +244,10 @@ export default function Contact() {
                     htmlFor="message"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    Message
+                    Message{" "}
+                    <span className="text-red-500" aria-hidden="true">
+                      *
+                    </span>
                   </label>
                   <textarea
                     id="message"
@@ -223,6 +255,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     required
+                    aria-required="true"
                     rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00823b] focus:border-[#00823b] outline-none transition-all resize-none"
                     placeholder="Your message..."

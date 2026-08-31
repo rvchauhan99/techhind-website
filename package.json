@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "node --experimental-strip-types --test app/utils/*.test.ts",
     "generate:seo-assets": "node scripts/generate-seo-assets.mjs",
     "verify:live": "node scripts/verify-live.mjs",
     "seo:weekly": "node scripts/weekly-seo-blog.mjs",
