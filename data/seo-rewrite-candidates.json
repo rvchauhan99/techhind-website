@@ -1,10 +1,71 @@
 {
-  "generatedAt": "2026-08-25T05:00:53.541Z",
+  "generatedAt": "2026-09-01T09:30:36.899Z",
   "mode": "heuristic",
   "siteUrl": "https://techhind.in/",
   "window": {
-    "startDate": "2026-07-28",
-    "endDate": "2026-08-25"
+    "startDate": "2026-08-04",
+    "endDate": "2026-09-01"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "slug": "solar-crm-for-epc-companies-checklist",
+      "path": "/blog/solar-crm-for-epc-companies-checklist",
+      "title": "Solar CRM for EPC Companies: What to Look For in 2026",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
+    },
+    {
+      "slug": "solar-epc-software-india",
+      "path": "/blog/solar-epc-software-india",
+      "title": "Solar EPC software India: Full Solar CRM & Management System for Indian EPCs",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
+    },
+    {
+      "slug": "solar-lead-management-software",
+      "path": "/blog/solar-lead-management-software",
+      "title": "Solar Lead Management Software: Stop Losing Follow-Ups",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
+    },
+    {
+      "slug": "solar-project-management-software-india",
+      "path": "/blog/solar-project-management-software-india",
+      "title": "Solar project management software India: Full Solar CRM & Management System for Indian EPCs",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
+    },
+    {
+      "slug": "solar-quotation-software-india",
+      "path": "/blog/solar-quotation-software-india",
+      "title": "Solar Quotation Software India — Inside a Complete Solar CRM",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
+    },
+    {
+      "slug": "end-to-end-solar-crm-for-epc",
+      "path": "/blog/end-to-end-solar-crm-for-epc",
+      "title": "End to end solar CRM for EPC: Full Solar CRM & Management System for Indian EPCs",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 22
+    }
+  ]
 }
