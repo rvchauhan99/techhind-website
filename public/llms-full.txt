@@ -1,6 +1,6 @@
 # techHind — Full AI / AEO context
 
-Last refreshed: 2026-08-05
+Last refreshed: 2026-09-01
 
 ## Executive overview
 
@@ -99,9 +99,17 @@ Sales, execution, inventory, B2B trading, commission, and service modules share 
 
 ## Blog index
 
+### B2B solar trading software: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use B2B solar trading software as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
+URL: https://techhind.in/blog/b2b-solar-trading-software
+
 ### Complete Solar CRM India: One System from Lead to AMC
 Why Indian Solar EPC companies need a complete Solar CRM / Solar Management System — not WhatsApp, Excel, or single-module tools.
 URL: https://techhind.in/blog/complete-solar-crm-india
+
+### End to end solar CRM for EPC: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use end to end solar CRM for EPC as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
+URL: https://techhind.in/blog/end-to-end-solar-crm-for-epc
 
 ### Solar CRM for EPC Companies: What to Look For in 2026
 A practical checklist for Indian Solar EPC companies evaluating Solar CRM — pipeline, GST quotes, inventory serials, B2B, and after-sales.
@@ -111,9 +119,17 @@ URL: https://techhind.in/blog/solar-crm-for-epc-companies-checklist
 Learn how Indian Solar EPC companies use solar EPC software India as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
 URL: https://techhind.in/blog/solar-epc-software-india
 
+### Solar inventory software EPC: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use solar inventory software EPC as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
+URL: https://techhind.in/blog/solar-inventory-software-epc
+
 ### Solar Lead Management Software: Stop Losing Follow-Ups
 How Indian solar EPCs should structure lead management — Meta ads, assignment, site visits, and handover to quotation.
 URL: https://techhind.in/blog/solar-lead-management-software
+
+### Solar payment tracking software: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use solar payment tracking software as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
+URL: https://techhind.in/blog/solar-payment-tracking-software
 
 ### Solar project management software India: Full Solar CRM & Management System for Indian EPCs
 Learn how Indian Solar EPC companies use solar project management software India as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
