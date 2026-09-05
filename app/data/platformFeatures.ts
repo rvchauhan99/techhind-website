@@ -129,7 +129,7 @@ export const platformFeatures: PlatformFeature[] = [
         alt: "Solar order confirmation pipeline in techHind CRM",
       },
     ],
-    relatedSlugs: ["solar-quotation-software", "solar-inventory-software"],
+    relatedSlugs: ["solar-quotation-software", "solar-inventory-software", "solar-production-assembly"],
   },
   {
     slug: "solar-inventory-software",
@@ -168,7 +168,49 @@ export const platformFeatures: PlatformFeature[] = [
         alt: "Solar component stock levels by warehouse in techHind",
       },
     ],
-    relatedSlugs: ["solar-order-management", "b2b-solar-trading"],
+    relatedSlugs: ["solar-order-management", "b2b-solar-trading", "solar-production-assembly"],
+  },
+  {
+    slug: "solar-production-assembly",
+    title: "Solar Production & Kit Assembly",
+    metaTitle: "Solar Production & Kit Assembly Software India | BOM & Work Orders",
+    metaDescription:
+      "Plan in-house solar kit assembly with versioned BOMs, work orders, shortage picklists, atomic production booking, scrap control, and serial genealogy — inside techHind Solar CRM.",
+    keywords: [
+      "solar production software India",
+      "solar kit assembly software",
+      "solar BOM software India",
+      "solar work order software",
+      "solar manufacturing software EPC",
+    ],
+    headline: "Production / Assembly — BOM to Finished Good",
+    summary:
+      "Assemble inverter kits, junction boxes, and pre-wired units in-house from warehouse components — with versioned BOMs, work orders, picklists, and one-step production booking that keeps stock and costs accurate.",
+    businessPurpose:
+      "Give warehouse and production teams a manufacturing loop inside the same Solar Management System that runs inventory, B2B, and project dispatch — without spreadsheets or a separate MES.",
+    capabilities: [
+      "Versioned BOM Master with material and operation standard costs",
+      "Work orders with approval-gated BOM snapshot freeze",
+      "Shortage-aware picklist PDFs for warehouse picking",
+      "Atomic production booking — component issue + finished-good receipt",
+      "Backflush consumption with scrap, rejection, and substitute components",
+      "Serial genealogy from finished good back to consumed component serials",
+      "Production dashboard KPIs, pipeline board, and Excel exports",
+      "Branded work order and picklist PDF documents",
+    ],
+    howItWorks: [
+      "Define and activate a BOM recipe for the finished-good SKU",
+      "Create a work order, review shortages, and approve to freeze the BOM snapshot",
+      "Print the picklist, stage components, then post assembly bookings",
+      "Finished goods land in stock with cost roll-up — ready for dispatch, B2B, or install",
+    ],
+    screenshots: [
+      {
+        src: "/platform/stocks.png",
+        alt: "Warehouse stock levels that feed solar kit assembly and finished goods in techHind",
+      },
+    ],
+    relatedSlugs: ["solar-inventory-software", "b2b-solar-trading", "solar-order-management"],
   },
   {
     slug: "b2b-solar-trading",

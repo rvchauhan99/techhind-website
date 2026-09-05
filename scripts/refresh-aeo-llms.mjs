@@ -54,6 +54,7 @@ techHind (Techhind Private Limited) is a cloud Solar CRM built exclusively for I
 - **Fabrication & Installation** — Serial capture, manager sign-off, delivery challans
 - **Payments & Outstanding** — Payment recording, audit, and follow-up reminders
 - **Procurement & Inventory** — Purchase orders, stock, serialized panel/inverter tracking
+- **Production / Assembly** — Versioned BOMs, work orders, picklists, kit booking into finished goods
 - **B2B Trading** — Dealer quotes, orders, shipments, and invoices
 - **Commission Management** — Partner incentives with approval and payout
 - **Service & Warranty** — Tickets, warranty claims, and spare parts
@@ -91,6 +92,7 @@ https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
 - Quotations: https://techhind.in/features/solar-quotation-software
 - Order Management: https://techhind.in/features/solar-order-management
 - Inventory: https://techhind.in/features/solar-inventory-software
+- Production / Assembly: https://techhind.in/features/solar-production-assembly
 - B2B Trading: https://techhind.in/features/b2b-solar-trading
 - Payments: https://techhind.in/features/solar-payment-tracking
 - Service & Warranty: https://techhind.in/features/solar-service-warranty

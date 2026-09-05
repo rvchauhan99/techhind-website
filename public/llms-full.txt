@@ -1,6 +1,6 @@
 # techHind — Full AI / AEO context
 
-Last refreshed: 2026-09-01
+Last refreshed: 2026-09-05
 
 ## Executive overview
 
@@ -17,6 +17,7 @@ TechHind Solar CRM is a complete **Solar Management System** for EPC companies, 
 | Sales & marketing | Lead pipeline, inquiries, quotations, conversion tracking |
 | Operations | Order execution, fabrication, installation, delivery |
 | Warehouse | Purchase orders, stock, serial tracking, dispatch |
+| Production | BOM recipes, work orders, kit assembly, finished goods |
 | Finance | Collections, outstanding tracking, B2B invoicing |
 | Service teams | Tickets, warranty, spare parts |
 | Management | Dashboards, KPIs, approvals, reports |
@@ -27,6 +28,7 @@ TechHind Solar CRM is a complete **Solar Management System** for EPC companies, 
 - **Sales** — Orders from quotation to confirmation, amendments, payments
 - **Execution** — Fabrication, installation approval, delivery challans
 - **Supply chain** — Suppliers, purchase orders, stock, serialized inventory
+- **Production / Assembly** — BOM Master, work orders, picklists, kit booking into finished goods
 - **B2B** — Dealer quotes, orders, shipments, invoices
 - **Commission** — Partner incentives with approval and payout
 - **Service** — Tickets, warranty claims, service billing
@@ -34,13 +36,15 @@ TechHind Solar CRM is a complete **Solar Management System** for EPC companies, 
 
 ## Key Differentiators
 
-**Complete lifecycle in one system** — No gaps between sales, operations, and finance.
+**Complete lifecycle in one system** — No gaps between sales, operations, warehouse production, and finance.
 
 **Built for solar** — Project schemes, DISCOM, subsidy docs, panel/inverter serial tracking, installation sign-off.
 
+**In-house kit assembly** — Versioned BOMs, work orders, shortage picklists, and atomic production booking with serial genealogy.
+
 **Role-based access** — Each team sees what they need; management controls permissions.
 
-**Professional documents** — Quotation PDFs, order documents, invoices, warranty cards.
+**Professional documents** — Quotation PDFs, order documents, picklists, invoices, warranty cards.
 
 **Meta Lead Ads** — Automatic lead import from Facebook and Instagram campaigns.
 
@@ -55,7 +59,7 @@ Screenshots in this handbook are from the live demo at **https://demo.techhind.i
 
 ## One Platform for Your Entire Solar Business
 
-TechHind Solar CRM brings sales, project execution, inventory, finance, and after-sales service into a single workspace. Your teams work from one system — with menus and data tailored to each role.
+TechHind Solar CRM brings sales, project execution, inventory, in-house kit assembly, finance, and after-sales service into a single workspace. Your teams work from one system — with menus and data tailored to each role.
 
 ## What the Platform Delivers
 
@@ -63,19 +67,22 @@ TechHind Solar CRM brings sales, project execution, inventory, finance, and afte
 Track every residential and commercial project from first lead through installation, subsidy documentation, payments, and warranty service — without switching between spreadsheets and disconnected tools.
 
 ### Role-based workspaces
-Each user sees only the modules they need. Sales teams manage pipelines and quotations; warehouse staff handle stock and dispatch; finance tracks collections; managers review dashboards and approvals.
+Each user sees only the modules they need. Sales teams manage pipelines and quotations; warehouse staff handle stock and dispatch; production planners run BOMs and work orders; finance tracks collections; managers review dashboards and approvals.
 
 ### Professional customer documents
-Generate branded **quotation PDFs**, **order documents**, **delivery challans**, **B2B invoices**, **payment receipts**, and **warranty cards** — ready to share with customers and partners.
+Generate branded **quotation PDFs**, **order documents**, **work order / picklist PDFs**, **delivery challans**, **B2B invoices**, **payment receipts**, and **warranty cards** — ready to share with customers and partners.
 
 ### Digital lead capture
 Connect **Meta (Facebook/Instagram) Lead Ads** so campaign leads flow directly into your sales pipeline with source tracking and assignment.
 
+### In-house production / assembly
+Define versioned **BOMs**, plan **work orders**, print shortage-aware **picklists**, and post atomic **production bookings** that issue components and receive finished goods with serial genealogy.
+
 ### Real-time visibility
-Dashboards, pipeline boards, and KPI strips give management an up-to-date picture of sales, execution backlog, outstanding payments, and service workload.
+Dashboards, pipeline boards, and KPI strips give management an up-to-date picture of sales, execution backlog, production value, outstanding payments, and service workload.
 
 ### Control and accountability
-Approval workflows for quotations, installations, payments, and commissions. Full audit history for payments and uploaded documents.
+Approval workflows for quotations, installations, payments, commissions, and work orders. Full audit history for payments and uploaded documents.
 
 ## Who Benefits
 
@@ -84,13 +91,14 @@ Approval workflows for quotations, installations, payments, and commissions. Ful
 | Sales & marketing | Leads, inquiries, quotations, follow-ups |
 | Operations | Orders, fabrication, installation, delivery |
 | Warehouse | Stock, purchase orders, challans, serial tracking |
+| Production | BOM Master, work orders, assembly booking, FG stock |
 | Finance | Payments, outstanding, B2B invoicing, commission |
 | Service | Tickets, warranty claims, material requests |
 | Management | Dashboards, reports, approvals |
 
 ## Integrated Modules
 
-Sales, execution, inventory, B2B trading, commission, and service modules share the same customer and order data — so information entered once is available everywhere it is needed.
+Sales, execution, inventory, production / assembly, B2B trading, commission, and service modules share the same product, warehouse, and order data — so information entered once is available everywhere it is needed.
 
 ---
 
@@ -98,6 +106,10 @@ Sales, execution, inventory, B2B trading, commission, and service modules share 
 
 
 ## Blog index
+
+### Solar Production & Kit Assembly Software for Indian EPCs
+Assemble inverter kits and finished goods inside techHind Solar CRM — versioned BOMs, work orders, shortage picklists, atomic booking, and serial genealogy for Indian EPC warehouses.
+URL: https://techhind.in/blog/solar-production-assembly-software
 
 ### B2B solar trading software: Full Solar CRM & Management System for Indian EPCs
 Learn how Indian Solar EPC companies use B2B solar trading software as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.

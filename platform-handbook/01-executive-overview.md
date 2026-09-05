@@ -11,6 +11,7 @@ TechHind Solar CRM is a complete **Solar Management System** for EPC companies, 
 | Sales & marketing | Lead pipeline, inquiries, quotations, conversion tracking |
 | Operations | Order execution, fabrication, installation, delivery |
 | Warehouse | Purchase orders, stock, serial tracking, dispatch |
+| Production | BOM recipes, work orders, kit assembly, finished goods |
 | Finance | Collections, outstanding tracking, B2B invoicing |
 | Service teams | Tickets, warranty, spare parts |
 | Management | Dashboards, KPIs, approvals, reports |
@@ -21,6 +22,7 @@ TechHind Solar CRM is a complete **Solar Management System** for EPC companies, 
 - **Sales** — Orders from quotation to confirmation, amendments, payments
 - **Execution** — Fabrication, installation approval, delivery challans
 - **Supply chain** — Suppliers, purchase orders, stock, serialized inventory
+- **Production / Assembly** — BOM Master, work orders, picklists, kit booking into finished goods
 - **B2B** — Dealer quotes, orders, shipments, invoices
 - **Commission** — Partner incentives with approval and payout
 - **Service** — Tickets, warranty claims, service billing
@@ -28,13 +30,15 @@ TechHind Solar CRM is a complete **Solar Management System** for EPC companies, 
 
 ## Key Differentiators
 
-**Complete lifecycle in one system** — No gaps between sales, operations, and finance.
+**Complete lifecycle in one system** — No gaps between sales, operations, warehouse production, and finance.
 
 **Built for solar** — Project schemes, DISCOM, subsidy docs, panel/inverter serial tracking, installation sign-off.
 
+**In-house kit assembly** — Versioned BOMs, work orders, shortage picklists, and atomic production booking with serial genealogy.
+
 **Role-based access** — Each team sees what they need; management controls permissions.
 
-**Professional documents** — Quotation PDFs, order documents, invoices, warranty cards.
+**Professional documents** — Quotation PDFs, order documents, picklists, invoices, warranty cards.
 
 **Meta Lead Ads** — Automatic lead import from Facebook and Instagram campaigns.
 

@@ -23,6 +23,14 @@ const KEYWORDS_PATH = path.join(ROOT, "data", "seo-keywords.json");
 const LOG_PATH = path.join(ROOT, "data", "seo-weekly-log.md");
 const HANDBOOK_DIR = path.join(ROOT, "platform-handbook");
 const LLMS_PATH = path.join(ROOT, "public", "llms.txt");
+const PRODUCTION_MODULE_PATH = path.join(
+  HANDBOOK_DIR,
+  "modules",
+  "18-production-assembly.md",
+);
+
+const PRODUCTION_KEYWORD_RE =
+  /production|bom|work\s*order|assembly|kit|manufactur|finished\s*good/i;
 
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
@@ -94,11 +102,16 @@ function collectUsedKeywordsAndSlugs() {
   return { usedKeywords, usedSlugs };
 }
 
+function isProductionKeyword(keyword) {
+  return PRODUCTION_KEYWORD_RE.test(String(keyword));
+}
+
 function loadHandbookSnippets() {
   const snippets = [];
   const files = [
     path.join(HANDBOOK_DIR, "01-executive-overview.md"),
     path.join(HANDBOOK_DIR, "02-platform-capabilities.md"),
+    PRODUCTION_MODULE_PATH,
     LLMS_PATH,
   ];
   for (const file of files) {
@@ -125,26 +138,76 @@ function titleFromKeyword(keyword) {
   return `${base}: Full Solar CRM & Management System for Indian EPCs`;
 }
 
+function buildGenericPath() {
+  return `1. Lead / Meta ads → inquiry → site visit
+2. GST quotation → order confirmation
+3. Procurement, warehouse, serial tracking
+4. Installation, delivery challans, payments
+5. B2B dealer flow and after-sales service where needed`;
+}
+
+function buildProductionPath() {
+  return `1. Procurement brings components into warehouse stock
+2. Activate a versioned **BOM** recipe for the finished good
+3. Create and approve a **work order** (BOM snapshot frozen)
+4. Print shortage-aware **picklist**, then post **assembly booking**
+5. Finished goods land in stock with cost roll-up — ready for B2B dispatch or project install
+6. Sales, payments, and after-sales continue in the same Solar CRM`;
+}
+
+function prioritizeLinks(links, keyword) {
+  if (!isProductionKeyword(keyword)) return links;
+  const preferred = "/features/solar-production-assembly";
+  const rest = links.filter((href) => href !== preferred);
+  return [preferred, ...rest];
+}
+
 function buildPost({ keyword, facts, links }) {
-  const linkLines = links
+  const productionIntent = isProductionKeyword(keyword);
+  const orderedLinks = prioritizeLinks(links, keyword);
+  const linkLines = orderedLinks
     .slice(0, 8)
     .map((href) => `- [${href}](${href})`)
     .join("\n");
-  const factLines = (facts.length ? facts : [
-    "Complete lifecycle from marketing lead to after-sales service",
-    "Built for Indian solar EPC — DISCOM, subsidy docs, panel/inverter serial tracking",
-    "Role-based workspaces for sales, warehouse, finance, and field teams",
-    "B2B dealer quotes, orders, shipments, and invoices in one system",
-  ])
+  const defaultFacts = productionIntent
+    ? [
+        "Versioned BOM Master with material and operation standard costs",
+        "Work orders with approval-gated BOM snapshot freeze",
+        "Atomic production booking — component issue + finished-good receipt",
+        "Serial genealogy from finished good back to consumed component serials",
+        "Complete Solar CRM lifecycle from lead to after-sales alongside kit assembly",
+      ]
+    : [
+        "Complete lifecycle from marketing lead to after-sales service",
+        "Built for Indian solar EPC — DISCOM, subsidy docs, panel/inverter serial tracking",
+        "Role-based workspaces for sales, warehouse, finance, and field teams",
+        "B2B dealer quotes, orders, shipments, and invoices in one system",
+      ];
+  const factLines = (facts.length ? facts : defaultFacts)
     .map((f) => `- ${f}`)
     .join("\n");
 
   const title = titleFromKeyword(keyword);
-  const description = `Learn how Indian Solar EPC companies use ${keyword} as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.`;
+  const description = productionIntent
+    ? `Learn how Indian Solar EPC companies use ${keyword} inside a complete Solar CRM — BOM, work orders, kit assembly, finished goods, inventory, B2B, and lead-to-install.`
+    : `Learn how Indian Solar EPC companies use ${keyword} as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.`;
   const slug = slugify(keyword);
   const date = todayISO();
+  const pathSteps = productionIntent ? buildProductionPath() : buildGenericPath();
+  const featureCta = productionIntent
+    ? `See [Production / Assembly](/features/solar-production-assembly), then the [Solar CRM overview](/solar-crm), [Solar EPC software](/solar-epc-software), [inventory](/features/solar-inventory-software), [features](/features), and [pricing](/pricing).`
+    : `Start with the [Solar CRM overview](/solar-crm), then [Solar EPC software](/solar-epc-software), [Solar CRM vs Zoho](/solar-crm-vs-zoho), [features](/features), and [pricing](/pricing).`;
+  const introExtra = productionIntent
+    ? " That includes in-house **kit assembly** (BOM → work order → picklist → booking) — not only field fabrication."
+    : "";
+  const faqExtra = productionIntent
+    ? `
 
-  const body = `When teams search for **${keyword}**, they often need more than one module. Indian Solar EPC companies need a **complete Solar CRM / Solar Management System** — from lead capture through installation, inventory, B2B trading, payments, and after-sales — not a quotes-only or spreadsheets stack.
+### Is production the same as field fabrication?
+No. Production / Assembly is warehouse kitting into finished goods. Fabrication & Installation tracks project site build and install after the sale.`
+    : "";
+
+  const body = `When teams search for **${keyword}**, they often need more than one module. Indian Solar EPC companies need a **complete Solar CRM / Solar Management System** — from lead capture through installation, inventory, B2B trading, payments, and after-sales — not a quotes-only or spreadsheets stack.${introExtra}
 
 ## Why WhatsApp + Excel + generic CRM break at scale
 
@@ -160,13 +223,9 @@ ${factLines}
 
 Treat **${keyword}** as a search intent that maps to the broader platform — not a standalone product. Evaluate the full path:
 
-1. Lead / Meta ads → inquiry → site visit
-2. GST quotation → order confirmation
-3. Procurement, warehouse, serial tracking
-4. Installation, delivery challans, payments
-5. B2B dealer flow and after-sales service where needed
+${pathSteps}
 
-Start with the [Solar CRM overview](/solar-crm), then [Solar EPC software](/solar-epc-software), [Solar CRM vs Zoho](/solar-crm-vs-zoho), [features](/features), and [pricing](/pricing).
+${featureCta}
 
 ### Related pages
 ${linkLines}
@@ -178,7 +237,7 @@ Book a demo of the **full lead-to-install walkthrough** (not only one screen), o
 ## FAQ
 
 ### Is techHind only for ${keyword}?
-No. That phrase may describe one pain. techHind covers the full Solar EPC lifecycle as a Solar Management System.
+No. That phrase may describe one pain. techHind covers the full Solar EPC lifecycle as a Solar Management System.${faqExtra}
 
 ### How is this different from Zoho or a point tool?
 Generic CRM and single-module apps leave stock, serials, dealer trading, and service fragmented. techHind connects those workflows in one India-first platform.
@@ -269,7 +328,7 @@ function main() {
 
   if (dryRun) {
     console.log("\n--- DRY RUN (not written) ---\n");
-    console.log(post.markdown.slice(0, 800) + "\n...");
+    console.log(post.markdown.slice(0, 1200) + "\n...");
     process.exit(0);
   }
 

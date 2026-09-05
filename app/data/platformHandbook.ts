@@ -7,6 +7,7 @@ export const platformDifferentiators = [
   "Professional documents — quotation PDFs, challans, B2B invoices, warranty cards",
   "Meta Lead Ads integration — Facebook and Instagram leads sync automatically",
   "B2B dealer quotes, orders, shipments, and invoicing",
+  "In-house kit assembly — BOM, work orders, picklists, and production booking",
   "Commission management with approval and payout tracking",
   "Serialized inventory for panels and inverters",
   "Service tickets and warranty claims with traceability",
@@ -69,6 +70,14 @@ export const platformModules = [
       "Manage purchase orders, goods receipt, stock levels, serial tracking, and warehouse transfers for solar components.",
     subFeatures: ["Purchase orders", "PO inward & serial capture", "Stock levels by warehouse", "Stock transfers"],
     slug: "solar-inventory-software",
+  },
+  {
+    icon: "Factory",
+    title: "Production / Assembly",
+    description:
+      "Assemble finished goods from warehouse components with versioned BOMs, work orders, picklists, and atomic production booking.",
+    subFeatures: ["Versioned BOM Master", "Work orders & picklists", "Atomic assembly booking", "Serial genealogy"],
+    slug: "solar-production-assembly",
   },
   {
     icon: "Building2",
@@ -217,6 +226,11 @@ export const platformFaqs = [
     question: "Does techHind manage commission for sales partners?",
     answer:
       "Yes. Commission Management lets you configure rates, track accruals per order, route through manager approval, and settle payouts — integrated with the order and payment lifecycle.",
+  },
+  {
+    question: "Can techHind handle in-house kit assembly and production?",
+    answer:
+      "Yes. Production / Assembly covers versioned BOMs, work orders, shortage picklists, and atomic booking that issues components and receives finished goods — including scrap, rejection, substitutes, and serial genealogy. This is warehouse kitting, separate from field fabrication and installation on project sites.",
   },
 ] as const;
 

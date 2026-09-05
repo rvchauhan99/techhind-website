@@ -32,7 +32,7 @@ export default function FeaturesHubPage() {
             Complete <span className="gradient-text">Solar Management System</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Twelve integrated modules — from Meta Lead Ads and GST quotations through installation, B2B trading, commission, and after-sales service.
+            Thirteen integrated modules — from Meta Lead Ads and GST quotations through installation, kit assembly, B2B trading, commission, and after-sales service.
           </p>
         </div>
       </section>

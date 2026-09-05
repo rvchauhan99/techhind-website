@@ -16,16 +16,16 @@ export const siteData = {
     shortName: "TH",
     tagline: "India's complete Solar Management System for EPC companies.",
     description:
-      "techHind Solar CRM is a complete Solar Management System for EPC companies, distributors, and integrators. It manages the full business journey — from marketing lead to installed project, payment collection, and after-sales service — in one platform built for the Indian solar market.",
+      "techHind Solar CRM is a complete Solar Management System for EPC companies, distributors, and integrators. It manages the full business journey — from marketing lead to installed project, payment collection, and after-sales service — including in-house kit assembly and warehouse production, in one platform built for the Indian solar market.",
     additionalInfo:
-      "Sales, operations, warehouse, finance, and service teams work from one system with role-based workspaces, approval workflows, and professional document generation — from quotation PDFs to B2B invoices and warranty cards.",
+      "Sales, operations, warehouse, production, finance, and service teams work from one system with role-based workspaces, approval workflows, and professional document generation — from quotation PDFs to B2B invoices, picklists, and warranty cards.",
   },
 
   // SEO & Metadata
   seo: {
     title: "Solar CRM for EPC Companies in India | techHind",
     description:
-      "Complete Solar Management System for Indian EPC companies — leads, Meta ads, quotations, orders, inventory, B2B trading, payments, and service in one platform.",
+      "Complete Solar Management System for Indian EPC companies — leads, Meta ads, quotations, orders, inventory, kit assembly, B2B trading, payments, and service in one platform.",
     keywords: [
       "solar CRM India",
       "CRM for solar EPC companies",
@@ -34,6 +34,8 @@ export const siteData = {
       "solar EPC software",
       "WhatsApp solar CRM",
       "solar inventory software",
+      "solar production software India",
+      "solar kit assembly software",
       "Meta lead ads CRM",
       "B2B solar trading",
       "solar quotation software India",
@@ -69,6 +71,7 @@ export const siteData = {
           { name: "Quotations", href: "/features/solar-quotation-software" },
           { name: "Order Management", href: "/features/solar-order-management" },
           { name: "Inventory", href: "/features/solar-inventory-software" },
+          { name: "Production / Assembly", href: "/features/solar-production-assembly" },
         ],
       },
       {
@@ -191,7 +194,7 @@ export const siteData = {
     title: "Everything You Need to Manage Your Solar Business",
     titleHighlight: "Manage Your Solar Business",
     description:
-      "A complete Solar Management System — 12 integrated modules from marketing leads and Meta ads through installation, inventory, B2B trading, and after-sales service.",
+      "A complete Solar Management System — 13 integrated modules from marketing leads and Meta ads through installation, inventory, kit assembly, B2B trading, and after-sales service.",
     items: platformModules.map(({ icon, title, description, subFeatures, slug }) => ({
       icon,
       title,
@@ -407,6 +410,7 @@ export const siteData = {
         { name: "All Features", href: "/features" },
         { name: "Solar CRM", href: "/solar-crm" },
         { name: "Lead Management", href: "/features/solar-lead-management" },
+        { name: "Production / Assembly", href: "/features/solar-production-assembly" },
         { name: "Pricing", href: "/pricing" },
       ],
       company: [

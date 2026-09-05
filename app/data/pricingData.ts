@@ -1,6 +1,7 @@
 export const includedCapabilities = [
   "Purchasing",
   "Inventory Management",
+  "Production / Assembly",
   "B2B Trading",
 ] as const;
 

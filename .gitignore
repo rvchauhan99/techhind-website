@@ -36,3 +36,10 @@ coverage/
 .npm/
 .yarn/
 .pnpm-store/
+
+# OpenOutreach pilot exports and logs (CSVs may contain lead PII)
+data/outreach/exports/
+data/outreach/logs/
+
+# OpenOutreach local secrets (never commit)
+docs/outreach/.env.outreach.local

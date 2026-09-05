@@ -42,7 +42,7 @@ export const solarCrmPillar: PillarPage = {
   eyebrow: "Solar CRM · India",
   h1: "Solar CRM for EPC Companies in India",
   intro:
-    "techHind is a Solar CRM and complete Solar Management System built exclusively for Indian Solar EPC companies. Run leads, site visits, GST quotations, orders, serialized inventory, B2B dealer trading, payments, and after-sales — in one cloud platform designed for residential and commercial solar.",
+    "techHind is a Solar CRM and complete Solar Management System built exclusively for Indian Solar EPC companies. Run leads, site visits, GST quotations, orders, serialized inventory, in-house kit assembly, B2B dealer trading, payments, and after-sales — in one cloud platform designed for residential and commercial solar.",
   problemTitle: "Why Solar EPCs Outgrow Excel, WhatsApp, and Generic CRM",
   problemBody:
     "When rooftop volume rises under schemes like PM Surya Ghar, the bottleneck is execution — not just more leads. Teams lose follow-ups in WhatsApp, quotes live in spreadsheets, stock and serials drift, and finance cannot see outstanding cleanly.",
@@ -50,6 +50,7 @@ export const solarCrmPillar: PillarPage = {
     "Leads from Meta ads, dealers, and walk-ins scatter across tools",
     "Site survey → quotation → order handoffs break without a solar pipeline",
     "Panels and inverters need serial tracking generic CRMs do not offer",
+    "Kit assembly and finished-good stock stay in spreadsheets outside the CRM",
     "DISCOM, subsidy, and document checklists do not fit Zoho/HubSpot out of the box",
     "Multi-branch EPC teams need role-based access and one source of truth",
   ],
@@ -90,6 +91,11 @@ export const solarCrmPillar: PillarPage = {
       href: "/features/solar-inventory-software",
     },
     {
+      title: "Production / Assembly",
+      body: "Versioned BOMs, work orders, picklists, and kit assembly booking into finished-good stock.",
+      href: "/features/solar-production-assembly",
+    },
+    {
       title: "B2B trading",
       body: "Dealer quotes, orders, shipments, invoices, and outstanding.",
       href: "/features/b2b-solar-trading",
@@ -107,7 +113,7 @@ export const solarCrmPillar: PillarPage = {
   ],
   comparisonTitle: "Solar CRM vs Generic CRM",
   comparisonIntro:
-    "Generic CRMs manage contacts and pipelines. A Solar CRM must also understand EPC execution — stock, serials, GST solar quotes, dealer trading, and India-first field workflows.",
+    "Generic CRMs manage contacts and pipelines. A Solar CRM must also understand EPC execution — stock, serials, kit assembly, GST solar quotes, dealer trading, and India-first field workflows.",
   comparisonRows: [
     {
       capability: "Solar lead → install pipeline",
@@ -123,6 +129,11 @@ export const solarCrmPillar: PillarPage = {
       capability: "Panel / inverter serial tracking",
       techhind: "Built-in inventory",
       generic: "Not available",
+    },
+    {
+      capability: "In-house kit assembly / BOM",
+      techhind: "Production module",
+      generic: "Spreadsheet / separate MES",
     },
     {
       capability: "B2B dealer orders & invoices",
@@ -183,13 +194,14 @@ export const solarEpcSoftwarePillar: PillarPage = {
   eyebrow: "Solar EPC Software · India",
   h1: "Solar EPC Software for Indian Installers",
   intro:
-    "techHind is solar EPC software that connects sales and operations. Manage the full project lifecycle — from marketing lead to installation, serialized stock, dealer trading, outstanding payments, and service — without stitching Zoho + Excel + WhatsApp.",
+    "techHind is solar EPC software that connects sales and operations. Manage the full project lifecycle — from marketing lead to installation, serialized stock, in-house kit assembly, dealer trading, outstanding payments, and service — without stitching Zoho + Excel + WhatsApp.",
   problemTitle: "EPC Software Must Match How Solar Companies Actually Work",
   problemBody:
     "Install capacity is rising across India. EPCs that win are the ones that process surveys, quotes, procurement, installs, and documents faster — with fewer dropped balls between office and field.",
   problemPoints: [
     "Project stages are solar-specific — not generic task boards",
     "Procurement and warehouse must sync with confirmed orders",
+    "In-house kit assembly needs BOMs and work orders tied to the same stock",
     "Field teams need serial capture and clear work queues",
     "Finance needs outstanding and document audit on every project",
     "Dealer / distributor lines often sit beside retail EPC work",
@@ -202,7 +214,7 @@ export const solarEpcSoftwarePillar: PillarPage = {
     },
     {
       title: "Supply the job",
-      body: "Purchase orders, inward, warehouse stock, transfers, and serial tracking for panels and inverters.",
+      body: "Purchase orders, inward, warehouse stock, transfers, serial tracking, and kit assembly into finished goods.",
     },
     {
       title: "Deliver the job",
@@ -226,6 +238,11 @@ export const solarEpcSoftwarePillar: PillarPage = {
       href: "/features/solar-inventory-software",
     },
     {
+      title: "Production / Assembly",
+      body: "BOM recipes, work orders, picklists, and finished-good booking.",
+      href: "/features/solar-production-assembly",
+    },
+    {
       title: "B2B solar trading",
       body: "Dealers, shipments, invoices, and outstanding in one place.",
       href: "/features/b2b-solar-trading",
@@ -238,7 +255,7 @@ export const solarEpcSoftwarePillar: PillarPage = {
   ],
   comparisonTitle: "Solar EPC Software vs Spreadsheet Ops",
   comparisonIntro:
-    "Spreadsheets scale until parallel projects explode. purpose-built solar EPC software keeps sales, warehouse, and finance on one timeline.",
+    "Spreadsheets scale until parallel projects explode. purpose-built solar EPC software keeps sales, warehouse, production, and finance on one timeline.",
   comparisonRows: [
     {
       capability: "Single project truth",
@@ -254,6 +271,11 @@ export const solarEpcSoftwarePillar: PillarPage = {
       capability: "Serial history",
       techhind: "Yes",
       generic: "Rarely tracked",
+    },
+    {
+      capability: "In-house kit assembly / BOM",
+      techhind: "Production module",
+      generic: "Spreadsheet / separate tool",
     },
     {
       capability: "Dealer + retail together",
