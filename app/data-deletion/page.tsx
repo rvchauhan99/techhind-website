@@ -38,7 +38,7 @@ export default function DataDeletion() {
               <div className="flex justify-center space-x-6 text-sm">
                 <span>Effective Date: 01 January 2026</span>
                 <span>•</span>
-                <span>Last Updated: 29 March 2026</span>
+                <span>Last Updated: 08 September 2026</span>
               </div>
             </div>
           </div>
@@ -169,11 +169,12 @@ export default function DataDeletion() {
                   <section>
                     <h2 className="text-2xl font-bold text-white mb-4">7. WhatsApp Communication Data</h2>
                     <p className="mb-4">
-                      If you communicated with a business through WhatsApp integrations powered by Techhind systems:
+                      If you communicated with a business through WhatsApp integrations powered by Techhind systems (including outbound Utility templates such as payment reminders sent via WhatsApp Cloud API):
                     </p>
                     <ul className="list-disc list-inside space-y-2 ml-4">
-                      <li>Techhind stores messaging metadata only where required for service delivery</li>
-                      <li>message ownership remains with the business you interacted with</li>
+                      <li>customer phone numbers and message content belong to the business you interacted with (the data owner)</li>
+                      <li>Techhind stores messaging metadata and agent logs only where required for service delivery</li>
+                      <li>the client business may disconnect their WhatsApp Business Account from Techhind CRM, which stops further sending through our platform</li>
                     </ul>
                     <p className="mt-4">
                       Deletion requests may be submitted using:
@@ -181,6 +182,9 @@ export default function DataDeletion() {
                     <div className="bg-[#0f2942] rounded-lg p-4">
                       <p className="text-[#00823b] font-medium text-lg">privacy@techhind.in</p>
                     </div>
+                    <p className="mt-4">
+                      Please include your name, phone number used on WhatsApp, approximate date, and the business name if known. We verify the request, coordinate with the client business where they own the data, and delete applicable records from our systems.
+                    </p>
                   </section>
 
                   {/* Section 8 */}

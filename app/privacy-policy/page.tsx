@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
               <div className="flex justify-center space-x-6 text-sm">
                 <span>Effective Date: 01 January 2026</span>
                 <span>•</span>
-                <span>Last Updated: 13 May 2026</span>
+                <span>Last Updated: 08 September 2026</span>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
               <div className="text-gray-300 leading-relaxed space-y-6">
                 
                 <p className="text-lg font-medium text-gray-200">
-                  Techhind Private Limited ("Techhind", "we", "our", or "us") is committed to protecting personal information and ensuring transparency in how data is collected, processed, stored, and shared through our website, ERP platform, CRM software, and integrations with third-party services including Meta platforms (Facebook and Instagram).
+                  Techhind Private Limited ("Techhind", "we", "our", or "us") is committed to protecting personal information and ensuring transparency in how data is collected, processed, stored, and shared through our website, ERP platform, CRM software, and integrations with third-party services including Meta platforms (Facebook, Instagram, and WhatsApp).
                 </p>
 
                 <p className="text-lg font-medium text-gray-200">
@@ -67,7 +67,7 @@ export default function PrivacyPolicy() {
                     <p className="mb-4">Our platform integrates with:</p>
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li>Meta Lead Ads APIs (Facebook & Instagram)</li>
-                      <li>WhatsApp Business API</li>
+                      <li>WhatsApp Cloud API (WhatsApp Business Platform)</li>
                       <li>Email communication services</li>
                       <li>Secure cloud infrastructure providers</li>
                     </ul>
@@ -144,6 +144,33 @@ export default function PrivacyPolicy() {
                       </div>
 
                       <div>
+                        <h3 className="text-xl font-semibold text-white mb-3">WhatsApp Cloud API data</h3>
+                        <p className="mb-2">
+                          When a client business connects their own WhatsApp Business Account to Techhind CRM (Embedded Signup), we process the minimum data needed to manage that account and send messages on their behalf. Techhind does not log in with the client&apos;s Facebook password.
+                        </p>
+                        <p className="mb-2">From Meta after the client connects, we may store:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>WhatsApp Business Account identifiers</li>
+                          <li>business phone number identifiers and display number</li>
+                          <li>encrypted API credentials used to call WhatsApp Cloud API</li>
+                        </ul>
+                        <p className="mb-2 mt-4">
+                          From the client&apos;s CRM (not scraped from personal WhatsApp chats), we may use:
+                        </p>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>customer phone numbers already stored in the client&apos;s CRM</li>
+                          <li>order and payment fields needed to fill client-approved Utility templates (for example payment reminders)</li>
+                          <li>delivery or status metadata required to operate the messaging agent</li>
+                        </ul>
+                        <p className="mt-2">
+                          These permissions are used only to manage the client&apos;s WhatsApp Business Account and to send messages through that account.
+                        </p>
+                        <p className="mt-2 text-[#00823b]">
+                          This data belongs to the respective client business. Techhind acts as Data Processor.
+                        </p>
+                      </div>
+
+                      <div>
                         <h3 className="text-xl font-semibold text-white mb-3">SolarCRM: user accounts and business data</h3>
                         <p className="mb-2">
                           SolarCRM is a mobile application offered by Techhind Private Limited. SolarCRM may collect and process business-related information in order to provide ERP services and business workflow functionality, including:
@@ -194,13 +221,14 @@ export default function PrivacyPolicy() {
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li>delivering ERP and CRM services</li>
                       <li>synchronizing Meta Lead Ads with client dashboards</li>
-                      <li>enabling WhatsApp and email notifications</li>
+                      <li>enabling email notifications</li>
+                      <li>sending client-approved WhatsApp Utility templates (such as payment reminders) via WhatsApp Cloud API on the client&apos;s own WhatsApp Business Account — not marketing blasts on Techhind&apos;s own ads</li>
                       <li>improving platform functionality</li>
                       <li>maintaining infrastructure security</li>
                       <li>preventing unauthorized access and fraud</li>
                     </ul>
                     <p className="mt-4 text-[#00823b]">
-                      We do not use Meta Lead data for independent advertising or profiling.
+                      We do not use Meta Lead data or WhatsApp Cloud API data for independent advertising or profiling.
                     </p>
                   </section>
 
@@ -212,14 +240,24 @@ export default function PrivacyPolicy() {
                     </p>
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li>Lead data is processed only for the advertiser/client that owns the ad account</li>
-                      <li>Techhind does not sell or reuse Meta Lead data</li>
-                      <li>Data is encrypted during transmission via secure APIs (SSL/TLS)</li>
+                      <li>WhatsApp Cloud API data is processed only for the client that owns the connected WhatsApp Business Account</li>
+                      <li>Techhind does not sell or reuse Meta Lead data or WhatsApp data, and does not use that data to run ads on Meta</li>
+                      <li>Data is encrypted during transmission via secure APIs (SSL/TLS); API credentials are stored encrypted at rest</li>
                       <li>Access is restricted using role-based permissions</li>
                     </ul>
                     <p className="mt-4">
-                      Meta users requesting deletion of their Lead Ads data may contact:
+                      Meta users requesting deletion of Lead Ads or WhatsApp-related data may contact:
                     </p>
                     <p className="text-[#00823b] font-medium">privacy@techhind.in</p>
+                    <p className="mt-2">
+                      Step-by-step deletion instructions:{' '}
+                      <a
+                        href="/data-deletion"
+                        className="text-[#00823b] font-medium underline underline-offset-2"
+                      >
+                        techhind.in/data-deletion
+                      </a>
+                    </p>
                   </section>
 
                   {/* Section 6 */}
@@ -310,11 +348,18 @@ export default function PrivacyPolicy() {
                       <li>withdraw consent where applicable</li>
                     </ul>
                     <p className="mt-4">
-                      Meta Lead Ads users may request deletion by contacting:
+                      Meta Lead Ads users and individuals who received WhatsApp messages through a Techhind-connected business account may request deletion by contacting:
                     </p>
                     <p className="text-[#00823b] font-medium">privacy@techhind.in</p>
                     <p className="mt-2">
-                      Requests are processed within statutory timelines.
+                      See also{' '}
+                      <a
+                        href="/data-deletion"
+                        className="text-[#00823b] font-medium underline underline-offset-2"
+                      >
+                        techhind.in/data-deletion
+                      </a>
+                      . Requests are processed within statutory timelines.
                     </p>
                   </section>
 

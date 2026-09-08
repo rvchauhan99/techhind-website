@@ -15,7 +15,7 @@ export const SITEMAP_LAST_MODIFIED: Record<string, string> = {
   "/solar-crm-vs-zoho": "2026-08-06",
   "/blog": "2026-09-05",
   "/pricing": "2026-09-05",
-  "/privacy-policy": "2026-01-01",
+  "/privacy-policy": "2026-09-08",
   "/terms-conditions": "2026-01-01",
-  "/data-deletion": "2026-01-01",
+  "/data-deletion": "2026-09-08",
 };
