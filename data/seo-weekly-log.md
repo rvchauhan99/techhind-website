@@ -7,3 +7,4 @@
 - 2026-08-24 | published | `b2b-solar-trading-software` | keyword: B2B solar trading software | auto weekly-seo-blog
 - 2026-08-31 | published | `solar-payment-tracking-software` | keyword: solar payment tracking software | auto weekly-seo-blog
 - 2026-09-07 | published | `solar-production-software-india` | keyword: solar production software India | auto weekly-seo-blog
+- 2026-09-14 | published | `solar-kit-assembly-software` | keyword: solar kit assembly software | auto weekly-seo-blog
