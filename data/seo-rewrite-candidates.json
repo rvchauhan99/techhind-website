@@ -1,22 +1,12 @@
 {
-  "generatedAt": "2026-09-15T09:30:28.372Z",
+  "generatedAt": "2026-09-22T09:23:43.940Z",
   "mode": "heuristic",
   "siteUrl": "https://techhind.in/",
   "window": {
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-15"
+    "startDate": "2026-08-25",
+    "endDate": "2026-09-22"
   },
   "candidates": [
-    {
-      "slug": "solar-lead-management-software",
-      "path": "/blog/solar-lead-management-software",
-      "title": "Solar Lead Management Software: Stop Losing Follow-Ups",
-      "reason": "age>=21d_no_gsc",
-      "impressions": null,
-      "clicks": null,
-      "ctr": null,
-      "score": 41
-    },
     {
       "slug": "solar-project-management-software-india",
       "path": "/blog/solar-project-management-software-india",
@@ -25,7 +15,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 41
+      "score": 48
     },
     {
       "slug": "solar-quotation-software-india",
@@ -35,7 +25,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 41
+      "score": 48
     },
     {
       "slug": "end-to-end-solar-crm-for-epc",
@@ -45,7 +35,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 36
+      "score": 43
     },
     {
       "slug": "solar-inventory-software-epc",
@@ -55,12 +45,32 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 29
+      "score": 36
     },
     {
       "slug": "b2b-solar-trading-software",
       "path": "/blog/b2b-solar-trading-software",
       "title": "B2B solar trading software: Full Solar CRM & Management System for Indian EPCs",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 29
+    },
+    {
+      "slug": "complete-solar-crm-india",
+      "path": "/blog/complete-solar-crm-india",
+      "title": "Complete Solar CRM India: One System from Lead to AMC",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
+    },
+    {
+      "slug": "solar-payment-tracking-software",
+      "path": "/blog/solar-payment-tracking-software",
+      "title": "Solar payment tracking software: Full Solar CRM & Management System for Indian EPCs",
       "reason": "age>=21d_no_gsc",
       "impressions": null,
       "clicks": null,
