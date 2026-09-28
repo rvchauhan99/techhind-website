@@ -9,3 +9,4 @@
 - 2026-09-07 | published | `solar-production-software-india` | keyword: solar production software India | auto weekly-seo-blog
 - 2026-09-14 | published | `solar-kit-assembly-software` | keyword: solar kit assembly software | auto weekly-seo-blog
 - 2026-09-21 | published | `solar-bom-software-india` | keyword: solar BOM software India | auto weekly-seo-blog
+- 2026-09-28 | published | `solar-work-order-software` | keyword: solar work order software | auto weekly-seo-blog
