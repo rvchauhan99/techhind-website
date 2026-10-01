@@ -1,6 +1,6 @@
 # techHind — Full AI / AEO context
 
-Last refreshed: 2026-09-05
+Last refreshed: 2026-10-01
 
 ## Executive overview
 
@@ -107,10 +107,6 @@ Sales, execution, inventory, production / assembly, B2B trading, commission, and
 
 ## Blog index
 
-### Solar Production & Kit Assembly Software for Indian EPCs
-Assemble inverter kits and finished goods inside techHind Solar CRM — versioned BOMs, work orders, shortage picklists, atomic booking, and serial genealogy for Indian EPC warehouses.
-URL: https://techhind.in/blog/solar-production-assembly-software
-
 ### B2B solar trading software: Full Solar CRM & Management System for Indian EPCs
 Learn how Indian Solar EPC companies use B2B solar trading software as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
 URL: https://techhind.in/blog/b2b-solar-trading-software
@@ -122,6 +118,10 @@ URL: https://techhind.in/blog/complete-solar-crm-india
 ### End to end solar CRM for EPC: Full Solar CRM & Management System for Indian EPCs
 Learn how Indian Solar EPC companies use end to end solar CRM for EPC as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
 URL: https://techhind.in/blog/end-to-end-solar-crm-for-epc
+
+### Solar BOM software India: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use solar BOM software India inside a complete Solar CRM — BOM, work orders, kit assembly, finished goods, inventory, B2B, and lead-to-install.
+URL: https://techhind.in/blog/solar-bom-software-india
 
 ### Solar CRM for EPC Companies: What to Look For in 2026
 A practical checklist for Indian Solar EPC companies evaluating Solar CRM — pipeline, GST quotes, inventory serials, B2B, and after-sales.
@@ -135,6 +135,10 @@ URL: https://techhind.in/blog/solar-epc-software-india
 Learn how Indian Solar EPC companies use solar inventory software EPC as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
 URL: https://techhind.in/blog/solar-inventory-software-epc
 
+### Solar kit assembly software: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use solar kit assembly software inside a complete Solar CRM — BOM, work orders, kit assembly, finished goods, inventory, B2B, and lead-to-install.
+URL: https://techhind.in/blog/solar-kit-assembly-software
+
 ### Solar Lead Management Software: Stop Losing Follow-Ups
 How Indian solar EPCs should structure lead management — Meta ads, assignment, site visits, and handover to quotation.
 URL: https://techhind.in/blog/solar-lead-management-software
@@ -143,6 +147,14 @@ URL: https://techhind.in/blog/solar-lead-management-software
 Learn how Indian Solar EPC companies use solar payment tracking software as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
 URL: https://techhind.in/blog/solar-payment-tracking-software
 
+### Solar Production & Kit Assembly Software for Indian EPCs
+Assemble inverter kits and finished goods inside techHind Solar CRM — versioned BOMs, work orders, shortage picklists, atomic booking, and serial genealogy for Indian EPC warehouses.
+URL: https://techhind.in/blog/solar-production-assembly-software
+
+### Solar production software India: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use solar production software India inside a complete Solar CRM — BOM, work orders, kit assembly, finished goods, inventory, B2B, and lead-to-install.
+URL: https://techhind.in/blog/solar-production-software-india
+
 ### Solar project management software India: Full Solar CRM & Management System for Indian EPCs
 Learn how Indian Solar EPC companies use solar project management software India as part of a complete Solar CRM / Solar Management System — lead to install, stock, B2B, payments, and AMC.
 URL: https://techhind.in/blog/solar-project-management-software-india
@@ -150,6 +162,10 @@ URL: https://techhind.in/blog/solar-project-management-software-india
 ### Solar Quotation Software India — Inside a Complete Solar CRM
 GST solar quotations matter — but Indian EPCs need them inside a complete Solar CRM, not as a standalone quote tool.
 URL: https://techhind.in/blog/solar-quotation-software-india
+
+### Solar work order software: Full Solar CRM & Management System for Indian EPCs
+Learn how Indian Solar EPC companies use solar work order software inside a complete Solar CRM — BOM, work orders, kit assembly, finished goods, inventory, B2B, and lead-to-install.
+URL: https://techhind.in/blog/solar-work-order-software
 
 
 ## Canonical product pages

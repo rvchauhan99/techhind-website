@@ -63,21 +63,22 @@ https://techhind.in/TechHind-Solar-CRM-Handbook.pdf
 
 ## Recent Blog Posts
 
-- Solar Production & Kit Assembly Software for Indian EPCs: https://techhind.in/blog/solar-production-assembly-software
 - B2B solar trading software: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/b2b-solar-trading-software
 - Complete Solar CRM India: One System from Lead to AMC: https://techhind.in/blog/complete-solar-crm-india
 - End to end solar CRM for EPC: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/end-to-end-solar-crm-for-epc
+- Solar BOM software India: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-bom-software-india
 - Solar CRM for EPC Companies: What to Look For in 2026: https://techhind.in/blog/solar-crm-for-epc-companies-checklist
 - Solar EPC software India: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-epc-software-india
 - Solar inventory software EPC: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-inventory-software-epc
+- Solar kit assembly software: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-kit-assembly-software
 - Solar Lead Management Software: Stop Losing Follow-Ups: https://techhind.in/blog/solar-lead-management-software
 - Solar payment tracking software: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-payment-tracking-software
-- Solar project management software India: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-project-management-software-india
-- Solar Quotation Software India — Inside a Complete Solar CRM: https://techhind.in/blog/solar-quotation-software-india
+- Solar Production & Kit Assembly Software for Indian EPCs: https://techhind.in/blog/solar-production-assembly-software
+- Solar production software India: Full Solar CRM & Management System for Indian EPCs: https://techhind.in/blog/solar-production-software-india
 
 ## Extended Documentation
 
 - AI crawler index: https://techhind.in/ai.txt
 - Full FAQ and module details: https://techhind.in/llms-full.txt
 
-<!-- refreshed: 2026-09-05 -->
+<!-- refreshed: 2026-10-01 -->
