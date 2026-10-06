@@ -1,22 +1,12 @@
 {
-  "generatedAt": "2026-09-29T10:48:11.069Z",
+  "generatedAt": "2026-10-06T11:23:42.021Z",
   "mode": "heuristic",
   "siteUrl": "https://techhind.in/",
   "window": {
-    "startDate": "2026-09-01",
-    "endDate": "2026-09-29"
+    "startDate": "2026-09-08",
+    "endDate": "2026-10-06"
   },
   "candidates": [
-    {
-      "slug": "solar-quotation-software-india",
-      "path": "/blog/solar-quotation-software-india",
-      "title": "Solar Quotation Software India — Inside a Complete Solar CRM",
-      "reason": "age>=21d_no_gsc",
-      "impressions": null,
-      "clicks": null,
-      "ctr": null,
-      "score": 55
-    },
     {
       "slug": "end-to-end-solar-crm-for-epc",
       "path": "/blog/end-to-end-solar-crm-for-epc",
@@ -25,7 +15,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 50
+      "score": 57
     },
     {
       "slug": "solar-inventory-software-epc",
@@ -35,7 +25,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 43
+      "score": 50
     },
     {
       "slug": "b2b-solar-trading-software",
@@ -45,7 +35,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 36
+      "score": 43
     },
     {
       "slug": "complete-solar-crm-india",
@@ -55,7 +45,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 34
+      "score": 41
     },
     {
       "slug": "solar-payment-tracking-software",
@@ -65,7 +55,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 29
+      "score": 36
     },
     {
       "slug": "solar-crm-for-epc-companies-checklist",
@@ -75,7 +65,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 27
+      "score": 34
     },
     {
       "slug": "solar-production-assembly-software",
@@ -85,12 +75,32 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 24
+      "score": 31
     },
     {
       "slug": "solar-production-software-india",
       "path": "/blog/solar-production-software-india",
       "title": "Solar production software India: Full Solar CRM & Management System for Indian EPCs",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 29
+    },
+    {
+      "slug": "solar-epc-software-india",
+      "path": "/blog/solar-epc-software-india",
+      "title": "Solar EPC software India: Full Solar CRM & Management System for Indian EPCs",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
+    },
+    {
+      "slug": "solar-kit-assembly-software",
+      "path": "/blog/solar-kit-assembly-software",
+      "title": "Solar kit assembly software: Full Solar CRM & Management System for Indian EPCs",
       "reason": "age>=21d_no_gsc",
       "impressions": null,
       "clicks": null,
