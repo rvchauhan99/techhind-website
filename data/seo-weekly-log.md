@@ -11,3 +11,4 @@
 - 2026-09-21 | published | `solar-bom-software-india` | keyword: solar BOM software India | auto weekly-seo-blog
 - 2026-09-28 | published | `solar-work-order-software` | keyword: solar work order software | auto weekly-seo-blog
 - 2026-10-05 | published | `solar-manufacturing-software-epc` | keyword: solar manufacturing software EPC | auto weekly-seo-blog
+- 2026-10-12 | published | `inverter-kit-assembly-software` | keyword: inverter kit assembly software | auto weekly-seo-blog
