@@ -1,22 +1,12 @@
 {
-  "generatedAt": "2026-10-06T11:23:42.021Z",
+  "generatedAt": "2026-10-13T11:58:55.511Z",
   "mode": "heuristic",
   "siteUrl": "https://techhind.in/",
   "window": {
-    "startDate": "2026-09-08",
-    "endDate": "2026-10-06"
+    "startDate": "2026-09-15",
+    "endDate": "2026-10-13"
   },
   "candidates": [
-    {
-      "slug": "end-to-end-solar-crm-for-epc",
-      "path": "/blog/end-to-end-solar-crm-for-epc",
-      "title": "End to end solar CRM for EPC: Full Solar CRM & Management System for Indian EPCs",
-      "reason": "age>=21d_no_gsc",
-      "impressions": null,
-      "clicks": null,
-      "ctr": null,
-      "score": 57
-    },
     {
       "slug": "solar-inventory-software-epc",
       "path": "/blog/solar-inventory-software-epc",
@@ -25,7 +15,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 50
+      "score": 57
     },
     {
       "slug": "b2b-solar-trading-software",
@@ -35,7 +25,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 43
+      "score": 50
     },
     {
       "slug": "complete-solar-crm-india",
@@ -45,7 +35,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 41
+      "score": 48
     },
     {
       "slug": "solar-payment-tracking-software",
@@ -55,7 +45,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 36
+      "score": 43
     },
     {
       "slug": "solar-crm-for-epc-companies-checklist",
@@ -65,7 +55,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 34
+      "score": 41
     },
     {
       "slug": "solar-production-assembly-software",
@@ -75,7 +65,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 31
+      "score": 38
     },
     {
       "slug": "solar-production-software-india",
@@ -85,7 +75,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 29
+      "score": 36
     },
     {
       "slug": "solar-epc-software-india",
@@ -95,7 +85,7 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 27
+      "score": 34
     },
     {
       "slug": "solar-kit-assembly-software",
@@ -105,7 +95,17 @@
       "impressions": null,
       "clicks": null,
       "ctr": null,
-      "score": 22
+      "score": 29
+    },
+    {
+      "slug": "solar-lead-management-software",
+      "path": "/blog/solar-lead-management-software",
+      "title": "Solar Lead Management Software: Stop Losing Follow-Ups",
+      "reason": "age>=21d_no_gsc",
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "score": 27
     }
   ]
 }
