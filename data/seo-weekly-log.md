@@ -13,3 +13,4 @@
 - 2026-10-05 | published | `solar-manufacturing-software-epc` | keyword: solar manufacturing software EPC | auto weekly-seo-blog
 - 2026-10-12 | published | `inverter-kit-assembly-software` | keyword: inverter kit assembly software | auto weekly-seo-blog
 - 2026-10-19 | published | `solar-finished-goods-tracking-software` | keyword: solar finished goods tracking software | auto weekly-seo-blog
+- 2026-10-26 | published | `solar-warehouse-assembly-software` | keyword: solar warehouse assembly software | auto weekly-seo-blog
