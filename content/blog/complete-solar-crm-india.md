@@ -6,10 +6,10 @@ date: "2026-08-05"
 status: "published"
 author: "techHind"
 keywords: ["complete solar CRM India", "solar CRM", "solar management system India", "solar CRM for EPC companies"]
-updated: "2026-08-26"
+updated: "2026-10-28"
 ---
 
-*(Updated 2026-08-26 — refreshed for clarity and search intent.)*
+*(Updated 2026-10-28 — refreshed for clarity and search intent.)*
 
 Indian Solar EPC teams researching **complete solar CRM India** usually need more than a single-feature tool. They need a **complete Solar CRM / Solar Management System** that connects lead → site visit → quotation → order → install → stock → payments → after-sales.
 
@@ -29,8 +29,8 @@ Why Indian Solar EPC companies need a complete Solar CRM / Solar Management Syst
 - Sales — Orders from quotation to confirmation, amendments, payments
 - Execution — Fabrication, installation approval, delivery challans
 - Supply chain — Suppliers, purchase orders, stock, serialized inventory
+- Production / Assembly — BOM Master, work orders, picklists, kit booking into finished goods
 - B2B — Dealer quotes, orders, shipments, invoices
-- Commission — Partner incentives with approval and payout
 
 ## How techHind covers it
 

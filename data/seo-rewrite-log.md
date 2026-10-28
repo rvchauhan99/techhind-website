@@ -8,3 +8,4 @@
 - 2026-10-07 | rewrite | `end-to-end-solar-crm-for-epc` | reason: age>=21d_no_gsc
 - 2026-10-14 | rewrite | `solar-inventory-software-epc` | reason: age>=21d_no_gsc
 - 2026-10-21 | rewrite | `b2b-solar-trading-software` | reason: age>=21d_no_gsc
+- 2026-10-28 | rewrite | `complete-solar-crm-india` | reason: age>=21d_no_gsc
