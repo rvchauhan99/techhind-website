@@ -16,3 +16,4 @@
 - 2026-10-26 | published | `solar-warehouse-assembly-software` | keyword: solar warehouse assembly software | auto weekly-seo-blog
 - 2026-11-02 | published | `whatsapp-solar-crm` | keyword: WhatsApp solar CRM | auto weekly-seo-blog
 - 2026-11-09 | published | `meta-lead-ads-solar-crm` | keyword: Meta Lead Ads solar CRM | auto weekly-seo-blog
+- 2026-11-16 | published | `facebook-lead-ads-solar-epc-software` | keyword: Facebook lead ads solar EPC software | auto weekly-seo-blog
