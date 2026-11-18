@@ -11,3 +11,4 @@
 - 2026-10-28 | rewrite | `complete-solar-crm-india` | reason: age>=21d_no_gsc
 - 2026-11-04 | rewrite | `solar-payment-tracking-software` | reason: age>=21d_no_gsc
 - 2026-11-11 | rewrite | `solar-crm-for-epc-companies-checklist` | reason: age>=21d_no_gsc
+- 2026-11-18 | rewrite | `solar-production-assembly-software` | reason: age>=21d_no_gsc
