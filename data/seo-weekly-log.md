@@ -17,3 +17,4 @@
 - 2026-11-02 | published | `whatsapp-solar-crm` | keyword: WhatsApp solar CRM | auto weekly-seo-blog
 - 2026-11-09 | published | `meta-lead-ads-solar-crm` | keyword: Meta Lead Ads solar CRM | auto weekly-seo-blog
 - 2026-11-16 | published | `facebook-lead-ads-solar-epc-software` | keyword: Facebook lead ads solar EPC software | auto weekly-seo-blog
+- 2026-11-23 | published | `solar-inquiry-management-software` | keyword: solar inquiry management software | auto weekly-seo-blog
