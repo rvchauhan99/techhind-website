@@ -212,6 +212,28 @@ export default function PrivacyPolicy() {
                     </p>
                   </section>
 
+                  {/* SolarCRM location (App Store disclosure) */}
+                  <section>
+                    <h2 className="text-2xl font-bold text-white mb-4">Location permission and GPS (SolarCRM)</h2>
+                    <p className="mb-4">
+                      SolarCRM may request access to your device location <strong className="text-white">while you are using the app</strong> (When In Use) for legitimate field and workforce operations, including:
+                    </p>
+                    <ul className="list-disc list-inside space-y-2 ml-4">
+                      <li>site visits and installation workflows</li>
+                      <li>attendance / on-duty check-in related location stamps</li>
+                      <li>field documentation that requires a work-site context</li>
+                    </ul>
+                    <p className="mt-4">
+                      Location is used only for App Functionality for your employer&apos;s authorized CRM workflows. We do not sell location data, and we do not use location for cross-app advertising or tracking as defined under Apple App Tracking Transparency.
+                    </p>
+                    <p className="mt-4">
+                      SolarCRM does not market or require continuous &quot;Always&quot; background location for App Store distribution. On iOS, background execution for on-duty tracking is limited by the operating system.
+                    </p>
+                    <p className="mt-4 text-[#00823b]">
+                      If you deny location permission, features that depend on GPS (such as site visit stamps or duty tracking) may not function properly.
+                    </p>
+                  </section>
+
                   {/* Section 4 */}
                   <section>
                     <h2 className="text-2xl font-bold text-white mb-4">4. Purpose of Processing</h2>
